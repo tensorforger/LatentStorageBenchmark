@@ -19,7 +19,7 @@ class ImageDataset(Dataset):
     from disk on the fly in ``__getitem__``.
     """
 
-    def __init__(self, cfg: DictConfig):
+    def __init__(self, cfg: DictConfig, num_samples: int | None = None):
         prepared_root = Path(__file__).resolve().parents[3] / "prepared_datasets"
         self.image_paths: list[Path] = []
         for dataset_name in cfg.datasets:
@@ -30,6 +30,8 @@ class ImageDataset(Dataset):
                     f"Run scripts/prepare_datasets.py first."
                 )
             self.image_paths.extend(sorted(dataset_dir.glob("*.png")))
+        if num_samples is not None:
+            self.image_paths = self.image_paths[:num_samples]
 
     def __len__(self) -> int:
         return len(self.image_paths)

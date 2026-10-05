@@ -1,5 +1,5 @@
-benchmark_name: lsbench_1.0
-num_samples: null
+benchmark_name: lsbench_fast
+num_samples: 5
 image:
   width: 1024
   height: 1024

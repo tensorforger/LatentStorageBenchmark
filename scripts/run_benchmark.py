@@ -1,4 +1,5 @@
-import sys
+import argparse
+import shutil
 from collections import defaultdict
 from datetime import datetime
 from pathlib import Path
@@ -108,27 +109,63 @@ class ImageBenchmarkRunner:
             )
 
 
+RESULT_KEYS_PER_STORAGE = [
+    "bytes_per_image",
+    "serialize_ms_per_image",
+    "deserialize_ms_per_image",
+]
+
+
 def main():
-    cfg = OmegaConf.load(sys.argv[1])
+    parser = argparse.ArgumentParser()
+    parser.add_argument("config")
+    parser.add_argument(
+        "--overwrite",
+        action="store_true",
+        help="erase previous results and start fresh (default: continue, skipping finished rows)",
+    )
+    args = parser.parse_args()
+
+    cfg = OmegaConf.load(args.config)
     image_cfg: DictConfig = cfg.image
 
     out_dir = Path("results") / cfg.benchmark_name
-    out_dir.mkdir(parents=True)
+    if args.overwrite and out_dir.exists():
+        shutil.rmtree(out_dir)
+    out_dir.mkdir(parents=True, exist_ok=True)
     OmegaConf.save(cfg, out_dir / "config.yaml")
     writer = ResultWriter(out_dir)
 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     dataloader = DataLoader(
-        ImageDataset(cfg=image_cfg), batch_size=image_cfg.batch_size, shuffle=False
+        ImageDataset(cfg=image_cfg, num_samples=cfg.get("num_samples")),
+        batch_size=image_cfg.batch_size,
+        shuffle=False,
     )
 
     storages = [configure_latent_storage(e) for e in image_cfg.latent_storages]
     metric_factories = [configure_metric_factory(e) for e in image_cfg.metrics]
 
+    metric_names = [f().get_metric_name() for f in metric_factories]
+    required_keys = metric_names + RESULT_KEYS_PER_STORAGE
+
     for vae_entry in image_cfg.vaes:
+        vae_name = vae_entry if isinstance(vae_entry, str) else vae_entry.name
+        pending = [
+            s
+            for s in storages
+            if not all(
+                writer.has_value(vae_name, s.get_storage_name(), k)
+                for k in required_keys
+            )
+        ]
+        if not pending:
+            print(f"Skipping {vae_name}: all results already computed")
+            continue
+
         vae = configure_vae(vae_entry, device)
         runner = ImageBenchmarkRunner(
-            dataloader, vae, storages, metric_factories, writer, device
+            dataloader, vae, pending, metric_factories, writer, device
         )
         runner.run()
         writer.write()  # incremental, so a crash keeps finished VAEs

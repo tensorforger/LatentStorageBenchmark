@@ -13,9 +13,9 @@ Pipeline per VAE: `image -> vae.encode -> storage.serialize -> bytes -> storage.
 | Latent storage | `lsbench/image/latent_storages/image_latent_storage.py::ImageLatentStorage` | `fp32_`, `fp16_`, `bf16_latent_storage.py` (safetensors bytes) |
 | Metric | `lsbench/image/metrics/image_metric.py::ImageMetric` | `mse_metric.py` |
 
-- `scripts/run_benchmark.py::ImageBenchmarkRunner` is the orchestrator: for each batch it encodes **once**, then fans out over all storages; it records `bytes_per_image`, `serialize_ms_per_image`, `deserialize_ms_per_image` plus every metric via `ResultWriter.add_value(value, vae, storage, metric)`.
+- `scripts/run_benchmark.py::ImageBenchmarkRunner` is the orchestrator: for each batch it encodes **once**, then fans out over all storages; it records `bytes_per_image`, `serialize_ms_per_image`, `deserialize_ms_per_image` plus every metric via `ResultWriter.add_value(value, vae, storage, metric)`. Runs are resumable: `ResultWriter` loads an existing `results.parquet`, and `main()` skips every (vae, storage) whose metric + size/time rows already exist (a VAE with nothing pending is not even loaded).
 - `lsbench/utils/`: `result_writer.py` (long-format table -> `results/<benchmark_name>/results.parquet` + `tables/*.md`), `report.py::make_plots`, `image_tools.py` (torch/np/cv2 conversions), `crop_maximal_rectangle.py`.
-- `configs/lsbench_1.0.yaml` (OmegaConf): `benchmark_name`, `image.{width,height,batch_size,datasets,vaes,latent_storages,metrics}`, and a `video` section (not used yet).
+- `configs/lsbench_1.0.yaml` (OmegaConf): `benchmark_name`, optional global `num_samples` (first N images of all datasets combined in config order; `null`/absent = all), `image.{width,height,batch_size,datasets,vaes,latent_storages,metrics}`, and a `video` section (not used yet). `configs/lsbench_fast.yaml` is the same with `num_samples: 5` and its own `benchmark_name` for quick tests.
 - **Components are built from the config** by `lsbench/utils/component_factory.py` (`configure_vae(entry, device)`, `configure_latent_storage(entry)`, `configure_metric_factory(entry)`). It imports every module in `lsbench/image/{vaes,latent_storages,metrics}/` and picks the single subclass whose class constant `NAME` equals the config name. `main()` has no component imports: adding a file + a config entry is the whole registration.
 - Config entry is either a plain name (`- mse`) or a mapping with constructor kwargs (`- {name: flux_2, path_to_model: models/FLUX.2-klein-4B/vae}`). `device` is injected automatically into VAEs whose `__init__` has a `device` argument.
 - Every VAE/storage/metric class must define `NAME = "..."` as a class constant; `get_*_name()` returns `self.NAME`.
@@ -51,7 +51,7 @@ General (all components):
 - Inputs are `[B,C,H,W]` RGB `[0,1]` on the compute device; clamp to `[0,1]` internally if the metric needs it. Average per-sample then over all samples (see `MSEMetric`). Return a plain Python `float`; handle the empty case.
 - Metrics needing pretrained weights (CLIP, FID, OCR) load them from `models/` or a library cache in `__init__`.
 
-Registration checklist (no edits to `scripts/run_benchmark.py` needed): (1) create the file in the right folder with `NAME` set, (2) add the name (or `{name: ..., kwargs}` mapping) to the matching list in `configs/lsbench_1.0.yaml`, (3) smoke-test with a small run (below); a wrong/missing name raises an error listing the available `NAME`s, (4) update the README "Coverage"/setup if needed. Any new top-level dependency must be importable at discovery time, since all modules in the folder are imported.
+Registration checklist (no edits to `scripts/run_benchmark.py` needed): (1) create the file in the right folder with `NAME` set, (2) add the name (or `{name: ..., kwargs}` mapping) to the matching list in `configs/lsbench_1.0.yaml`, (3) smoke-test with `configs/lsbench_fast.yaml --overwrite` (below); a wrong/missing name raises an error listing the available `NAME`s, (4) update the README "Coverage"/setup if needed. Any new top-level dependency must be importable at discovery time, since all modules in the folder are imported.
 
 ## 3. Running
 
@@ -71,9 +71,12 @@ Known data quirks: `Total-Text-Dataset/Images/Train/img61.JPG` is a git-lfs poin
 
 Benchmark and report:
 ```bash
-.venv/bin/python scripts/run_benchmark.py configs/lsbench_1.0.yaml   # -> results/<benchmark_name>/
-.venv/bin/python scripts/make_report.py results/lsbench_1.0          # re-make plots from results.parquet
+.venv/bin/python scripts/run_benchmark.py configs/lsbench_1.0.yaml              # continue: skips finished rows, nothing is overwritten
+.venv/bin/python scripts/run_benchmark.py configs/lsbench_1.0.yaml --overwrite  # deletes results/<benchmark_name> and starts fresh
+.venv/bin/python scripts/run_benchmark.py configs/lsbench_fast.yaml --overwrite  # fast smoke test (5 samples) -> results/lsbench_fast/
+.venv/bin/python scripts/make_report.py results/lsbench_1.0                       # re-make plots from results.parquet
 ```
-- `run_benchmark.py` does `mkdir(parents=True)` on `results/<benchmark_name>`, so it **fails if that dir exists**: change `benchmark_name` in a copy of the config (e.g. `configs/dev.yaml`) for experiments instead of deleting existing results.
-- For quick smoke tests use a copy of the config with a single small dataset and `batch_size: 1`; there is no test suite yet.
+- Default mode is continue: re-running a finished benchmark does nothing; adding a VAE/storage/metric to the config computes only the missing rows. Results are keyed by (vae, storage, metric) only, so after changing `num_samples`, datasets or other data settings use `--overwrite` (or a new `benchmark_name`), otherwise old and new rows get mixed.
+- `--overwrite` removes the whole `results/<benchmark_name>` dir: use it only for test configs such as `lsbench_fast.yaml`, never on the full `lsbench_1.0` results unless intended.
+- For smoke tests of new components, add them to `configs/lsbench_fast.yaml` (or a copy) and run the fast command; there is no test suite yet.
 - Uses CUDA when available, otherwise CPU (very slow for large VAEs).

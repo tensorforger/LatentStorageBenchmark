@@ -14,6 +14,21 @@ class ResultWriter:
     def __init__(self, out_dir: str | Path):
         self.out_dir = Path(out_dir)
         self.records: list[dict] = []
+        parquet_path = self.out_dir / "results.parquet"
+        if parquet_path.exists():
+            self.records = pd.read_parquet(parquet_path).to_dict("records")
+        self._keys = {
+            (r["domain"], r["vae"], r["storage"], r["metric"]) for r in self.records
+        }
+
+    def has_value(
+        self,
+        vae_name: str,
+        storage_name: str,
+        metric_name: str,
+        domain_name: str = "image",
+    ) -> bool:
+        return (domain_name, vae_name, storage_name, metric_name) in self._keys
 
     def add_value(
         self,
@@ -23,6 +38,14 @@ class ResultWriter:
         metric_name: str,
         domain_name: str = "image",
     ):
+        key = (domain_name, vae_name, storage_name, metric_name)
+        if key in self._keys:  # recomputed row (e.g. a metric was added to the config)
+            self.records = [
+                r
+                for r in self.records
+                if (r["domain"], r["vae"], r["storage"], r["metric"]) != key
+            ]
+        self._keys.add(key)
         self.records.append(
             {
                 "domain": domain_name,
