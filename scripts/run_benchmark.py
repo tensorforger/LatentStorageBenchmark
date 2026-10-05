@@ -14,14 +14,12 @@ from lsbench.image.dataset import ImageDataset
 from lsbench.image.vaes.image_vae import ImageVAE
 from lsbench.image.metrics.image_metric import ImageMetric
 from lsbench.image.latent_storages.image_latent_storage import ImageLatentStorage
-from lsbench.image.vaes.flux_2_vae import Flux2VAE
-from lsbench.image.vaes.no_vae import NoVAE
 
-from lsbench.image.metrics.mse_metric import MSEMetric
-from lsbench.image.latent_storages.fp32_latent_storage import FP32LatentStorage
-from lsbench.image.latent_storages.fp16_latent_storage import FP16LatentStorage
-from lsbench.image.latent_storages.bf16_latent_storage import BF16LatentStorage
-
+from lsbench.utils.component_factory import (
+    configure_latent_storage,
+    configure_metric_factory,
+    configure_vae,
+)
 from lsbench.utils.report import make_plots
 from lsbench.utils.result_writer import ResultWriter
 
@@ -124,27 +122,17 @@ def main():
         ImageDataset(cfg=image_cfg), batch_size=image_cfg.batch_size, shuffle=False
     )
 
-    vaes = [
-        NoVAE(),
-        Flux2VAE(path_to_model="models/FLUX.2-klein-4B/vae"),
-    ]
+    storages = [configure_latent_storage(e) for e in image_cfg.latent_storages]
+    metric_factories = [configure_metric_factory(e) for e in image_cfg.metrics]
 
-    storages = [
-        FP32LatentStorage(),
-        FP16LatentStorage(),
-        BF16LatentStorage(),
-    ]
-
-    metric_factories = [
-        MSEMetric,
-    ]
-
-    for vae in vaes:
+    for vae_entry in image_cfg.vaes:
+        vae = configure_vae(vae_entry, device)
         runner = ImageBenchmarkRunner(
             dataloader, vae, storages, metric_factories, writer, device
         )
         runner.run()
         writer.write()  # incremental, so a crash keeps finished VAEs
+        del runner, vae  # free VRAM before loading the next VAE
 
     make_plots(writer.dataframe, out_dir)
     print(f"Results written to {out_dir}")

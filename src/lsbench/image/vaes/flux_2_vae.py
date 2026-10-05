@@ -6,12 +6,13 @@ from lsbench.image.vaes.image_vae import ImageVAE
 
 
 class Flux2VAE(ImageVAE):
+    NAME = "flux_2"
+
     def __init__(self, path_to_model: str, device: torch.device = "cuda"):
         super().__init__()
 
         self.latent_channels = 3
         self.spatial_compression = 1
-        self.vae_name = "flux_2"
 
         self.model = AutoencoderKLFlux2.from_pretrained(
             path_to_model, device=device
@@ -115,4 +116,4 @@ class Flux2VAE(ImageVAE):
         return self.spatial_compression
 
     def get_vae_name(self) -> str:
-        return self.vae_name
+        return self.NAME

@@ -4,10 +4,11 @@ from lsbench.image.vaes.image_vae import ImageVAE
 
 
 class NoVAE(ImageVAE):
+    NAME = "no_vae"
+
     def __init__(self, device: torch.device = "cuda"):
         self.latent_channels = 3
         self.spatial_compression = 1
-        self.vae_name = "no_vae"
 
         self.mean = torch.tensor([0.485, 0.456, 0.406])[None, :, None, None].to(device)
         self.std = torch.tensor([0.229, 0.224, 0.225])[None, :, None, None].to(device)
@@ -55,4 +56,4 @@ class NoVAE(ImageVAE):
         return self.spatial_compression
 
     def get_vae_name(self) -> str:
-        return self.vae_name
+        return self.NAME

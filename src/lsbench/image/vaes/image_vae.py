@@ -9,7 +9,10 @@ class ImageVAE(torch.nn.Module):
     VAE should handle by itself:
     - pixel and latent normalization
     - image and latent device and dtype handling according to weights
+    Subclasses must define a class constant NAME equal to the config entry.
     """
+
+    NAME: str
 
     @abstractmethod
     def encode(

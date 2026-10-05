@@ -5,7 +5,10 @@ import torch
 class ImageMetric(ABC):
     """
     Abstract class and common interface for image metrics.
+    Subclasses must define a class constant NAME equal to the config entry.
     """
+
+    NAME: str
 
     @abstractmethod
     def add_pair(

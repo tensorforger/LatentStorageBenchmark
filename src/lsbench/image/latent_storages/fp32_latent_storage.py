@@ -4,11 +4,12 @@ from lsbench.image.latent_storages.image_latent_storage import ImageLatentStorag
 
 
 class FP32LatentStorage(ImageLatentStorage):
+    NAME = "fp32"
+
     def __init__(
         self,
     ):
         super().__init__()
-        self.storage_name = "fp32"
 
     def serialize(self, latents: torch.Tensor) -> bytes:
         """
@@ -31,4 +32,4 @@ class FP32LatentStorage(ImageLatentStorage):
         return t.to(device=device, dtype=torch.float32)
 
     def get_storage_name(self) -> str:
-        return self.storage_name
+        return self.NAME

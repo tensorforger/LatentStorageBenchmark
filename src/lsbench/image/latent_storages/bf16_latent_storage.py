@@ -4,11 +4,12 @@ from lsbench.image.latent_storages.image_latent_storage import ImageLatentStorag
 
 
 class BF16LatentStorage(ImageLatentStorage):
+    NAME = "bf16"
+
     def __init__(
         self,
     ):
         super().__init__()
-        self.storage_name = "bf16"
 
     def serialize(self, latents: torch.Tensor) -> bytes:
         """
@@ -31,4 +32,4 @@ class BF16LatentStorage(ImageLatentStorage):
         return t.to(device=device, dtype=torch.bfloat16)
 
     def get_storage_name(self) -> str:
-        return self.storage_name
+        return self.NAME

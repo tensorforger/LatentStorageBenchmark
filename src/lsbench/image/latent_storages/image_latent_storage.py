@@ -7,7 +7,10 @@ class ImageLatentStorage(ABC):
     """
     Abstract class and common interface for image latent storages.
     Handeles device by itself.
+    Subclasses must define a class constant NAME equal to the config entry.
     """
+
+    NAME: str
 
     @abstractmethod
     def serialize(self, latents: torch.Tensor) -> bytes:

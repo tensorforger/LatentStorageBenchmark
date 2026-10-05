@@ -3,8 +3,9 @@ from lsbench.image.metrics.image_metric import ImageMetric
 
 
 class MSEMetric(ImageMetric):
+    NAME = "mse"
+
     def __init__(self):
-        self.metric_name = "mse"
         self.reset()
 
     def add_pair(
@@ -34,4 +35,4 @@ class MSEMetric(ImageMetric):
         self.num_samples = 0
 
     def get_metric_name(self) -> str:
-        return self.metric_name
+        return self.NAME
