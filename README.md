@@ -14,7 +14,7 @@ While the core purpose of this is to benchmark **Storage** efficency, it can als
 ## Coverage
 
 - **VAEs:** Qwen-Image 2.1, FLUX.2, SDXL, ...
-- **Compression:** `fp32` (baseline), `bf16`, `int8`, HOSVD, PARAFAC, ...
+- **Compression:** `fp32` (baseline), `bf16`, `fp16`, 8-bit (FP8 E4M3/E5M2, MXFP8, INT8 per-tensor/channel/group/asymmetric/MSE-clip/outlier/Hadamard/mu-law, NF8), 4-bit (NVFP4, MXFP4, INT4 group/asymmetric/MSE-clip/Hadamard/outlier, NF4, NF4 double-quant, k-means codebook), HOSVD, PARAFAC, ...
 
 ## Contents
 
@@ -67,5 +67,9 @@ git clone https://huggingface.co/black-forest-labs/FLUX.2-klein-4B
 ## Run
 
 ```bash
+# compute all and visualize
 uv run python scripts/run_benchmark.py configs/lsbench_1.0.yaml
+
+# visualize only
+uv run python scripts/make_report.py results/lsbench_1.0/
 ```
