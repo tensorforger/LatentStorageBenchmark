@@ -1,0 +1,28 @@
+benchmark_name: lsbench_1.0
+image:
+  width: 1024
+  height: 1024
+  batch_size: 4
+  datasets:
+  - axis-v1_1k
+  vaes:
+  - no_vae
+  - flux_2
+  latent_storages:
+  - fp32
+  - fp16
+  - bf16
+  metrics:
+  - mse
+video:
+  datasets:
+  - movirec
+  - GasVideo1000
+  vaes:
+  - no_vae
+  latent_storages:
+  - fp32
+  - fp16
+  - bf16
+  metrics:
+  - mse
