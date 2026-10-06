@@ -42,6 +42,22 @@ def from_groups(groups: torch.Tensor, shape) -> torch.Tensor:
     return groups.reshape(shape[0], -1)[:, :n].reshape(shape)
 
 
+def to_square_groups(x: torch.Tensor, block: int) -> torch.Tensor:
+    """[B, C, H, W] -> [B, G, block * block]; each group is a block x block patch of one channel (zero padded)."""
+    b, c, h, w = x.shape
+    x = F.pad(x, (0, (-w) % block, 0, (-h) % block))
+    hb, wb = x.shape[2] // block, x.shape[3] // block
+    x = x.reshape(b, c, hb, block, wb, block).permute(0, 1, 2, 4, 3, 5)
+    return x.reshape(b, c * hb * wb, block * block)
+
+
+def from_square_groups(groups: torch.Tensor, shape, block: int) -> torch.Tensor:
+    b, c, h, w = shape
+    hb, wb = -(-h // block), -(-w // block)
+    x = groups.reshape(b, c, hb, wb, block, block).permute(0, 1, 2, 4, 3, 5)
+    return x.reshape(b, c, hb * block, wb * block)[:, :, :h, :w]
+
+
 def fp16_scale(amax: torch.Tensor, qmax: float) -> torch.Tensor:
     return (amax / qmax).clamp(min=FP16_MIN_SCALE).to(torch.float16)
 
@@ -60,6 +76,29 @@ def unpack_nibbles(packed: torch.Tensor, n: int) -> torch.Tensor:
     return both.reshape(packed.shape[0], -1)[:, :n]
 
 
+def pack_bits(codes: torch.Tensor, bits: int) -> torch.Tensor:
+    """uint8 codes in [0, 2^bits), [B, ...] -> uint8 [B, ceil(n * bits / 8)], LSB first."""
+    flat = codes.reshape(codes.shape[0], -1)
+    if bits == 8:
+        return flat.contiguous()
+    shifts = torch.arange(bits, device=flat.device, dtype=torch.uint8)
+    bit_rows = ((flat.unsqueeze(-1) >> shifts) & 1).reshape(flat.shape[0], -1)
+    bit_rows = F.pad(bit_rows, (0, (-bit_rows.shape[1]) % 8))
+    weights = 1 << torch.arange(8, device=flat.device, dtype=torch.uint8)
+    return (bit_rows.reshape(flat.shape[0], -1, 8) * weights).sum(-1).to(torch.uint8)
+
+
+def unpack_bits(packed: torch.Tensor, n: int, bits: int) -> torch.Tensor:
+    """uint8 [B, ceil(n * bits / 8)] -> uint8 [B, n]."""
+    if bits == 8:
+        return packed[:, :n]
+    b = packed.shape[0]
+    shifts = torch.arange(8, device=packed.device, dtype=torch.uint8)
+    bit_rows = ((packed.unsqueeze(-1) >> shifts) & 1).reshape(b, -1)[:, : n * bits]
+    weights = 1 << torch.arange(bits, device=packed.device, dtype=torch.uint8)
+    return (bit_rows.reshape(b, n, bits) * weights).sum(-1).to(torch.uint8)
+
+
 def nearest_code(x: torch.Tensor, codebook: torch.Tensor) -> torch.Tensor:
     """Index of the nearest entry of a sorted 1D codebook, uint8 (<= 256 entries)."""
     mids = (codebook[1:] + codebook[:-1]) / 2
@@ -70,6 +109,137 @@ def lookup(codebook: torch.Tensor, codes: torch.Tensor) -> torch.Tensor:
     """codebook [K] or [B, K], codes [B, ...] -> values with the shape of codes."""
     book = codebook.reshape(-1, codebook.shape[-1]).expand(codes.shape[0], -1)
     return book.gather(1, codes.reshape(codes.shape[0], -1).long()).reshape(codes.shape)
+
+
+def quantize_int4_asym(groups: torch.Tensor) -> dict[str, torch.Tensor]:
+    """groups [B, G, g] -> packed 4-bit codes, fp16 scale and packed 4-bit zero-point per group."""
+    lo = groups.amin(-1, keepdim=True).clamp(max=0)
+    hi = groups.amax(-1, keepdim=True).clamp(min=0)
+    scale16 = ((hi - lo) / 15).clamp(min=FP16_MIN_SCALE).to(torch.float16)
+    scale = scale16.float()
+    zero = torch.round(-lo / scale).clamp(0, 15)
+    q = (torch.round(groups / scale) + zero).clamp(0, 15).to(torch.uint8)
+    return {
+        "codes": pack_nibbles(q),
+        "scale": scale16,
+        "zero": pack_nibbles(zero.to(torch.uint8)),
+    }
+
+
+def dequantize_int4_asym(t: dict[str, torch.Tensor], group_size: int) -> torch.Tensor:
+    b, n_groups = t["scale"].shape[:2]
+    q = unpack_nibbles(t["codes"], n_groups * group_size).reshape(
+        b, n_groups, group_size
+    )
+    zero = unpack_nibbles(t["zero"], n_groups).reshape(b, n_groups, 1)
+    return (q.float() - zero.float()) * t["scale"].float()
+
+
+def _minmax_grid(
+    lo: torch.Tensor,
+    hi: torch.Tensor,
+    cmin: torch.Tensor,
+    cmax: torch.Tensor,
+    range_bits: int,
+) -> tuple[torch.Tensor, torch.Tensor]:
+    """Group start and span from the range indices; shared by quantize and dequantize."""
+    d = ((cmax - cmin) / (2**range_bits - 1)).clamp(min=1e-8)
+    return cmin + lo * d, (hi - lo) * d
+
+
+def fit_lloyd_table(
+    u: torch.Tensor,
+    w: torch.Tensor,
+    levels: int,
+    iters: int = 20,
+    max_points: int = 2**17,
+) -> torch.Tensor:
+    """Weighted 1D Lloyd-Max levels for values u in [0, 1], sorted and fp16-representable."""
+    stride = max(1, u.numel() // max_points)
+    u, w = u[::stride], w[::stride]
+    w = w / w.mean().clamp(min=1e-30)
+    table = torch.linspace(0, 1, levels, device=u.device)
+    for _ in range(iters):
+        assign = nearest_code(u, table).long()
+        num = torch.zeros_like(table).index_add_(0, assign, u * w)
+        den = torch.zeros_like(table).index_add_(0, assign, w)
+        table = torch.where(den > 0, num / den.clamp(min=1e-30), table)
+    return table.to(torch.float16).float().sort().values
+
+
+def quantize_minmax(
+    groups: torch.Tensor,
+    refs: int,
+    bits: int,
+    range_bits: int = 8,
+    lloyd: bool = False,
+) -> dict[str, torch.Tensor]:
+    """
+    Asymmetric `bits`-bit quantization on the true [min, max] of each group (no forced zero,
+    all codes usable). The group min/max are stored as `range_bits`-bit indices into the range
+    of a reference block (`refs` equal blocks per sample, e.g. channels).
+    With `lloyd` the levels inside [min, max] are a per-sample Lloyd-Max table (stored in the
+    result) instead of uniform.
+    groups [B, G, g] with G % refs == 0, blocks contiguous along G.
+    """
+    b, n_groups, n = groups.shape
+    x = groups.reshape(b, refs, -1, n)
+    levels = 2**range_bits - 1
+    cmin = x.amin(dim=(2, 3), keepdim=True)
+    cmax = x.amax(dim=(2, 3), keepdim=True)
+    d = ((cmax - cmin) / levels).clamp(min=1e-8)
+    # floor/ceil so the quantized range always covers the group
+    lo = torch.floor((x.amin(-1, keepdim=True) - cmin) / d).clamp(0, levels - 1)
+    hi = torch.ceil((x.amax(-1, keepdim=True) - cmin) / d).clamp(max=levels)
+    hi = torch.maximum(hi, lo + 1)
+    start, span = _minmax_grid(lo, hi, cmin, cmax, range_bits)
+    out = {}
+    if lloyd:
+        u = ((x - start) / span).reshape(b, -1)
+        w = span.expand_as(x).reshape(b, -1) ** 2  # squared error scales with span^2
+        tables = [fit_lloyd_table(u[i], w[i], 2**bits) for i in range(b)]
+        q = torch.stack([nearest_code(u[i], tables[i]) for i in range(b)])
+        out["table"] = torch.stack(tables).to(torch.float16)
+    else:
+        step = span / (2**bits - 1)
+        q = torch.round((x - start) / step).clamp(0, 2**bits - 1).to(torch.uint8)
+    out |= {
+        "codes": pack_bits(q, bits),
+        "lo": pack_bits(lo.reshape(b, n_groups).to(torch.uint8), range_bits),
+        "hi": pack_bits(hi.reshape(b, n_groups).to(torch.uint8), range_bits),
+        "cmin": cmin.reshape(b, refs),
+        "cmax": cmax.reshape(b, refs),
+    }
+    return out
+
+
+def dequantize_minmax(
+    t: dict[str, torch.Tensor],
+    group_size: int,
+    bits: int,
+    range_bits: int = 8,
+    n_groups: int | None = None,
+) -> torch.Tensor:
+    """n_groups can be omitted only when range_bits == 8 (the index tensors are then unpacked)."""
+    b = t["lo"].shape[0]
+    if n_groups is None:
+        n_groups = t["lo"].shape[1]
+    refs = t["cmin"].shape[1]
+    q = unpack_bits(t["codes"], n_groups * group_size, bits).reshape(
+        b, refs, -1, group_size
+    )
+    start, span = _minmax_grid(
+        unpack_bits(t["lo"], n_groups, range_bits).float().reshape(b, refs, -1, 1),
+        unpack_bits(t["hi"], n_groups, range_bits).float().reshape(b, refs, -1, 1),
+        t["cmin"].reshape(b, refs, 1, 1),
+        t["cmax"].reshape(b, refs, 1, 1),
+        range_bits,
+    )
+    if "table" in t:
+        x = lookup(t["table"].float(), q) * span + start
+    else:
+        x = q.float() * (span / (2**bits - 1)) + start
+    return x.reshape(b, n_groups, group_size)
 
 
 def pack_int4_symmetric(groups: torch.Tensor, scale: torch.Tensor) -> torch.Tensor:

@@ -2,23 +2,24 @@ import torch
 
 from lsbench.image.latent_storages.image_latent_storage import ImageLatentStorage
 from lsbench.utils.quantization import (
-    dequantize_int4_asym,
-    from_groups,
+    dequantize_minmax,
+    from_square_groups,
     pack_tensors,
-    quantize_int4_asym,
-    to_groups,
+    quantize_minmax,
+    to_square_groups,
     unpack_tensors,
 )
 
 
-class INT4AsymGroupLatentStorage(ImageLatentStorage):
-    """Asymmetric INT4 (AWQ/GPTQ zero-point format): fp16 scale and 4-bit integer zero-point per group."""
+class INT6MinMaxSquareLatentStorage(ImageLatentStorage):
+    """6-bit variant of int4_minmax_square: true min/max per block x block patch, 64 levels."""
 
-    NAME = "int4_asym_group"
+    NAME = "int6_minmax_square"
+    BITS = 6
 
-    def __init__(self, group_size: int = 32):
+    def __init__(self, block: int = 4):
         super().__init__()
-        self.group_size = group_size
+        self.block = block
 
     def serialize(self, latents: torch.Tensor) -> bytes:
         """
@@ -28,8 +29,8 @@ class INT4AsymGroupLatentStorage(ImageLatentStorage):
             bytes
         """
         x = latents.detach().float()
-        groups = to_groups(x, self.group_size)
-        return pack_tensors(quantize_int4_asym(groups), x.shape)
+        groups = to_square_groups(x, self.block)
+        return pack_tensors(quantize_minmax(groups, x.shape[1], self.BITS), x.shape)
 
     def deserialize(self, data: bytes, device: torch.device = "cuda") -> torch.Tensor:
         """
@@ -39,7 +40,8 @@ class INT4AsymGroupLatentStorage(ImageLatentStorage):
             latents: [B, C, H, W], normalized to model format
         """
         t, shape = unpack_tensors(data, device)
-        return from_groups(dequantize_int4_asym(t, self.group_size), shape)
+        groups = dequantize_minmax(t, self.block**2, self.BITS)
+        return from_square_groups(groups, shape, self.block)
 
     def get_storage_name(self) -> str:
-        return f"{self.NAME}_g{self.group_size}"
+        return f"{self.NAME}_b{self.block}"

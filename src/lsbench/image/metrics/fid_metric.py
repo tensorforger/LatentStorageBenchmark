@@ -8,6 +8,7 @@ class FIDMetric(ImageMetric):
     """Frechet Inception Distance between original and reconstructed image sets (lower is better)."""
 
     NAME = "fid"
+    _shared_inception = {}  # one Inception network per feature size; one instance per storage would exhaust GPU memory
 
     def __init__(self, feature: int = 2048):
         self.feature = feature
@@ -15,6 +16,8 @@ class FIDMetric(ImageMetric):
         self.fid = FrechetInceptionDistance(
             feature=self.feature, reset_real_features=True, normalize=True
         ).to(self.device)
+        shared = FIDMetric._shared_inception.setdefault(feature, self.fid.inception)
+        self.fid.inception = shared
         self.num_samples = 0
 
     def add_pair(

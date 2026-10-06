@@ -20,3 +20,4 @@ torch-fidelity
 pandas
 tabulate
 pyarrow
+zstandard
