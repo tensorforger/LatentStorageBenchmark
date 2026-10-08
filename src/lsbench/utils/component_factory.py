@@ -10,6 +10,15 @@ from omegaconf import OmegaConf
 from lsbench.image.latent_storages.image_latent_storage import ImageLatentStorage
 from lsbench.image.metrics.image_metric import ImageMetric
 from lsbench.image.vaes.image_vae import ImageVAE
+from lsbench.video.latent_storages.video_latent_storage import VideoLatentStorage
+from lsbench.video.metrics.video_metric import VideoMetric
+from lsbench.video.vaes.video_vae import VideoVAE
+
+# domain -> (vae, latent storage, metric) base classes
+DOMAIN_BASES = {
+    "image": (ImageVAE, ImageLatentStorage, ImageMetric),
+    "video": (VideoVAE, VideoLatentStorage, VideoMetric),
+}
 
 # Config entry: "name" or {name: ..., **constructor_kwargs}.
 
@@ -50,19 +59,22 @@ def _with_device(cls: type, kwargs: dict, device: torch.device) -> dict:
     return kwargs
 
 
-def configure_vae(entry, device: torch.device) -> ImageVAE:
+def configure_vae(entry, device: torch.device, domain: str = "image"):
     name, kwargs = _parse_entry(entry)
-    cls = _find_class("lsbench.image.vaes", ImageVAE, name)
+    cls = _find_class(f"lsbench.{domain}.vaes", DOMAIN_BASES[domain][0], name)
+    kwargs.pop("batch_size", None)  # per-VAE batch size is consumed by the runner
     return cls(**_with_device(cls, kwargs, device))
 
 
-def configure_latent_storage(entry) -> ImageLatentStorage:
+def configure_latent_storage(entry, domain: str = "image"):
     name, kwargs = _parse_entry(entry)
-    return _find_class("lsbench.image.latent_storages", ImageLatentStorage, name)(
-        **kwargs
+    cls = _find_class(
+        f"lsbench.{domain}.latent_storages", DOMAIN_BASES[domain][1], name
     )
+    return cls(**kwargs)
 
 
-def configure_metric_factory(entry) -> Callable[[], ImageMetric]:
+def configure_metric_factory(entry, domain: str = "image") -> Callable[[], Any]:
     name, kwargs = _parse_entry(entry)
-    return partial(_find_class("lsbench.image.metrics", ImageMetric, name), **kwargs)
+    cls = _find_class(f"lsbench.{domain}.metrics", DOMAIN_BASES[domain][2], name)
+    return partial(cls, **kwargs)

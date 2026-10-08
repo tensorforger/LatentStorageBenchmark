@@ -1,0 +1,8066 @@
+[
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "fp32",
+    "metric": "mse",
+    "value": 1.0800446157450899e-16
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "fp32",
+    "metric": "psnr",
+    "value": 100.0
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "fp32",
+    "metric": "ssim",
+    "value": 0.9999937903881073
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "fp32",
+    "metric": "lpips",
+    "value": 3.0386515165181647e-10
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "fp32",
+    "metric": "fid",
+    "value": 0.07488894462585449
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "fp32",
+    "metric": "bytes_per_image",
+    "value": 12582934.0
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "fp32",
+    "metric": "serialize_ms_per_image",
+    "value": 3.087237088004258
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "fp32",
+    "metric": "deserialize_ms_per_image",
+    "value": 1.8324880420077534
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "fp16",
+    "metric": "mse",
+    "value": 3.916399663683734e-09
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "fp16",
+    "metric": "psnr",
+    "value": 84.61974099731445
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "fp16",
+    "metric": "ssim",
+    "value": 0.9999929404258728
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "fp16",
+    "metric": "lpips",
+    "value": 1.1985435390329258e-06
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "fp16",
+    "metric": "fid",
+    "value": 0.11908438056707382
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "fp16",
+    "metric": "bytes_per_image",
+    "value": 6291478.0
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "fp16",
+    "metric": "serialize_ms_per_image",
+    "value": 2.681982511021488
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "fp16",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.8710711969979457
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "bf16",
+    "metric": "mse",
+    "value": 2.5186144836197857e-07
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "bf16",
+    "metric": "psnr",
+    "value": 66.87956538391113
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "bf16",
+    "metric": "ssim",
+    "value": 0.9997713181972504
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "bf16",
+    "metric": "lpips",
+    "value": 6.224910342552903e-05
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "bf16",
+    "metric": "fid",
+    "value": 0.1026105135679245
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "bf16",
+    "metric": "bytes_per_image",
+    "value": 6291478.0
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "bf16",
+    "metric": "serialize_ms_per_image",
+    "value": 2.4267891989802592
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "bf16",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.8258057610037213
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "fp8_e4m3",
+    "metric": "mse",
+    "value": 6.469951515464346e-05
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "fp8_e4m3",
+    "metric": "psnr",
+    "value": 42.48380773925781
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "fp8_e4m3",
+    "metric": "ssim",
+    "value": 0.9585011050701141
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "fp8_e4m3",
+    "metric": "lpips",
+    "value": 0.02148448240896687
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "fp8_e4m3",
+    "metric": "fid",
+    "value": 1.7197591066360474
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "fp8_e4m3",
+    "metric": "bytes_per_image",
+    "value": 3145752.0
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "fp8_e4m3",
+    "metric": "serialize_ms_per_image",
+    "value": 0.5415761009953712
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "fp8_e4m3",
+    "metric": "deserialize_ms_per_image",
+    "value": 1.8932775020275585
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int8_tensor",
+    "metric": "mse",
+    "value": 1.656648782955017e-06
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int8_tensor",
+    "metric": "psnr",
+    "value": 57.93997024536133
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int8_tensor",
+    "metric": "ssim",
+    "value": 0.9992195241451264
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int8_tensor",
+    "metric": "lpips",
+    "value": 0.00040525592876656445
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int8_tensor",
+    "metric": "fid",
+    "value": 0.13411776721477509
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int8_tensor",
+    "metric": "bytes_per_image",
+    "value": 3145786.0
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int8_tensor",
+    "metric": "serialize_ms_per_image",
+    "value": 0.7289661050108407
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int8_tensor",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.40679994999845803
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int8_minmax_square_b8",
+    "metric": "mse",
+    "value": 1.1007973220955591e-07
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int8_minmax_square_b8",
+    "metric": "psnr",
+    "value": 71.25762646484375
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int8_minmax_square_b8",
+    "metric": "ssim",
+    "value": 0.9999816613197327
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int8_minmax_square_b8",
+    "metric": "lpips",
+    "value": 3.381894177209688e-06
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int8_minmax_square_b8",
+    "metric": "fid",
+    "value": 0.11951345205307007
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int8_minmax_square_b8",
+    "metric": "bytes_per_image",
+    "value": 3244162.0
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int8_minmax_square_b8",
+    "metric": "serialize_ms_per_image",
+    "value": 0.7037082070237375
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int8_minmax_square_b8",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.47822091496891517
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_group_g32",
+    "metric": "mse",
+    "value": 0.00018355329295445698
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_group_g32",
+    "metric": "psnr",
+    "value": 37.65334205627441
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_group_g32",
+    "metric": "ssim",
+    "value": 0.9370212228298187
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_group_g32",
+    "metric": "lpips",
+    "value": 0.042246333740651607
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_group_g32",
+    "metric": "fid",
+    "value": 2.855787754058838
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_group_g32",
+    "metric": "bytes_per_image",
+    "value": 1769530.0
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_group_g32",
+    "metric": "serialize_ms_per_image",
+    "value": 0.4922718160014483
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_group_g32",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.2550135449946538
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_minmax_square_b4",
+    "metric": "mse",
+    "value": 1.3573031773830735e-05
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_minmax_square_b4",
+    "metric": "psnr",
+    "value": 50.710228210449216
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_minmax_square_b4",
+    "metric": "ssim",
+    "value": 0.9990034964084625
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_minmax_square_b4",
+    "metric": "lpips",
+    "value": 0.0003907094732276164
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_minmax_square_b4",
+    "metric": "fid",
+    "value": 0.09492629021406174
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_minmax_square_b4",
+    "metric": "bytes_per_image",
+    "value": 1966210.0
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_minmax_square_b4",
+    "metric": "serialize_ms_per_image",
+    "value": 0.7281157750021521
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_minmax_square_b4",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.5067515099763114
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_hadamard_g32",
+    "metric": "mse",
+    "value": 0.0009529100909130648
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_hadamard_g32",
+    "metric": "psnr",
+    "value": 31.128500648498534
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_hadamard_g32",
+    "metric": "ssim",
+    "value": 0.8456835193634034
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_hadamard_g32",
+    "metric": "lpips",
+    "value": 0.18977724346518515
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_hadamard_g32",
+    "metric": "fid",
+    "value": 14.390118598937988
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_hadamard_g32",
+    "metric": "bytes_per_image",
+    "value": 1769530.0
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_hadamard_g32",
+    "metric": "serialize_ms_per_image",
+    "value": 0.39968243800103664
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_hadamard_g32",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.247083525011476
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "nvfp4",
+    "metric": "mse",
+    "value": 0.0005369292056420818
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "nvfp4",
+    "metric": "psnr",
+    "value": 33.24042361450195
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "nvfp4",
+    "metric": "ssim",
+    "value": 0.8777594151496887
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "nvfp4",
+    "metric": "lpips",
+    "value": 0.10919554056227207
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "nvfp4",
+    "metric": "fid",
+    "value": 8.098925590515137
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "nvfp4",
+    "metric": "bytes_per_image",
+    "value": 1769554.0
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "nvfp4",
+    "metric": "serialize_ms_per_image",
+    "value": 0.39027014599014365
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "nvfp4",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.2800130850264395
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "nf4_dq_g64",
+    "metric": "mse",
+    "value": 0.000530736159242224
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "nf4_dq_g64",
+    "metric": "psnr",
+    "value": 33.120734115600584
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "nf4_dq_g64",
+    "metric": "ssim",
+    "value": 0.8760989360809326
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "nf4_dq_g64",
+    "metric": "lpips",
+    "value": 0.1048646729439497
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "nf4_dq_g64",
+    "metric": "fid",
+    "value": 10.624287605285645
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "nf4_dq_g64",
+    "metric": "bytes_per_image",
+    "value": 1622492.0
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "nf4_dq_g64",
+    "metric": "serialize_ms_per_image",
+    "value": 0.3424552159922314
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "nf4_dq_g64",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.24869975801630062
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c2_b4_r5",
+    "metric": "mse",
+    "value": 0.00024589661230857017
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c2_b4_r5",
+    "metric": "psnr",
+    "value": 37.840432205200194
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c2_b4_r5",
+    "metric": "ssim",
+    "value": 0.9744986979961395
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c2_b4_r5",
+    "metric": "lpips",
+    "value": 0.012868774976581334
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c2_b4_r5",
+    "metric": "fid",
+    "value": 0.565697193145752
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c2_b4_r5",
+    "metric": "bytes_per_image",
+    "value": 1032346.0
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c2_b4_r5",
+    "metric": "serialize_ms_per_image",
+    "value": 3.6932544569936
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c2_b4_r5",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.3513759190136625
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c3_b4_r5",
+    "metric": "mse",
+    "value": 6.016333452498657e-05
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c3_b4_r5",
+    "metric": "psnr",
+    "value": 43.91021343994141
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c3_b4_r5",
+    "metric": "ssim",
+    "value": 0.9935944707393646
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c3_b4_r5",
+    "metric": "lpips",
+    "value": 0.002381618902552873
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c3_b4_r5",
+    "metric": "fid",
+    "value": 0.17278645932674408
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c3_b4_r5",
+    "metric": "bytes_per_image",
+    "value": 1425570.0
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c3_b4_r5",
+    "metric": "serialize_ms_per_image",
+    "value": 2.88404347798496
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c3_b4_r5",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.44680176101064717
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c3_b8_r5",
+    "metric": "mse",
+    "value": 0.00012137406539841323
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c3_b8_r5",
+    "metric": "psnr",
+    "value": 40.65949981689453
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c3_b8_r5",
+    "metric": "ssim",
+    "value": 0.9850847322940827
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c3_b8_r5",
+    "metric": "lpips",
+    "value": 0.005280396867543459
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c3_b8_r5",
+    "metric": "fid",
+    "value": 0.35949745774269104
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c3_b8_r5",
+    "metric": "bytes_per_image",
+    "value": 1241250.0
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c3_b8_r5",
+    "metric": "serialize_ms_per_image",
+    "value": 3.042592510008035
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c3_b8_r5",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.39193298700411106
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c4_b8_r6",
+    "metric": "mse",
+    "value": 2.9122829064363033e-05
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c4_b8_r6",
+    "metric": "psnr",
+    "value": 46.95904382324219
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c4_b8_r6",
+    "metric": "ssim",
+    "value": 0.9966252410411834
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c4_b8_r6",
+    "metric": "lpips",
+    "value": 0.0009616446165600791
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c4_b8_r6",
+    "metric": "fid",
+    "value": 0.15912075340747833
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c4_b8_r6",
+    "metric": "bytes_per_image",
+    "value": 1646770.0
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c4_b8_r6",
+    "metric": "serialize_ms_per_image",
+    "value": 2.4392903720108734
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c4_b8_r6",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.4871434189972206
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c4_b4_r5",
+    "metric": "mse",
+    "value": 1.5341787982833922e-05
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c4_b4_r5",
+    "metric": "psnr",
+    "value": 49.846902297973635
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c4_b4_r5",
+    "metric": "ssim",
+    "value": 0.9984327838420868
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c4_b4_r5",
+    "metric": "lpips",
+    "value": 0.0005948184265289455
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c4_b4_r5",
+    "metric": "fid",
+    "value": 0.1482490748167038
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c4_b4_r5",
+    "metric": "bytes_per_image",
+    "value": 1818802.0
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c4_b4_r5",
+    "metric": "serialize_ms_per_image",
+    "value": 2.4231817749896436
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c4_b4_r5",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.5363137470194488
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c5_b8_r6",
+    "metric": "mse",
+    "value": 7.393364709514572e-06
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c5_b8_r6",
+    "metric": "psnr",
+    "value": 52.91783013916016
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c5_b8_r6",
+    "metric": "ssim",
+    "value": 0.9991386456489563
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c5_b8_r6",
+    "metric": "lpips",
+    "value": 0.00023115811176830902
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c5_b8_r6",
+    "metric": "fid",
+    "value": 0.12420519441366196
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c5_b8_r6",
+    "metric": "bytes_per_image",
+    "value": 2040018.0
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c5_b8_r6",
+    "metric": "serialize_ms_per_image",
+    "value": 2.482973383990611
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c5_b8_r6",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.6025607880073949
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c6_b8_r6",
+    "metric": "mse",
+    "value": 1.875339923572028e-06
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c6_b8_r6",
+    "metric": "psnr",
+    "value": 58.87827088928223
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c6_b8_r6",
+    "metric": "ssim",
+    "value": 0.9997805027961731
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c6_b8_r6",
+    "metric": "lpips",
+    "value": 5.8579889417160306e-05
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c6_b8_r6",
+    "metric": "fid",
+    "value": 0.11467665433883667
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c6_b8_r6",
+    "metric": "bytes_per_image",
+    "value": 2433298.0
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c6_b8_r6",
+    "metric": "serialize_ms_per_image",
+    "value": 2.81908452501375
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c6_b8_r6",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.6985827509706724
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c8_b8_r6",
+    "metric": "mse",
+    "value": 1.1405154735655287e-07
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c8_b8_r6",
+    "metric": "psnr",
+    "value": 71.00477203369141
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c8_b8_r6",
+    "metric": "ssim",
+    "value": 0.9999804255962372
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c8_b8_r6",
+    "metric": "lpips",
+    "value": 3.818735646291316e-06
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c8_b8_r6",
+    "metric": "fid",
+    "value": 0.1247243881225586
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c8_b8_r6",
+    "metric": "bytes_per_image",
+    "value": 3220116.0
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c8_b8_r6",
+    "metric": "serialize_ms_per_image",
+    "value": 2.1931773379837978
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c8_b8_r6",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.5212556410151592
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "normal_cdf_minmax_square_c4_b4_r5_s2.5",
+    "metric": "mse",
+    "value": 2.4730686765906285e-05
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "normal_cdf_minmax_square_c4_b4_r5_s2.5",
+    "metric": "psnr",
+    "value": 48.1923835144043
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "normal_cdf_minmax_square_c4_b4_r5_s2.5",
+    "metric": "ssim",
+    "value": 0.9983040523529053
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "normal_cdf_minmax_square_c4_b4_r5_s2.5",
+    "metric": "lpips",
+    "value": 0.0008873645069543272
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "normal_cdf_minmax_square_c4_b4_r5_s2.5",
+    "metric": "fid",
+    "value": 0.1721739023923874
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "normal_cdf_minmax_square_c4_b4_r5_s2.5",
+    "metric": "bytes_per_image",
+    "value": 1818808.0
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "normal_cdf_minmax_square_c4_b4_r5_s2.5",
+    "metric": "serialize_ms_per_image",
+    "value": 0.7636318899967591
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "normal_cdf_minmax_square_c4_b4_r5_s2.5",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.5381807069898059
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "fp32",
+    "metric": "mse",
+    "value": 0.0012374919621215667
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "fp32",
+    "metric": "psnr",
+    "value": 31.746542488098143
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "fp32",
+    "metric": "ssim",
+    "value": 0.8711666719913482
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "fp32",
+    "metric": "lpips",
+    "value": 0.025944487620145083
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "fp32",
+    "metric": "fid",
+    "value": 2.1227197647094727
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "fp32",
+    "metric": "bytes_per_image",
+    "value": 2097174.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "fp32",
+    "metric": "serialize_ms_per_image",
+    "value": 0.38166602302953834
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "fp32",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.2371002879790467
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "fp16",
+    "metric": "mse",
+    "value": 0.0012374935714760794
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "fp16",
+    "metric": "psnr",
+    "value": 31.746529624938965
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "fp16",
+    "metric": "ssim",
+    "value": 0.8711672742366791
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "fp16",
+    "metric": "lpips",
+    "value": 0.02594432947039604
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "fp16",
+    "metric": "fid",
+    "value": 2.12225604057312
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "fp16",
+    "metric": "bytes_per_image",
+    "value": 1048598.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "fp16",
+    "metric": "serialize_ms_per_image",
+    "value": 0.35462332398856233
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "fp16",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.1295754159855278
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "bf16",
+    "metric": "mse",
+    "value": 0.0012375654229253997
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "bf16",
+    "metric": "psnr",
+    "value": 31.74631697845459
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "bf16",
+    "metric": "ssim",
+    "value": 0.8711663558483124
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "bf16",
+    "metric": "lpips",
+    "value": 0.025944826442748307
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "bf16",
+    "metric": "fid",
+    "value": 2.122507333755493
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "bf16",
+    "metric": "bytes_per_image",
+    "value": 1048598.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "bf16",
+    "metric": "serialize_ms_per_image",
+    "value": 0.35215663099006633
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "bf16",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.12220202299431548
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "fp8_e4m3",
+    "metric": "mse",
+    "value": 0.001251425927010132
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "fp8_e4m3",
+    "metric": "psnr",
+    "value": 31.671203063964843
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "fp8_e4m3",
+    "metric": "ssim",
+    "value": 0.8706956562995911
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "fp8_e4m3",
+    "metric": "lpips",
+    "value": 0.02626158817857504
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "fp8_e4m3",
+    "metric": "fid",
+    "value": 2.1887645721435547
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "fp8_e4m3",
+    "metric": "bytes_per_image",
+    "value": 524312.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "fp8_e4m3",
+    "metric": "serialize_ms_per_image",
+    "value": 0.1370295280321443
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "fp8_e4m3",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.3406286250210542
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int8_tensor",
+    "metric": "mse",
+    "value": 0.0012405710121965968
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int8_tensor",
+    "metric": "psnr",
+    "value": 31.731364135742187
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int8_tensor",
+    "metric": "ssim",
+    "value": 0.871039701461792
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int8_tensor",
+    "metric": "lpips",
+    "value": 0.026016173454001545
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int8_tensor",
+    "metric": "fid",
+    "value": 2.1471660137176514
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int8_tensor",
+    "metric": "bytes_per_image",
+    "value": 524346.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int8_tensor",
+    "metric": "serialize_ms_per_image",
+    "value": 0.16512187997250294
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int8_tensor",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.08539806803491956
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int8_minmax_square_b8",
+    "metric": "mse",
+    "value": 0.0012378071578277741
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int8_minmax_square_b8",
+    "metric": "psnr",
+    "value": 31.745142890930175
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int8_minmax_square_b8",
+    "metric": "ssim",
+    "value": 0.8711591348648071
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int8_minmax_square_b8",
+    "metric": "lpips",
+    "value": 0.025951158031821252
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int8_minmax_square_b8",
+    "metric": "fid",
+    "value": 2.1237826347351074
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int8_minmax_square_b8",
+    "metric": "bytes_per_image",
+    "value": 541036.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int8_minmax_square_b8",
+    "metric": "serialize_ms_per_image",
+    "value": 0.21731920400634408
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int8_minmax_square_b8",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.12027056499573519
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_group_g32",
+    "metric": "mse",
+    "value": 0.0013722534280386754
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_group_g32",
+    "metric": "psnr",
+    "value": 31.140777946472166
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_group_g32",
+    "metric": "ssim",
+    "value": 0.8658964846134186
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_group_g32",
+    "metric": "lpips",
+    "value": 0.028956849247217177
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_group_g32",
+    "metric": "fid",
+    "value": 3.091732978820801
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_group_g32",
+    "metric": "bytes_per_image",
+    "value": 294970.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_group_g32",
+    "metric": "serialize_ms_per_image",
+    "value": 0.14255188001698116
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_group_g32",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.08229332996779704
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_minmax_square_b4",
+    "metric": "mse",
+    "value": 0.0012818533955723979
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_minmax_square_b4",
+    "metric": "psnr",
+    "value": 31.535451065063477
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_minmax_square_b4",
+    "metric": "ssim",
+    "value": 0.8699623222351074
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_minmax_square_b4",
+    "metric": "lpips",
+    "value": 0.026907010486349463
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_minmax_square_b4",
+    "metric": "fid",
+    "value": 2.4195079803466797
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_minmax_square_b4",
+    "metric": "bytes_per_image",
+    "value": 328044.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_minmax_square_b4",
+    "metric": "serialize_ms_per_image",
+    "value": 0.21194720598577987
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_minmax_square_b4",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.11400516202411382
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_hadamard_g32",
+    "metric": "mse",
+    "value": 0.001571596028690692
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_hadamard_g32",
+    "metric": "psnr",
+    "value": 30.316504150390625
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_hadamard_g32",
+    "metric": "ssim",
+    "value": 0.8589922356605529
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_hadamard_g32",
+    "metric": "lpips",
+    "value": 0.033998880010098216
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_hadamard_g32",
+    "metric": "fid",
+    "value": 4.982760906219482
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_hadamard_g32",
+    "metric": "bytes_per_image",
+    "value": 294970.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_hadamard_g32",
+    "metric": "serialize_ms_per_image",
+    "value": 0.1539531180387712
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_hadamard_g32",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.09116737897420535
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "nvfp4",
+    "metric": "mse",
+    "value": 0.0014220682113082147
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "nvfp4",
+    "metric": "psnr",
+    "value": 30.82993374633789
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "nvfp4",
+    "metric": "ssim",
+    "value": 0.8649705944061279
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "nvfp4",
+    "metric": "lpips",
+    "value": 0.029843224819749593
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "nvfp4",
+    "metric": "fid",
+    "value": 3.223938226699829
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "nvfp4",
+    "metric": "bytes_per_image",
+    "value": 294992.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "nvfp4",
+    "metric": "serialize_ms_per_image",
+    "value": 0.17562746900694037
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "nvfp4",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.09887584701209562
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "nf4_dq_g64",
+    "metric": "mse",
+    "value": 0.0013958838226972147
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "nf4_dq_g64",
+    "metric": "psnr",
+    "value": 30.96491344451904
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "nf4_dq_g64",
+    "metric": "ssim",
+    "value": 0.8655344793796539
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "nf4_dq_g64",
+    "metric": "lpips",
+    "value": 0.02935748152062297
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "nf4_dq_g64",
+    "metric": "fid",
+    "value": 2.9986557960510254
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "nf4_dq_g64",
+    "metric": "bytes_per_image",
+    "value": 270492.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "nf4_dq_g64",
+    "metric": "serialize_ms_per_image",
+    "value": 0.17045883800528827
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "nf4_dq_g64",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.10200812000948645
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c2_b4_r5",
+    "metric": "mse",
+    "value": 0.0020423209903528915
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c2_b4_r5",
+    "metric": "psnr",
+    "value": 28.976334175109862
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c2_b4_r5",
+    "metric": "ssim",
+    "value": 0.8347272653579711
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c2_b4_r5",
+    "metric": "lpips",
+    "value": 0.04737414187565446
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c2_b4_r5",
+    "metric": "fid",
+    "value": 7.181787014007568
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c2_b4_r5",
+    "metric": "bytes_per_image",
+    "value": 172418.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c2_b4_r5",
+    "metric": "serialize_ms_per_image",
+    "value": 2.9895653080147895
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c2_b4_r5",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.1212217579868593
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c3_b4_r5",
+    "metric": "mse",
+    "value": 0.0014160541603923775
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c3_b4_r5",
+    "metric": "psnr",
+    "value": 30.944826385498047
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c3_b4_r5",
+    "metric": "ssim",
+    "value": 0.8623719396591186
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c3_b4_r5",
+    "metric": "lpips",
+    "value": 0.03039316537603736
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c3_b4_r5",
+    "metric": "fid",
+    "value": 3.1929147243499756
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c3_b4_r5",
+    "metric": "bytes_per_image",
+    "value": 237962.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c3_b4_r5",
+    "metric": "serialize_ms_per_image",
+    "value": 2.123588228982044
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c3_b4_r5",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.1287859039966861
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c3_b8_r5",
+    "metric": "mse",
+    "value": 0.0015364546250784769
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c3_b8_r5",
+    "metric": "psnr",
+    "value": 30.4831748046875
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c3_b8_r5",
+    "metric": "ssim",
+    "value": 0.8554747421741485
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c3_b8_r5",
+    "metric": "lpips",
+    "value": 0.033650510367006066
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c3_b8_r5",
+    "metric": "fid",
+    "value": 3.947765588760376
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c3_b8_r5",
+    "metric": "bytes_per_image",
+    "value": 207242.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c3_b8_r5",
+    "metric": "serialize_ms_per_image",
+    "value": 2.3900260260179493
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c3_b8_r5",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.12316279799233598
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c4_b8_r6",
+    "metric": "mse",
+    "value": 0.0013084068399912211
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c4_b8_r6",
+    "metric": "psnr",
+    "value": 31.416881744384767
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c4_b8_r6",
+    "metric": "ssim",
+    "value": 0.8677575223445892
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c4_b8_r6",
+    "metric": "lpips",
+    "value": 0.027614886647090317
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c4_b8_r6",
+    "metric": "fid",
+    "value": 2.560668706893921
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c4_b8_r6",
+    "metric": "bytes_per_image",
+    "value": 274844.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c4_b8_r6",
+    "metric": "serialize_ms_per_image",
+    "value": 1.770206088991472
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c4_b8_r6",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.13426252901626867
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c4_b4_r5",
+    "metric": "mse",
+    "value": 0.0012830180675373413
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c4_b4_r5",
+    "metric": "psnr",
+    "value": 31.53160572052002
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c4_b4_r5",
+    "metric": "ssim",
+    "value": 0.8690648503303527
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c4_b4_r5",
+    "metric": "lpips",
+    "value": 0.027008941184729338
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c4_b4_r5",
+    "metric": "fid",
+    "value": 2.394322633743286
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c4_b4_r5",
+    "metric": "bytes_per_image",
+    "value": 303516.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c4_b4_r5",
+    "metric": "serialize_ms_per_image",
+    "value": 1.6194303490210586
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c4_b4_r5",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.13710183900002448
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c5_b8_r6",
+    "metric": "mse",
+    "value": 0.0012563710467948113
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c5_b8_r6",
+    "metric": "psnr",
+    "value": 31.65745743560791
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c5_b8_r6",
+    "metric": "ssim",
+    "value": 0.8703495748043061
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c5_b8_r6",
+    "metric": "lpips",
+    "value": 0.02637382298335433
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c5_b8_r6",
+    "metric": "fid",
+    "value": 2.233121633529663
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c5_b8_r6",
+    "metric": "bytes_per_image",
+    "value": 340412.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c5_b8_r6",
+    "metric": "serialize_ms_per_image",
+    "value": 1.5022377469813364
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c5_b8_r6",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.1390986149872333
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c6_b8_r6",
+    "metric": "mse",
+    "value": 0.00124220817303285
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c6_b8_r6",
+    "metric": "psnr",
+    "value": 31.724077919006348
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c6_b8_r6",
+    "metric": "ssim",
+    "value": 0.8709600350856781
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c6_b8_r6",
+    "metric": "lpips",
+    "value": 0.026054592348635195
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c6_b8_r6",
+    "metric": "fid",
+    "value": 2.153395891189575
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c6_b8_r6",
+    "metric": "bytes_per_image",
+    "value": 406012.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c6_b8_r6",
+    "metric": "serialize_ms_per_image",
+    "value": 1.6490996229931625
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c6_b8_r6",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.14546131598945067
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c8_b8_r6",
+    "metric": "mse",
+    "value": 0.0012377947506611235
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c8_b8_r6",
+    "metric": "psnr",
+    "value": 31.74509745788574
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c8_b8_r6",
+    "metric": "ssim",
+    "value": 0.8711561300754547
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c8_b8_r6",
+    "metric": "lpips",
+    "value": 0.025952022632583976
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c8_b8_r6",
+    "metric": "fid",
+    "value": 2.1239631175994873
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c8_b8_r6",
+    "metric": "bytes_per_image",
+    "value": 537468.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c8_b8_r6",
+    "metric": "serialize_ms_per_image",
+    "value": 1.3392722160242556
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c8_b8_r6",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.14946377195519744
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "normal_cdf_minmax_square_c4_b4_r5_s2.5",
+    "metric": "mse",
+    "value": 0.0013041280476609246
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "normal_cdf_minmax_square_c4_b4_r5_s2.5",
+    "metric": "psnr",
+    "value": 31.378442680358887
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "normal_cdf_minmax_square_c4_b4_r5_s2.5",
+    "metric": "ssim",
+    "value": 0.8690087542533874
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "normal_cdf_minmax_square_c4_b4_r5_s2.5",
+    "metric": "lpips",
+    "value": 0.027580945247784257
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "normal_cdf_minmax_square_c4_b4_r5_s2.5",
+    "metric": "fid",
+    "value": 2.584637403488159
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "normal_cdf_minmax_square_c4_b4_r5_s2.5",
+    "metric": "bytes_per_image",
+    "value": 303756.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "normal_cdf_minmax_square_c4_b4_r5_s2.5",
+    "metric": "serialize_ms_per_image",
+    "value": 0.24449861498396785
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "normal_cdf_minmax_square_c4_b4_r5_s2.5",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.14048683801229345
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "fp32",
+    "metric": "mse",
+    "value": 0.0014402901286503038
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "fp32",
+    "metric": "psnr",
+    "value": 32.22659539031982
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "fp32",
+    "metric": "ssim",
+    "value": 0.8721328473985195
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "fp32",
+    "metric": "lpips",
+    "value": 0.027290440481621773
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "fp32",
+    "metric": "fid",
+    "value": 0.756847083568573
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "fp32",
+    "metric": "bytes_per_image",
+    "value": 1048664.0
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "fp32",
+    "metric": "serialize_ms_per_image",
+    "value": 0.321895045999554
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "fp32",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.19991730308902333
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "fp16",
+    "metric": "mse",
+    "value": 0.0014403057895833627
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "fp16",
+    "metric": "psnr",
+    "value": 32.226527364730835
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "fp16",
+    "metric": "ssim",
+    "value": 0.8721324210464955
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "fp16",
+    "metric": "lpips",
+    "value": 0.027290394894196653
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "fp16",
+    "metric": "fid",
+    "value": 0.756549060344696
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "fp16",
+    "metric": "bytes_per_image",
+    "value": 524376.0
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "fp16",
+    "metric": "serialize_ms_per_image",
+    "value": 0.3760489309570403
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "fp16",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.12612104091749643
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "bf16",
+    "metric": "mse",
+    "value": 0.0014409959480817633
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "bf16",
+    "metric": "psnr",
+    "value": 32.22274116897583
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "bf16",
+    "metric": "ssim",
+    "value": 0.8720902623534202
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "bf16",
+    "metric": "lpips",
+    "value": 0.027308379922294988
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "bf16",
+    "metric": "fid",
+    "value": 0.7596609592437744
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "bf16",
+    "metric": "bytes_per_image",
+    "value": 524376.0
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "bf16",
+    "metric": "serialize_ms_per_image",
+    "value": 0.35696862598342705
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "bf16",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.12080825200609979
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "fp8_e4m3",
+    "metric": "mse",
+    "value": 0.001610798489617082
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "fp8_e4m3",
+    "metric": "psnr",
+    "value": 31.385624764442444
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "fp8_e4m3",
+    "metric": "ssim",
+    "value": 0.8616736417412758
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "fp8_e4m3",
+    "metric": "lpips",
+    "value": 0.032740033024456355
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "fp8_e4m3",
+    "metric": "fid",
+    "value": 1.9205436706542969
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "fp8_e4m3",
+    "metric": "bytes_per_image",
+    "value": 262232.0
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "fp8_e4m3",
+    "metric": "serialize_ms_per_image",
+    "value": 0.1889369480231835
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "fp8_e4m3",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.34556993099613464
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "int8_tensor",
+    "metric": "mse",
+    "value": 0.0014679476028304635
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "int8_tensor",
+    "metric": "psnr",
+    "value": 32.08534981250763
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "int8_tensor",
+    "metric": "ssim",
+    "value": 0.8704716254770756
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "int8_tensor",
+    "metric": "lpips",
+    "value": 0.027994419928174467
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "int8_tensor",
+    "metric": "fid",
+    "value": 0.8725136518478394
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "int8_tensor",
+    "metric": "bytes_per_image",
+    "value": 262356.0
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "int8_tensor",
+    "metric": "serialize_ms_per_image",
+    "value": 0.30081894692921196
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "int8_tensor",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.1163786720862845
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "int8_minmax_square_b8",
+    "metric": "mse",
+    "value": 0.0014420697436362388
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "int8_minmax_square_b8",
+    "metric": "psnr",
+    "value": 32.216289664268494
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "int8_minmax_square_b8",
+    "metric": "ssim",
+    "value": 0.8720329324901104
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "int8_minmax_square_b8",
+    "metric": "lpips",
+    "value": 0.02733251556858886
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "int8_minmax_square_b8",
+    "metric": "fid",
+    "value": 0.7641780376434326
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "int8_minmax_square_b8",
+    "metric": "bytes_per_image",
+    "value": 271264.0
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "int8_minmax_square_b8",
+    "metric": "serialize_ms_per_image",
+    "value": 0.4827009061227727
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "int8_minmax_square_b8",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.22029495591050363
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "int4_group_g32",
+    "metric": "mse",
+    "value": 0.0025909435407265847
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "int4_group_g32",
+    "metric": "psnr",
+    "value": 28.44282452583313
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "int4_group_g32",
+    "metric": "ssim",
+    "value": 0.8104903213083744
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "int4_group_g32",
+    "metric": "lpips",
+    "value": 0.0856427798345685
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "int4_group_g32",
+    "metric": "fid",
+    "value": 12.55960464477539
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "int4_group_g32",
+    "metric": "bytes_per_image",
+    "value": 147680.0
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "int4_group_g32",
+    "metric": "serialize_ms_per_image",
+    "value": 0.31645942508112057
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "int4_group_g32",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.16719760591877275
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "int4_minmax_square_b4",
+    "metric": "mse",
+    "value": 0.0016227610693913448
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "int4_minmax_square_b4",
+    "metric": "psnr",
+    "value": 31.30173602104187
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "int4_minmax_square_b4",
+    "metric": "ssim",
+    "value": 0.8623865877389908
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "int4_minmax_square_b4",
+    "metric": "lpips",
+    "value": 0.03250600185571238
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "int4_minmax_square_b4",
+    "metric": "fid",
+    "value": 1.680345892906189
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "int4_minmax_square_b4",
+    "metric": "bytes_per_image",
+    "value": 164776.0
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "int4_minmax_square_b4",
+    "metric": "serialize_ms_per_image",
+    "value": 0.5324948039597075
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "int4_minmax_square_b4",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.26121723787582596
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "int4_hadamard_g32",
+    "metric": "mse",
+    "value": 0.005942738327430561
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "int4_hadamard_g32",
+    "metric": "psnr",
+    "value": 23.95867998123169
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "int4_hadamard_g32",
+    "metric": "ssim",
+    "value": 0.6719030382186174
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "int4_hadamard_g32",
+    "metric": "lpips",
+    "value": 0.3241620992049575
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "int4_hadamard_g32",
+    "metric": "fid",
+    "value": 53.34669494628906
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "int4_hadamard_g32",
+    "metric": "bytes_per_image",
+    "value": 147680.0
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "int4_hadamard_g32",
+    "metric": "serialize_ms_per_image",
+    "value": 0.3412960219102388
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "int4_hadamard_g32",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.18426742001247476
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "nvfp4",
+    "metric": "mse",
+    "value": 0.003338000506220851
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "nvfp4",
+    "metric": "psnr",
+    "value": 26.977406143188478
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "nvfp4",
+    "metric": "ssim",
+    "value": 0.7722968258261681
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "nvfp4",
+    "metric": "lpips",
+    "value": 0.15487110278755425
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "nvfp4",
+    "metric": "fid",
+    "value": 23.682357788085938
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "nvfp4",
+    "metric": "bytes_per_image",
+    "value": 147764.0
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "nvfp4",
+    "metric": "serialize_ms_per_image",
+    "value": 0.43142176400579046
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "nvfp4",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.21053637905060896
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "nf4_dq_g64",
+    "metric": "mse",
+    "value": 0.0029375919113808777
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "nf4_dq_g64",
+    "metric": "psnr",
+    "value": 27.67265409088135
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "nf4_dq_g64",
+    "metric": "ssim",
+    "value": 0.7899850100278855
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "nf4_dq_g64",
+    "metric": "lpips",
+    "value": 0.11900664681568741
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "nf4_dq_g64",
+    "metric": "fid",
+    "value": 18.326711654663086
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "nf4_dq_g64",
+    "metric": "bytes_per_image",
+    "value": 135548.0
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "nf4_dq_g64",
+    "metric": "serialize_ms_per_image",
+    "value": 0.41084068293639575
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "nf4_dq_g64",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.21118131798721151
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "lloyd_minmax_square_c2_b4_r5",
+    "metric": "mse",
+    "value": 0.003873909859899868
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "lloyd_minmax_square_c2_b4_r5",
+    "metric": "psnr",
+    "value": 26.248726423263548
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "lloyd_minmax_square_c2_b4_r5",
+    "metric": "ssim",
+    "value": 0.757405336201191
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "lloyd_minmax_square_c2_b4_r5",
+    "metric": "lpips",
+    "value": 0.1472783808130771
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "lloyd_minmax_square_c2_b4_r5",
+    "metric": "fid",
+    "value": 28.27077293395996
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "lloyd_minmax_square_c2_b4_r5",
+    "metric": "bytes_per_image",
+    "value": 87016.0
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "lloyd_minmax_square_c2_b4_r5",
+    "metric": "serialize_ms_per_image",
+    "value": 3.310108623969427
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "lloyd_minmax_square_c2_b4_r5",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.3432221731527534
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "lloyd_minmax_square_c3_b4_r5",
+    "metric": "mse",
+    "value": 0.0021676386732760876
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "lloyd_minmax_square_c3_b4_r5",
+    "metric": "psnr",
+    "value": 29.465772840499877
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "lloyd_minmax_square_c3_b4_r5",
+    "metric": "ssim",
+    "value": 0.8335896860957146
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "lloyd_minmax_square_c3_b4_r5",
+    "metric": "lpips",
+    "value": 0.053635179144330324
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "lloyd_minmax_square_c3_b4_r5",
+    "metric": "fid",
+    "value": 6.213176250457764
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "lloyd_minmax_square_c3_b4_r5",
+    "metric": "bytes_per_image",
+    "value": 119792.0
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "lloyd_minmax_square_c3_b4_r5",
+    "metric": "serialize_ms_per_image",
+    "value": 2.435833441966679
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "lloyd_minmax_square_c3_b4_r5",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.3459619680324977
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "lloyd_minmax_square_c3_b8_r5",
+    "metric": "mse",
+    "value": 0.0028119429999605926
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "lloyd_minmax_square_c3_b8_r5",
+    "metric": "psnr",
+    "value": 27.95236611652374
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "lloyd_minmax_square_c3_b8_r5",
+    "metric": "ssim",
+    "value": 0.8010770480632782
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "lloyd_minmax_square_c3_b8_r5",
+    "metric": "lpips",
+    "value": 0.09070318385958671
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "lloyd_minmax_square_c3_b8_r5",
+    "metric": "fid",
+    "value": 14.843241691589355
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "lloyd_minmax_square_c3_b8_r5",
+    "metric": "bytes_per_image",
+    "value": 104432.0
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "lloyd_minmax_square_c3_b8_r5",
+    "metric": "serialize_ms_per_image",
+    "value": 2.707401529998606
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "lloyd_minmax_square_c3_b8_r5",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.3443299038808618
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "lloyd_minmax_square_c4_b8_r6",
+    "metric": "mse",
+    "value": 0.0018459059140841418
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "lloyd_minmax_square_c4_b8_r6",
+    "metric": "psnr",
+    "value": 30.442053144454956
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "lloyd_minmax_square_c4_b8_r6",
+    "metric": "ssim",
+    "value": 0.8495113312900067
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "lloyd_minmax_square_c4_b8_r6",
+    "metric": "lpips",
+    "value": 0.0407646285588853
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "lloyd_minmax_square_c4_b8_r6",
+    "metric": "fid",
+    "value": 3.4114596843719482
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "lloyd_minmax_square_c4_b8_r6",
+    "metric": "bytes_per_image",
+    "value": 138240.0
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "lloyd_minmax_square_c4_b8_r6",
+    "metric": "serialize_ms_per_image",
+    "value": 2.0543292079673847
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "lloyd_minmax_square_c4_b8_r6",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.3438469128886936
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "lloyd_minmax_square_c4_b4_r5",
+    "metric": "mse",
+    "value": 0.0016545922733948828
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "lloyd_minmax_square_c4_b4_r5",
+    "metric": "psnr",
+    "value": 31.18601207447052
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "lloyd_minmax_square_c4_b4_r5",
+    "metric": "ssim",
+    "value": 0.8602714167833329
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "lloyd_minmax_square_c4_b4_r5",
+    "metric": "lpips",
+    "value": 0.033341500580776486
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "lloyd_minmax_square_c4_b4_r5",
+    "metric": "fid",
+    "value": 1.8323508501052856
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "lloyd_minmax_square_c4_b4_r5",
+    "metric": "bytes_per_image",
+    "value": 152584.0
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "lloyd_minmax_square_c4_b4_r5",
+    "metric": "serialize_ms_per_image",
+    "value": 1.919579684978089
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "lloyd_minmax_square_c4_b4_r5",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.34598044794256566
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "lloyd_minmax_square_c5_b8_r6",
+    "metric": "mse",
+    "value": 0.0015538966188287304
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "lloyd_minmax_square_c5_b8_r6",
+    "metric": "psnr",
+    "value": 31.6317310256958
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "lloyd_minmax_square_c5_b8_r6",
+    "metric": "ssim",
+    "value": 0.8656129482090473
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "lloyd_minmax_square_c5_b8_r6",
+    "metric": "lpips",
+    "value": 0.030405691627180202
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "lloyd_minmax_square_c5_b8_r6",
+    "metric": "fid",
+    "value": 1.2937848567962646
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "lloyd_minmax_square_c5_b8_r6",
+    "metric": "bytes_per_image",
+    "value": 171040.0
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "lloyd_minmax_square_c5_b8_r6",
+    "metric": "serialize_ms_per_image",
+    "value": 1.7801844789246388
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "lloyd_minmax_square_c5_b8_r6",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.34521337007390684
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "lloyd_minmax_square_c6_b8_r6",
+    "metric": "mse",
+    "value": 0.0014694688117306213
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "lloyd_minmax_square_c6_b8_r6",
+    "metric": "psnr",
+    "value": 32.06334011745453
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "lloyd_minmax_square_c6_b8_r6",
+    "metric": "ssim",
+    "value": 0.8704334645867348
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "lloyd_minmax_square_c6_b8_r6",
+    "metric": "lpips",
+    "value": 0.02802526408212725
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "lloyd_minmax_square_c6_b8_r6",
+    "metric": "fid",
+    "value": 0.8768495321273804
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "lloyd_minmax_square_c6_b8_r6",
+    "metric": "bytes_per_image",
+    "value": 203872.0
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "lloyd_minmax_square_c6_b8_r6",
+    "metric": "serialize_ms_per_image",
+    "value": 1.929035752076743
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "lloyd_minmax_square_c6_b8_r6",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.35281576097622747
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "lloyd_minmax_square_c8_b8_r6",
+    "metric": "mse",
+    "value": 0.001442109095476553
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "lloyd_minmax_square_c8_b8_r6",
+    "metric": "psnr",
+    "value": 32.216156958580015
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "lloyd_minmax_square_c8_b8_r6",
+    "metric": "ssim",
+    "value": 0.8720272460281849
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "lloyd_minmax_square_c8_b8_r6",
+    "metric": "lpips",
+    "value": 0.027333112790132872
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "lloyd_minmax_square_c8_b8_r6",
+    "metric": "fid",
+    "value": 0.7631974816322327
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "lloyd_minmax_square_c8_b8_r6",
+    "metric": "bytes_per_image",
+    "value": 269800.0
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "lloyd_minmax_square_c8_b8_r6",
+    "metric": "serialize_ms_per_image",
+    "value": 1.7350846709159669
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "lloyd_minmax_square_c8_b8_r6",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.33113602606317727
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "normal_cdf_minmax_square_c4_b4_r5_s2.5",
+    "metric": "mse",
+    "value": 0.0016850671656775376
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "normal_cdf_minmax_square_c4_b4_r5_s2.5",
+    "metric": "psnr",
+    "value": 31.020145024299623
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "normal_cdf_minmax_square_c4_b4_r5_s2.5",
+    "metric": "ssim",
+    "value": 0.8589600595831871
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "normal_cdf_minmax_square_c4_b4_r5_s2.5",
+    "metric": "lpips",
+    "value": 0.0344252180273179
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "normal_cdf_minmax_square_c4_b4_r5_s2.5",
+    "metric": "fid",
+    "value": 2.0814547538757324
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "normal_cdf_minmax_square_c4_b4_r5_s2.5",
+    "metric": "bytes_per_image",
+    "value": 153128.0
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "normal_cdf_minmax_square_c4_b4_r5_s2.5",
+    "metric": "serialize_ms_per_image",
+    "value": 0.6774191278818762
+  },
+  {
+    "domain": "image",
+    "vae": "qwen_image_2_1",
+    "storage": "normal_cdf_minmax_square_c4_b4_r5_s2.5",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.3666261551188654
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "fp32",
+    "metric": "mse",
+    "value": 0.001410660636902321
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "fp32",
+    "metric": "psnr",
+    "value": 31.744014488220216
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "fp32",
+    "metric": "ssim",
+    "value": 0.8718658437728882
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "fp32",
+    "metric": "lpips",
+    "value": 0.024662279084324838
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "fp32",
+    "metric": "fid",
+    "value": 0.5177859663963318
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "fp32",
+    "metric": "bytes_per_image",
+    "value": 1048598.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "fp32",
+    "metric": "serialize_ms_per_image",
+    "value": 0.29630727702897275
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "fp32",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.12174979701376287
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "fp16",
+    "metric": "mse",
+    "value": 0.0014106651608308313
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "fp16",
+    "metric": "psnr",
+    "value": 31.74399535369873
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "fp16",
+    "metric": "ssim",
+    "value": 0.8718655326366425
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "fp16",
+    "metric": "lpips",
+    "value": 0.02466267143934965
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "fp16",
+    "metric": "fid",
+    "value": 0.5178217887878418
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "fp16",
+    "metric": "bytes_per_image",
+    "value": 524310.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "fp16",
+    "metric": "serialize_ms_per_image",
+    "value": 0.6256192358923727
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "fp16",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.07077744402340613
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "bf16",
+    "metric": "mse",
+    "value": 0.0014109286457824055
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "bf16",
+    "metric": "psnr",
+    "value": 31.742749099731444
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "bf16",
+    "metric": "ssim",
+    "value": 0.871843738079071
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "bf16",
+    "metric": "lpips",
+    "value": 0.02467231414653361
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "bf16",
+    "metric": "fid",
+    "value": 0.5205801725387573
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "bf16",
+    "metric": "bytes_per_image",
+    "value": 524310.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "bf16",
+    "metric": "serialize_ms_per_image",
+    "value": 0.5716308050032239
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "bf16",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.06968771996616852
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "fp8_e4m3",
+    "metric": "mse",
+    "value": 0.0014813552678097038
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "fp8_e4m3",
+    "metric": "psnr",
+    "value": 31.421435760498046
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "fp8_e4m3",
+    "metric": "ssim",
+    "value": 0.8661820800304413
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "fp8_e4m3",
+    "metric": "lpips",
+    "value": 0.02771777570620179
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "fp8_e4m3",
+    "metric": "fid",
+    "value": 1.357830286026001
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "fp8_e4m3",
+    "metric": "bytes_per_image",
+    "value": 262168.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "fp8_e4m3",
+    "metric": "serialize_ms_per_image",
+    "value": 0.1332687290632748
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "fp8_e4m3",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.19052111201017397
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "int8_tensor",
+    "metric": "mse",
+    "value": 0.0014211568114405964
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "int8_tensor",
+    "metric": "psnr",
+    "value": 31.699575088500975
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "int8_tensor",
+    "metric": "ssim",
+    "value": 0.8711184527873993
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "int8_tensor",
+    "metric": "lpips",
+    "value": 0.02499682667478919
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "int8_tensor",
+    "metric": "fid",
+    "value": 0.584638774394989
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "int8_tensor",
+    "metric": "bytes_per_image",
+    "value": 262202.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "int8_tensor",
+    "metric": "serialize_ms_per_image",
+    "value": 0.16143004303739872
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "int8_tensor",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.05930884695408167
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "int8_minmax_square_b8",
+    "metric": "mse",
+    "value": 0.0014117328578722662
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "int8_minmax_square_b8",
+    "metric": "psnr",
+    "value": 31.739589462280275
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "int8_minmax_square_b8",
+    "metric": "ssim",
+    "value": 0.8718044981956482
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "int8_minmax_square_b8",
+    "metric": "lpips",
+    "value": 0.024687991875223816
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "int8_minmax_square_b8",
+    "metric": "fid",
+    "value": 0.5228134393692017
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "int8_minmax_square_b8",
+    "metric": "bytes_per_image",
+    "value": 270570.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "int8_minmax_square_b8",
+    "metric": "serialize_ms_per_image",
+    "value": 0.1709600949398009
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "int8_minmax_square_b8",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.08609493806579849
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "int4_group_g32",
+    "metric": "mse",
+    "value": 0.001995900769077707
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "int4_group_g32",
+    "metric": "psnr",
+    "value": 29.762705436706543
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "int4_group_g32",
+    "metric": "ssim",
+    "value": 0.8346780610084533
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "int4_group_g32",
+    "metric": "lpips",
+    "value": 0.05748678123950958
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "int4_group_g32",
+    "metric": "fid",
+    "value": 7.507864475250244
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "int4_group_g32",
+    "metric": "bytes_per_image",
+    "value": 147512.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "int4_group_g32",
+    "metric": "serialize_ms_per_image",
+    "value": 0.11036954299925128
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "int4_group_g32",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.058824204017582815
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "int4_minmax_square_b4",
+    "metric": "mse",
+    "value": 0.0015617345457430928
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "int4_minmax_square_b4",
+    "metric": "psnr",
+    "value": 31.17359783935547
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "int4_minmax_square_b4",
+    "metric": "ssim",
+    "value": 0.8639211359024048
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "int4_minmax_square_b4",
+    "metric": "lpips",
+    "value": 0.028885900548659266
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "int4_minmax_square_b4",
+    "metric": "fid",
+    "value": 1.2220932245254517
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "int4_minmax_square_b4",
+    "metric": "bytes_per_image",
+    "value": 164074.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "int4_minmax_square_b4",
+    "metric": "serialize_ms_per_image",
+    "value": 0.17014396703598322
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "int4_minmax_square_b4",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.08745410296251066
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "int4_hadamard_g32",
+    "metric": "mse",
+    "value": 0.0034948797267861666
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "int4_hadamard_g32",
+    "metric": "psnr",
+    "value": 26.53591720581055
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "int4_hadamard_g32",
+    "metric": "ssim",
+    "value": 0.7388763840198517
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "int4_hadamard_g32",
+    "metric": "lpips",
+    "value": 0.22820708882808685
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "int4_hadamard_g32",
+    "metric": "fid",
+    "value": 30.427579879760742
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "int4_hadamard_g32",
+    "metric": "bytes_per_image",
+    "value": 147512.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "int4_hadamard_g32",
+    "metric": "serialize_ms_per_image",
+    "value": 0.11911508102639345
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "int4_hadamard_g32",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.06603117896156618
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "nvfp4",
+    "metric": "mse",
+    "value": 0.002260911495483015
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "nvfp4",
+    "metric": "psnr",
+    "value": 28.827988655090333
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "nvfp4",
+    "metric": "ssim",
+    "value": 0.8073356926441193
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "nvfp4",
+    "metric": "lpips",
+    "value": 0.10546250562369823
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "nvfp4",
+    "metric": "fid",
+    "value": 13.928418159484863
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "nvfp4",
+    "metric": "bytes_per_image",
+    "value": 147536.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "nvfp4",
+    "metric": "serialize_ms_per_image",
+    "value": 0.14279936384991743
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "nvfp4",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.07314796706486959
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "nf4_dq_g64",
+    "metric": "mse",
+    "value": 0.002143493171373848
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "nf4_dq_g64",
+    "metric": "psnr",
+    "value": 29.168402954101563
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "nf4_dq_g64",
+    "metric": "ssim",
+    "value": 0.8149651079177856
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "nf4_dq_g64",
+    "metric": "lpips",
+    "value": 0.0879554435312748
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "nf4_dq_g64",
+    "metric": "fid",
+    "value": 11.720633506774902
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "nf4_dq_g64",
+    "metric": "bytes_per_image",
+    "value": 135290.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "nf4_dq_g64",
+    "metric": "serialize_ms_per_image",
+    "value": 0.13726342804147862
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "nf4_dq_g64",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.07284868299757363
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "lloyd_minmax_square_c2_b4_r5",
+    "metric": "mse",
+    "value": 0.003465089615434408
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "lloyd_minmax_square_c2_b4_r5",
+    "metric": "psnr",
+    "value": 27.01908177947998
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "lloyd_minmax_square_c2_b4_r5",
+    "metric": "ssim",
+    "value": 0.7709899280071258
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "lloyd_minmax_square_c2_b4_r5",
+    "metric": "lpips",
+    "value": 0.14134525467455386
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "lloyd_minmax_square_c2_b4_r5",
+    "metric": "fid",
+    "value": 20.175649642944336
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "lloyd_minmax_square_c2_b4_r5",
+    "metric": "bytes_per_image",
+    "value": 86272.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "lloyd_minmax_square_c2_b4_r5",
+    "metric": "serialize_ms_per_image",
+    "value": 2.9878790830771322
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "lloyd_minmax_square_c2_b4_r5",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.1019976539464551
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "lloyd_minmax_square_c3_b4_r5",
+    "metric": "mse",
+    "value": 0.0020230709111201577
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "lloyd_minmax_square_c3_b4_r5",
+    "metric": "psnr",
+    "value": 29.765449089050293
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "lloyd_minmax_square_c3_b4_r5",
+    "metric": "ssim",
+    "value": 0.8396081118583679
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "lloyd_minmax_square_c3_b4_r5",
+    "metric": "lpips",
+    "value": 0.048733772482722995
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "lloyd_minmax_square_c3_b4_r5",
+    "metric": "fid",
+    "value": 4.778083801269531
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "lloyd_minmax_square_c3_b4_r5",
+    "metric": "bytes_per_image",
+    "value": 119048.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "lloyd_minmax_square_c3_b4_r5",
+    "metric": "serialize_ms_per_image",
+    "value": 2.11502325902984
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "lloyd_minmax_square_c3_b4_r5",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.10462751198065234
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "lloyd_minmax_square_c3_b8_r5",
+    "metric": "mse",
+    "value": 0.002372443001833744
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "lloyd_minmax_square_c3_b8_r5",
+    "metric": "psnr",
+    "value": 28.910481231689452
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "lloyd_minmax_square_c3_b8_r5",
+    "metric": "ssim",
+    "value": 0.8205290484428406
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "lloyd_minmax_square_c3_b8_r5",
+    "metric": "lpips",
+    "value": 0.06927827500551939
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "lloyd_minmax_square_c3_b8_r5",
+    "metric": "fid",
+    "value": 9.177041053771973
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "lloyd_minmax_square_c3_b8_r5",
+    "metric": "bytes_per_image",
+    "value": 103688.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "lloyd_minmax_square_c3_b8_r5",
+    "metric": "serialize_ms_per_image",
+    "value": 2.4376680940113147
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "lloyd_minmax_square_c3_b8_r5",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.10195152994128875
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "lloyd_minmax_square_c4_b8_r6",
+    "metric": "mse",
+    "value": 0.0016827261589933188
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "lloyd_minmax_square_c4_b8_r6",
+    "metric": "psnr",
+    "value": 30.742976181030272
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "lloyd_minmax_square_c4_b8_r6",
+    "metric": "ssim",
+    "value": 0.8567813415527343
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "lloyd_minmax_square_c4_b8_r6",
+    "metric": "lpips",
+    "value": 0.033578275540843604
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "lloyd_minmax_square_c4_b8_r6",
+    "metric": "fid",
+    "value": 2.1793904304504395
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "lloyd_minmax_square_c4_b8_r6",
+    "metric": "bytes_per_image",
+    "value": 137496.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "lloyd_minmax_square_c4_b8_r6",
+    "metric": "serialize_ms_per_image",
+    "value": 1.7524211270574597
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "lloyd_minmax_square_c4_b8_r6",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.10815078006999101
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "lloyd_minmax_square_c4_b4_r5",
+    "metric": "mse",
+    "value": 0.0015849524204968476
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "lloyd_minmax_square_c4_b4_r5",
+    "metric": "psnr",
+    "value": 31.086471557617188
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "lloyd_minmax_square_c4_b4_r5",
+    "metric": "ssim",
+    "value": 0.8624544579982758
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "lloyd_minmax_square_c4_b4_r5",
+    "metric": "lpips",
+    "value": 0.02987258991226554
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "lloyd_minmax_square_c4_b4_r5",
+    "metric": "fid",
+    "value": 1.3727165460586548
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "lloyd_minmax_square_c4_b4_r5",
+    "metric": "bytes_per_image",
+    "value": 151834.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "lloyd_minmax_square_c4_b4_r5",
+    "metric": "serialize_ms_per_image",
+    "value": 1.590658099972643
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "lloyd_minmax_square_c4_b4_r5",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.11038549604563741
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "lloyd_minmax_square_c5_b8_r6",
+    "metric": "mse",
+    "value": 0.0014848622373247054
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "lloyd_minmax_square_c5_b8_r6",
+    "metric": "psnr",
+    "value": 31.44812649536133
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "lloyd_minmax_square_c5_b8_r6",
+    "metric": "ssim",
+    "value": 0.8676878056526184
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "lloyd_minmax_square_c5_b8_r6",
+    "metric": "lpips",
+    "value": 0.026691344927065073
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "lloyd_minmax_square_c5_b8_r6",
+    "metric": "fid",
+    "value": 0.870166003704071
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "lloyd_minmax_square_c5_b8_r6",
+    "metric": "bytes_per_image",
+    "value": 170296.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "lloyd_minmax_square_c5_b8_r6",
+    "metric": "serialize_ms_per_image",
+    "value": 1.4676243108478957
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "lloyd_minmax_square_c5_b8_r6",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.11172596007963875
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "lloyd_minmax_square_c6_b8_r6",
+    "metric": "mse",
+    "value": 0.0014295882883889135
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "lloyd_minmax_square_c6_b8_r6",
+    "metric": "psnr",
+    "value": 31.66644147491455
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "lloyd_minmax_square_c6_b8_r6",
+    "metric": "ssim",
+    "value": 0.8707967777252197
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "lloyd_minmax_square_c6_b8_r6",
+    "metric": "lpips",
+    "value": 0.02514349195547402
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "lloyd_minmax_square_c6_b8_r6",
+    "metric": "fid",
+    "value": 0.5962373614311218
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "lloyd_minmax_square_c6_b8_r6",
+    "metric": "bytes_per_image",
+    "value": 203130.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "lloyd_minmax_square_c6_b8_r6",
+    "metric": "serialize_ms_per_image",
+    "value": 1.5834990059156553
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "lloyd_minmax_square_c6_b8_r6",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.11471908599924063
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "lloyd_minmax_square_c8_b8_r6",
+    "metric": "mse",
+    "value": 0.0014118615983752534
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "lloyd_minmax_square_c8_b8_r6",
+    "metric": "psnr",
+    "value": 31.73904550933838
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "lloyd_minmax_square_c8_b8_r6",
+    "metric": "ssim",
+    "value": 0.8717985410690308
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "lloyd_minmax_square_c8_b8_r6",
+    "metric": "lpips",
+    "value": 0.024692706363275647
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "lloyd_minmax_square_c8_b8_r6",
+    "metric": "fid",
+    "value": 0.5240943431854248
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "lloyd_minmax_square_c8_b8_r6",
+    "metric": "bytes_per_image",
+    "value": 269050.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "lloyd_minmax_square_c8_b8_r6",
+    "metric": "serialize_ms_per_image",
+    "value": 1.3805839629640104
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "lloyd_minmax_square_c8_b8_r6",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.11844330601888942
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "normal_cdf_minmax_square_c4_b4_r5_s2.5",
+    "metric": "mse",
+    "value": 0.0016239973643096164
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "normal_cdf_minmax_square_c4_b4_r5_s2.5",
+    "metric": "psnr",
+    "value": 30.831938087463378
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "normal_cdf_minmax_square_c4_b4_r5_s2.5",
+    "metric": "ssim",
+    "value": 0.8611100358963013
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "normal_cdf_minmax_square_c4_b4_r5_s2.5",
+    "metric": "lpips",
+    "value": 0.031025707440450787
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "normal_cdf_minmax_square_c4_b4_r5_s2.5",
+    "metric": "fid",
+    "value": 1.6687870025634766
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "normal_cdf_minmax_square_c4_b4_r5_s2.5",
+    "metric": "bytes_per_image",
+    "value": 151946.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "normal_cdf_minmax_square_c4_b4_r5_s2.5",
+    "metric": "serialize_ms_per_image",
+    "value": 0.2126524609484477
+  },
+  {
+    "domain": "image",
+    "vae": "flux_1",
+    "storage": "normal_cdf_minmax_square_c4_b4_r5_s2.5",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.11111195107514504
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "fp32",
+    "metric": "mse",
+    "value": 0.0019105858163675294
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "fp32",
+    "metric": "psnr",
+    "value": 30.209506156921385
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "fp32",
+    "metric": "ssim",
+    "value": 0.8193733348846436
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "fp32",
+    "metric": "lpips",
+    "value": 0.03455382553208619
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "fp32",
+    "metric": "fid",
+    "value": 0.8218163847923279
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "fp32",
+    "metric": "bytes_per_image",
+    "value": 1048598.0
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "fp32",
+    "metric": "serialize_ms_per_image",
+    "value": 0.34846507696056506
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "fp32",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.11841974910203135
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "fp16",
+    "metric": "mse",
+    "value": 0.001910588508588262
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "fp16",
+    "metric": "psnr",
+    "value": 30.209496131896973
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "fp16",
+    "metric": "ssim",
+    "value": 0.8193730046749115
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "fp16",
+    "metric": "lpips",
+    "value": 0.034553919387981295
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "fp16",
+    "metric": "fid",
+    "value": 0.8221325874328613
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "fp16",
+    "metric": "bytes_per_image",
+    "value": 524310.0
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "fp16",
+    "metric": "serialize_ms_per_image",
+    "value": 0.6330970490671461
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "fp16",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.07025466803315794
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "bf16",
+    "metric": "mse",
+    "value": 0.001910760305239819
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "bf16",
+    "metric": "psnr",
+    "value": 30.20892303466797
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "bf16",
+    "metric": "ssim",
+    "value": 0.8193625802993775
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "bf16",
+    "metric": "lpips",
+    "value": 0.03456163958832621
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "bf16",
+    "metric": "fid",
+    "value": 0.8276243805885315
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "bf16",
+    "metric": "bytes_per_image",
+    "value": 524310.0
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "bf16",
+    "metric": "serialize_ms_per_image",
+    "value": 0.6471500170373474
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "bf16",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.07019206495169783
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "fp8_e4m3",
+    "metric": "mse",
+    "value": 0.001954269875132013
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "fp8_e4m3",
+    "metric": "psnr",
+    "value": 30.04795404815674
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "fp8_e4m3",
+    "metric": "ssim",
+    "value": 0.816399276971817
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "fp8_e4m3",
+    "metric": "lpips",
+    "value": 0.03720849176123738
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "fp8_e4m3",
+    "metric": "fid",
+    "value": 2.392054557800293
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "fp8_e4m3",
+    "metric": "bytes_per_image",
+    "value": 262168.0
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "fp8_e4m3",
+    "metric": "serialize_ms_per_image",
+    "value": 0.13524155105551472
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "fp8_e4m3",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.17739863602037076
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "int8_tensor",
+    "metric": "mse",
+    "value": 0.001915406224085018
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "int8_tensor",
+    "metric": "psnr",
+    "value": 30.192777305603027
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "int8_tensor",
+    "metric": "ssim",
+    "value": 0.8191024754047393
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "int8_tensor",
+    "metric": "lpips",
+    "value": 0.03477629974484444
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "int8_tensor",
+    "metric": "fid",
+    "value": 0.9562437534332275
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "int8_tensor",
+    "metric": "bytes_per_image",
+    "value": 262202.0
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "int8_tensor",
+    "metric": "serialize_ms_per_image",
+    "value": 0.16589428500446957
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "int8_tensor",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.05943931703950511
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "int8_minmax_square_b8",
+    "metric": "mse",
+    "value": 0.0019107759019825607
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "int8_minmax_square_b8",
+    "metric": "psnr",
+    "value": 30.208941047668457
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "int8_minmax_square_b8",
+    "metric": "ssim",
+    "value": 0.81936700797081
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "int8_minmax_square_b8",
+    "metric": "lpips",
+    "value": 0.03455865049175918
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "int8_minmax_square_b8",
+    "metric": "fid",
+    "value": 0.8250349760055542
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "int8_minmax_square_b8",
+    "metric": "bytes_per_image",
+    "value": 270570.0
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "int8_minmax_square_b8",
+    "metric": "serialize_ms_per_image",
+    "value": 0.1761481189460028
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "int8_minmax_square_b8",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.09049101795972092
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "int4_group_g32",
+    "metric": "mse",
+    "value": 0.0021546094518271274
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "int4_group_g32",
+    "metric": "psnr",
+    "value": 29.441249366760253
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "int4_group_g32",
+    "metric": "ssim",
+    "value": 0.8084046444892883
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "int4_group_g32",
+    "metric": "lpips",
+    "value": 0.050781686440110205
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "int4_group_g32",
+    "metric": "fid",
+    "value": 9.000185012817383
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "int4_group_g32",
+    "metric": "bytes_per_image",
+    "value": 147512.0
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "int4_group_g32",
+    "metric": "serialize_ms_per_image",
+    "value": 0.11560952998843277
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "int4_group_g32",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.0627701269913814
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "int4_minmax_square_b4",
+    "metric": "mse",
+    "value": 0.001933983589959098
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "int4_minmax_square_b4",
+    "metric": "psnr",
+    "value": 30.129265319824217
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "int4_minmax_square_b4",
+    "metric": "ssim",
+    "value": 0.8188024094104767
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "int4_minmax_square_b4",
+    "metric": "lpips",
+    "value": 0.03518906207475811
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "int4_minmax_square_b4",
+    "metric": "fid",
+    "value": 1.22092604637146
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "int4_minmax_square_b4",
+    "metric": "bytes_per_image",
+    "value": 164074.0
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "int4_minmax_square_b4",
+    "metric": "serialize_ms_per_image",
+    "value": 0.17915155798982596
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "int4_minmax_square_b4",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.09238209602335701
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "int4_hadamard_g32",
+    "metric": "mse",
+    "value": 0.0036426150857005266
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "int4_hadamard_g32",
+    "metric": "psnr",
+    "value": 26.32785671234131
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "int4_hadamard_g32",
+    "metric": "ssim",
+    "value": 0.7353671064376831
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "int4_hadamard_g32",
+    "metric": "lpips",
+    "value": 0.15321388426423072
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "int4_hadamard_g32",
+    "metric": "fid",
+    "value": 39.64459228515625
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "int4_hadamard_g32",
+    "metric": "bytes_per_image",
+    "value": 147512.0
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "int4_hadamard_g32",
+    "metric": "serialize_ms_per_image",
+    "value": 0.12557995002134703
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "int4_hadamard_g32",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.06836489195120521
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "nvfp4",
+    "metric": "mse",
+    "value": 0.0024921906068339013
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "nvfp4",
+    "metric": "psnr",
+    "value": 28.555061279296876
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "nvfp4",
+    "metric": "ssim",
+    "value": 0.7962704286575317
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "nvfp4",
+    "metric": "lpips",
+    "value": 0.09936501155793667
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "nvfp4",
+    "metric": "fid",
+    "value": 20.762718200683594
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "nvfp4",
+    "metric": "bytes_per_image",
+    "value": 147536.0
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "nvfp4",
+    "metric": "serialize_ms_per_image",
+    "value": 0.1494562440129812
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "nvfp4",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.07434590702905552
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "nf4_dq_g64",
+    "metric": "mse",
+    "value": 0.002410873049637303
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "nf4_dq_g64",
+    "metric": "psnr",
+    "value": 28.624506675720216
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "nf4_dq_g64",
+    "metric": "ssim",
+    "value": 0.7944231796264648
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "nf4_dq_g64",
+    "metric": "lpips",
+    "value": 0.09180949300527573
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "nf4_dq_g64",
+    "metric": "fid",
+    "value": 18.0092830657959
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "nf4_dq_g64",
+    "metric": "bytes_per_image",
+    "value": 135290.0
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "nf4_dq_g64",
+    "metric": "serialize_ms_per_image",
+    "value": 0.14635005205491325
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "nf4_dq_g64",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.07545176199346315
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "lloyd_minmax_square_c2_b4_r5",
+    "metric": "mse",
+    "value": 0.002660182799445465
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "lloyd_minmax_square_c2_b4_r5",
+    "metric": "psnr",
+    "value": 28.164015647888185
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "lloyd_minmax_square_c2_b4_r5",
+    "metric": "ssim",
+    "value": 0.7861356408596039
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "lloyd_minmax_square_c2_b4_r5",
+    "metric": "lpips",
+    "value": 0.06393785566836596
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "lloyd_minmax_square_c2_b4_r5",
+    "metric": "fid",
+    "value": 12.227110862731934
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "lloyd_minmax_square_c2_b4_r5",
+    "metric": "bytes_per_image",
+    "value": 86272.0
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "lloyd_minmax_square_c2_b4_r5",
+    "metric": "serialize_ms_per_image",
+    "value": 3.0519761150426348
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "lloyd_minmax_square_c2_b4_r5",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.10806732502533123
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "lloyd_minmax_square_c3_b4_r5",
+    "metric": "mse",
+    "value": 0.0020851541308220477
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "lloyd_minmax_square_c3_b4_r5",
+    "metric": "psnr",
+    "value": 29.623292488098144
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "lloyd_minmax_square_c3_b4_r5",
+    "metric": "ssim",
+    "value": 0.8113647053241729
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "lloyd_minmax_square_c3_b4_r5",
+    "metric": "lpips",
+    "value": 0.040555323291569946
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "lloyd_minmax_square_c3_b4_r5",
+    "metric": "fid",
+    "value": 3.1116139888763428
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "lloyd_minmax_square_c3_b4_r5",
+    "metric": "bytes_per_image",
+    "value": 119048.0
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "lloyd_minmax_square_c3_b4_r5",
+    "metric": "serialize_ms_per_image",
+    "value": 2.1727707700047176
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "lloyd_minmax_square_c3_b4_r5",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.1124030769788078
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "lloyd_minmax_square_c3_b8_r5",
+    "metric": "mse",
+    "value": 0.0022131271292455497
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "lloyd_minmax_square_c3_b8_r5",
+    "metric": "psnr",
+    "value": 29.23903022003174
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "lloyd_minmax_square_c3_b8_r5",
+    "metric": "ssim",
+    "value": 0.8048920581340789
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "lloyd_minmax_square_c3_b8_r5",
+    "metric": "lpips",
+    "value": 0.04592095598578453
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "lloyd_minmax_square_c3_b8_r5",
+    "metric": "fid",
+    "value": 6.152539253234863
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "lloyd_minmax_square_c3_b8_r5",
+    "metric": "bytes_per_image",
+    "value": 103688.0
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "lloyd_minmax_square_c3_b8_r5",
+    "metric": "serialize_ms_per_image",
+    "value": 2.5656490739638684
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "lloyd_minmax_square_c3_b8_r5",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.10809140704805031
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "lloyd_minmax_square_c4_b8_r6",
+    "metric": "mse",
+    "value": 0.0019814350997330622
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "lloyd_minmax_square_c4_b8_r6",
+    "metric": "psnr",
+    "value": 29.960694709777833
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "lloyd_minmax_square_c4_b8_r6",
+    "metric": "ssim",
+    "value": 0.8160302734375
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "lloyd_minmax_square_c4_b8_r6",
+    "metric": "lpips",
+    "value": 0.03690148752555251
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "lloyd_minmax_square_c4_b8_r6",
+    "metric": "fid",
+    "value": 1.8783631324768066
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "lloyd_minmax_square_c4_b8_r6",
+    "metric": "bytes_per_image",
+    "value": 137496.0
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "lloyd_minmax_square_c4_b8_r6",
+    "metric": "serialize_ms_per_image",
+    "value": 1.8089610609968076
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "lloyd_minmax_square_c4_b8_r6",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.11353433805925306
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "lloyd_minmax_square_c4_b4_r5",
+    "metric": "mse",
+    "value": 0.0019532502451329492
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "lloyd_minmax_square_c4_b4_r5",
+    "metric": "psnr",
+    "value": 30.0616184463501
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "lloyd_minmax_square_c4_b4_r5",
+    "metric": "ssim",
+    "value": 0.8174133503437042
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "lloyd_minmax_square_c4_b4_r5",
+    "metric": "lpips",
+    "value": 0.03593575318902731
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "lloyd_minmax_square_c4_b4_r5",
+    "metric": "fid",
+    "value": 1.321028232574463
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "lloyd_minmax_square_c4_b4_r5",
+    "metric": "bytes_per_image",
+    "value": 151834.0
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "lloyd_minmax_square_c4_b4_r5",
+    "metric": "serialize_ms_per_image",
+    "value": 1.6288775278444518
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "lloyd_minmax_square_c4_b4_r5",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.1162088320706971
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "lloyd_minmax_square_c5_b8_r6",
+    "metric": "mse",
+    "value": 0.0019280095554422587
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "lloyd_minmax_square_c5_b8_r6",
+    "metric": "psnr",
+    "value": 30.148012145996095
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "lloyd_minmax_square_c5_b8_r6",
+    "metric": "ssim",
+    "value": 0.8185671179294586
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "lloyd_minmax_square_c5_b8_r6",
+    "metric": "lpips",
+    "value": 0.0351116057569161
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "lloyd_minmax_square_c5_b8_r6",
+    "metric": "fid",
+    "value": 1.0577484369277954
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "lloyd_minmax_square_c5_b8_r6",
+    "metric": "bytes_per_image",
+    "value": 170296.0
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "lloyd_minmax_square_c5_b8_r6",
+    "metric": "serialize_ms_per_image",
+    "value": 1.5047262329535442
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "lloyd_minmax_square_c5_b8_r6",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.11606473904976156
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "lloyd_minmax_square_c6_b8_r6",
+    "metric": "mse",
+    "value": 0.00191503350311541
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "lloyd_minmax_square_c6_b8_r6",
+    "metric": "psnr",
+    "value": 30.193715408325197
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "lloyd_minmax_square_c6_b8_r6",
+    "metric": "ssim",
+    "value": 0.8191673905849457
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "lloyd_minmax_square_c6_b8_r6",
+    "metric": "lpips",
+    "value": 0.03469261585362256
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "lloyd_minmax_square_c6_b8_r6",
+    "metric": "fid",
+    "value": 0.8787161111831665
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "lloyd_minmax_square_c6_b8_r6",
+    "metric": "bytes_per_image",
+    "value": 203130.0
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "lloyd_minmax_square_c6_b8_r6",
+    "metric": "serialize_ms_per_image",
+    "value": 1.595870103003108
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "lloyd_minmax_square_c6_b8_r6",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.12154203896352556
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "lloyd_minmax_square_c8_b8_r6",
+    "metric": "mse",
+    "value": 0.0019108801577240229
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "lloyd_minmax_square_c8_b8_r6",
+    "metric": "psnr",
+    "value": 30.20845886230469
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "lloyd_minmax_square_c8_b8_r6",
+    "metric": "ssim",
+    "value": 0.8193598999977112
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "lloyd_minmax_square_c8_b8_r6",
+    "metric": "lpips",
+    "value": 0.03456241378001869
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "lloyd_minmax_square_c8_b8_r6",
+    "metric": "fid",
+    "value": 0.8253000378608704
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "lloyd_minmax_square_c8_b8_r6",
+    "metric": "bytes_per_image",
+    "value": 269050.0
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "lloyd_minmax_square_c8_b8_r6",
+    "metric": "serialize_ms_per_image",
+    "value": 1.3525978200050304
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "lloyd_minmax_square_c8_b8_r6",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.12151027896470623
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "normal_cdf_minmax_square_c4_b4_r5_s2.5",
+    "metric": "mse",
+    "value": 0.0019524014517664908
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "normal_cdf_minmax_square_c4_b4_r5_s2.5",
+    "metric": "psnr",
+    "value": 30.039368560791015
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "normal_cdf_minmax_square_c4_b4_r5_s2.5",
+    "metric": "ssim",
+    "value": 0.8179526710510254
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "normal_cdf_minmax_square_c4_b4_r5_s2.5",
+    "metric": "lpips",
+    "value": 0.035858161741867664
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "normal_cdf_minmax_square_c4_b4_r5_s2.5",
+    "metric": "fid",
+    "value": 1.4654637575149536
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "normal_cdf_minmax_square_c4_b4_r5_s2.5",
+    "metric": "bytes_per_image",
+    "value": 151946.0
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "normal_cdf_minmax_square_c4_b4_r5_s2.5",
+    "metric": "serialize_ms_per_image",
+    "value": 0.2247925909687183
+  },
+  {
+    "domain": "image",
+    "vae": "sd_3_5",
+    "storage": "normal_cdf_minmax_square_c4_b4_r5_s2.5",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.11876688202755759
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "fp32",
+    "metric": "mse",
+    "value": 0.0030459931325749496
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "fp32",
+    "metric": "psnr",
+    "value": 28.437766998291014
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "fp32",
+    "metric": "ssim",
+    "value": 0.7644835913181305
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "fp32",
+    "metric": "lpips",
+    "value": 0.06440555662289262
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "fp32",
+    "metric": "fid",
+    "value": 4.314848899841309
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "fp32",
+    "metric": "bytes_per_image",
+    "value": 262166.0
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "fp32",
+    "metric": "serialize_ms_per_image",
+    "value": 0.13169177698728163
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "fp32",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.05320822999055963
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "fp16",
+    "metric": "mse",
+    "value": 0.0030460176907945425
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "fp16",
+    "metric": "psnr",
+    "value": 28.437725952148437
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "fp16",
+    "metric": "ssim",
+    "value": 0.7644817581176758
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "fp16",
+    "metric": "lpips",
+    "value": 0.06440684252977372
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "fp16",
+    "metric": "fid",
+    "value": 4.315182209014893
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "fp16",
+    "metric": "bytes_per_image",
+    "value": 131094.0
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "fp16",
+    "metric": "serialize_ms_per_image",
+    "value": 0.11803636502008885
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "fp16",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.03289788904658053
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "bf16",
+    "metric": "mse",
+    "value": 0.0030469992856378665
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "bf16",
+    "metric": "psnr",
+    "value": 28.435307014465334
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "bf16",
+    "metric": "ssim",
+    "value": 0.7644071221351624
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "bf16",
+    "metric": "lpips",
+    "value": 0.06443331762216985
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "bf16",
+    "metric": "fid",
+    "value": 4.3236308097839355
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "bf16",
+    "metric": "bytes_per_image",
+    "value": 131094.0
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "bf16",
+    "metric": "serialize_ms_per_image",
+    "value": 0.11915531793056289
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "bf16",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.032503366041055415
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "fp8_e4m3",
+    "metric": "mse",
+    "value": 0.0032647137347375974
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "fp8_e4m3",
+    "metric": "psnr",
+    "value": 27.95067360687256
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "fp8_e4m3",
+    "metric": "ssim",
+    "value": 0.750913815498352
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "fp8_e4m3",
+    "metric": "lpips",
+    "value": 0.07412203225493431
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "fp8_e4m3",
+    "metric": "fid",
+    "value": 6.128190040588379
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "fp8_e4m3",
+    "metric": "bytes_per_image",
+    "value": 65558.0
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "fp8_e4m3",
+    "metric": "serialize_ms_per_image",
+    "value": 0.0727897100878181
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "fp8_e4m3",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.08538701596262399
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "int8_tensor",
+    "metric": "mse",
+    "value": 0.003069582794967573
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "int8_tensor",
+    "metric": "psnr",
+    "value": 28.382690620422363
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "int8_tensor",
+    "metric": "ssim",
+    "value": 0.7627738788127899
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "int8_tensor",
+    "metric": "lpips",
+    "value": 0.0651977613773197
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "int8_tensor",
+    "metric": "fid",
+    "value": 4.3304643630981445
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "int8_tensor",
+    "metric": "bytes_per_image",
+    "value": 65594.0
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "int8_tensor",
+    "metric": "serialize_ms_per_image",
+    "value": 0.10306725396367256
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "int8_tensor",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.03417767401697347
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "int8_minmax_square_b8",
+    "metric": "mse",
+    "value": 0.003050343896728009
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "int8_minmax_square_b8",
+    "metric": "psnr",
+    "value": 28.42866074371338
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "int8_minmax_square_b8",
+    "metric": "ssim",
+    "value": 0.7642542124986649
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "int8_minmax_square_b8",
+    "metric": "lpips",
+    "value": 0.06451818301528692
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "int8_minmax_square_b8",
+    "metric": "fid",
+    "value": 4.303900241851807
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "int8_minmax_square_b8",
+    "metric": "bytes_per_image",
+    "value": 67720.0
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "int8_minmax_square_b8",
+    "metric": "serialize_ms_per_image",
+    "value": 0.1367276790260803
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "int8_minmax_square_b8",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.06109772094350774
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "int4_group_g32",
+    "metric": "mse",
+    "value": 0.0042853097333572805
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "int4_group_g32",
+    "metric": "psnr",
+    "value": 26.250344398498534
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "int4_group_g32",
+    "metric": "ssim",
+    "value": 0.7083123897314072
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "int4_group_g32",
+    "metric": "lpips",
+    "value": 0.15951989629864693
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "int4_group_g32",
+    "metric": "fid",
+    "value": 21.89005470275879
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "int4_group_g32",
+    "metric": "bytes_per_image",
+    "value": 36920.0
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "int4_group_g32",
+    "metric": "serialize_ms_per_image",
+    "value": 0.09575060095085064
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "int4_group_g32",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.04690477799886139
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "int4_minmax_square_b4",
+    "metric": "mse",
+    "value": 0.003574303229630459
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "int4_minmax_square_b4",
+    "metric": "psnr",
+    "value": 27.444891563415528
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "int4_minmax_square_b4",
+    "metric": "ssim",
+    "value": 0.739613638997078
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "int4_minmax_square_b4",
+    "metric": "lpips",
+    "value": 0.0871596999913454
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "int4_minmax_square_b4",
+    "metric": "fid",
+    "value": 7.209638595581055
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "int4_minmax_square_b4",
+    "metric": "bytes_per_image",
+    "value": 41096.0
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "int4_minmax_square_b4",
+    "metric": "serialize_ms_per_image",
+    "value": 0.1571330449078232
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "int4_minmax_square_b4",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.07229405901307473
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "int4_hadamard_g32",
+    "metric": "mse",
+    "value": 0.005898821852169931
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "int4_hadamard_g32",
+    "metric": "psnr",
+    "value": 24.128295097351074
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "int4_hadamard_g32",
+    "metric": "ssim",
+    "value": 0.6475149186849594
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "int4_hadamard_g32",
+    "metric": "lpips",
+    "value": 0.33491557908058167
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "int4_hadamard_g32",
+    "metric": "fid",
+    "value": 51.61736297607422
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "int4_hadamard_g32",
+    "metric": "bytes_per_image",
+    "value": 36920.0
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "int4_hadamard_g32",
+    "metric": "serialize_ms_per_image",
+    "value": 0.10648832099104766
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "int4_hadamard_g32",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.053605433051416185
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "nvfp4",
+    "metric": "mse",
+    "value": 0.004571254230570048
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "nvfp4",
+    "metric": "psnr",
+    "value": 25.731330764770508
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "nvfp4",
+    "metric": "ssim",
+    "value": 0.6928766733407974
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "nvfp4",
+    "metric": "lpips",
+    "value": 0.2121150248348713
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "nvfp4",
+    "metric": "fid",
+    "value": 28.871450424194336
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "nvfp4",
+    "metric": "bytes_per_image",
+    "value": 36944.0
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "nvfp4",
+    "metric": "serialize_ms_per_image",
+    "value": 0.12745247695420403
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "nvfp4",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.05926975701004267
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "nf4_dq_g64",
+    "metric": "mse",
+    "value": 0.004408048244891688
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "nf4_dq_g64",
+    "metric": "psnr",
+    "value": 25.96350609588623
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "nf4_dq_g64",
+    "metric": "ssim",
+    "value": 0.6983944472074509
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "nf4_dq_g64",
+    "metric": "lpips",
+    "value": 0.19088182148337365
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "nf4_dq_g64",
+    "metric": "fid",
+    "value": 25.685667037963867
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "nf4_dq_g64",
+    "metric": "bytes_per_image",
+    "value": 33890.0
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "nf4_dq_g64",
+    "metric": "serialize_ms_per_image",
+    "value": 0.12745920494489837
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "nf4_dq_g64",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.061470454100344796
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "lloyd_minmax_square_c2_b4_r5",
+    "metric": "mse",
+    "value": 0.006422383457422257
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "lloyd_minmax_square_c2_b4_r5",
+    "metric": "psnr",
+    "value": 23.99740435028076
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "lloyd_minmax_square_c2_b4_r5",
+    "metric": "ssim",
+    "value": 0.6456518404483795
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "lloyd_minmax_square_c2_b4_r5",
+    "metric": "lpips",
+    "value": 0.3053937285542488
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "lloyd_minmax_square_c2_b4_r5",
+    "metric": "fid",
+    "value": 48.42809295654297
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "lloyd_minmax_square_c2_b4_r5",
+    "metric": "bytes_per_image",
+    "value": 21662.0
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "lloyd_minmax_square_c2_b4_r5",
+    "metric": "serialize_ms_per_image",
+    "value": 1.7095480040006805
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "lloyd_minmax_square_c2_b4_r5",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.09442326499265619
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "lloyd_minmax_square_c3_b4_r5",
+    "metric": "mse",
+    "value": 0.004499673432786949
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "lloyd_minmax_square_c3_b4_r5",
+    "metric": "psnr",
+    "value": 26.026484436035155
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "lloyd_minmax_square_c3_b4_r5",
+    "metric": "ssim",
+    "value": 0.7019075800180435
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "lloyd_minmax_square_c3_b4_r5",
+    "metric": "lpips",
+    "value": 0.15772818967700006
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "lloyd_minmax_square_c3_b4_r5",
+    "metric": "fid",
+    "value": 19.782129287719727
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "lloyd_minmax_square_c3_b4_r5",
+    "metric": "bytes_per_image",
+    "value": 29862.0
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "lloyd_minmax_square_c3_b4_r5",
+    "metric": "serialize_ms_per_image",
+    "value": 1.306195922952611
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "lloyd_minmax_square_c3_b4_r5",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.09596876595605863
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "lloyd_minmax_square_c3_b8_r5",
+    "metric": "mse",
+    "value": 0.004912706464296207
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "lloyd_minmax_square_c3_b8_r5",
+    "metric": "psnr",
+    "value": 25.474158966064454
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "lloyd_minmax_square_c3_b8_r5",
+    "metric": "ssim",
+    "value": 0.687518247127533
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "lloyd_minmax_square_c3_b8_r5",
+    "metric": "lpips",
+    "value": 0.19195875331759452
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "lloyd_minmax_square_c3_b8_r5",
+    "metric": "fid",
+    "value": 28.15015411376953
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "lloyd_minmax_square_c3_b8_r5",
+    "metric": "bytes_per_image",
+    "value": 26022.0
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "lloyd_minmax_square_c3_b8_r5",
+    "metric": "serialize_ms_per_image",
+    "value": 1.42778770296718
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "lloyd_minmax_square_c3_b8_r5",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.0951054230608861
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "lloyd_minmax_square_c4_b8_r6",
+    "metric": "mse",
+    "value": 0.0038199755793320946
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "lloyd_minmax_square_c4_b8_r6",
+    "metric": "psnr",
+    "value": 27.016200775146483
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "lloyd_minmax_square_c4_b8_r6",
+    "metric": "ssim",
+    "value": 0.728059179186821
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "lloyd_minmax_square_c4_b8_r6",
+    "metric": "lpips",
+    "value": 0.10285745181888342
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "lloyd_minmax_square_c4_b8_r6",
+    "metric": "fid",
+    "value": 10.630317687988281
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "lloyd_minmax_square_c4_b8_r6",
+    "metric": "bytes_per_image",
+    "value": 34488.0
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "lloyd_minmax_square_c4_b8_r6",
+    "metric": "serialize_ms_per_image",
+    "value": 1.1121370919936453
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "lloyd_minmax_square_c4_b8_r6",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.09479704000113998
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "lloyd_minmax_square_c4_b4_r5",
+    "metric": "mse",
+    "value": 0.003631564123323187
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "lloyd_minmax_square_c4_b4_r5",
+    "metric": "psnr",
+    "value": 27.342322731018065
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "lloyd_minmax_square_c4_b4_r5",
+    "metric": "ssim",
+    "value": 0.7363553726673127
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "lloyd_minmax_square_c4_b4_r5",
+    "metric": "lpips",
+    "value": 0.0905901413783431
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "lloyd_minmax_square_c4_b4_r5",
+    "metric": "fid",
+    "value": 7.789485931396484
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "lloyd_minmax_square_c4_b4_r5",
+    "metric": "bytes_per_image",
+    "value": 38072.0
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "lloyd_minmax_square_c4_b4_r5",
+    "metric": "serialize_ms_per_image",
+    "value": 1.0914892129876534
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "lloyd_minmax_square_c4_b4_r5",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.09609929705766262
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "lloyd_minmax_square_c5_b8_r6",
+    "metric": "mse",
+    "value": 0.003302939563523978
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "lloyd_minmax_square_c5_b8_r6",
+    "metric": "psnr",
+    "value": 27.923093223571776
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "lloyd_minmax_square_c5_b8_r6",
+    "metric": "ssim",
+    "value": 0.7512180593013763
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "lloyd_minmax_square_c5_b8_r6",
+    "metric": "lpips",
+    "value": 0.07309850616753101
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "lloyd_minmax_square_c5_b8_r6",
+    "metric": "fid",
+    "value": 5.18752908706665
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "lloyd_minmax_square_c5_b8_r6",
+    "metric": "bytes_per_image",
+    "value": 42712.0
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "lloyd_minmax_square_c5_b8_r6",
+    "metric": "serialize_ms_per_image",
+    "value": 1.0888162659175578
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "lloyd_minmax_square_c5_b8_r6",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.09619557201222051
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "lloyd_minmax_square_c6_b8_r6",
+    "metric": "mse",
+    "value": 0.0031166248120134696
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "lloyd_minmax_square_c6_b8_r6",
+    "metric": "psnr",
+    "value": 28.29189083099365
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "lloyd_minmax_square_c6_b8_r6",
+    "metric": "ssim",
+    "value": 0.7606591439247131
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "lloyd_minmax_square_c6_b8_r6",
+    "metric": "lpips",
+    "value": 0.06629537590965628
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "lloyd_minmax_square_c6_b8_r6",
+    "metric": "fid",
+    "value": 4.412565231323242
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "lloyd_minmax_square_c6_b8_r6",
+    "metric": "bytes_per_image",
+    "value": 50968.0
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "lloyd_minmax_square_c6_b8_r6",
+    "metric": "serialize_ms_per_image",
+    "value": 1.0874665150549845
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "lloyd_minmax_square_c6_b8_r6",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.09702021093835356
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "lloyd_minmax_square_c8_b8_r6",
+    "metric": "mse",
+    "value": 0.0030504463607794606
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "lloyd_minmax_square_c8_b8_r6",
+    "metric": "psnr",
+    "value": 28.428387214660646
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "lloyd_minmax_square_c8_b8_r6",
+    "metric": "ssim",
+    "value": 0.7642393068075181
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "lloyd_minmax_square_c8_b8_r6",
+    "metric": "lpips",
+    "value": 0.06450047187134623
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "lloyd_minmax_square_c8_b8_r6",
+    "metric": "fid",
+    "value": 4.305140495300293
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "lloyd_minmax_square_c8_b8_r6",
+    "metric": "bytes_per_image",
+    "value": 67736.0
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "lloyd_minmax_square_c8_b8_r6",
+    "metric": "serialize_ms_per_image",
+    "value": 1.0907226299750619
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "lloyd_minmax_square_c8_b8_r6",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.09103534003952518
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "normal_cdf_minmax_square_c4_b4_r5_s2.5",
+    "metric": "mse",
+    "value": 0.003724258505972102
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "normal_cdf_minmax_square_c4_b4_r5_s2.5",
+    "metric": "psnr",
+    "value": 27.11254965209961
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "normal_cdf_minmax_square_c4_b4_r5_s2.5",
+    "metric": "ssim",
+    "value": 0.7333496572971344
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "normal_cdf_minmax_square_c4_b4_r5_s2.5",
+    "metric": "lpips",
+    "value": 0.09560164475440978
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "normal_cdf_minmax_square_c4_b4_r5_s2.5",
+    "metric": "fid",
+    "value": 8.66562557220459
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "normal_cdf_minmax_square_c4_b4_r5_s2.5",
+    "metric": "bytes_per_image",
+    "value": 38086.0
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "normal_cdf_minmax_square_c4_b4_r5_s2.5",
+    "metric": "serialize_ms_per_image",
+    "value": 0.2036266329960199
+  },
+  {
+    "domain": "image",
+    "vae": "sdxl",
+    "storage": "normal_cdf_minmax_square_c4_b4_r5_s2.5",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.1017368228858686
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "fp32",
+    "metric": "mse",
+    "value": 1.0482994379952808e-16
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "fp32",
+    "metric": "psnr",
+    "value": 100.0
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "fp32",
+    "metric": "ssim",
+    "value": 0.9999945540428161
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "fp32",
+    "metric": "lpips",
+    "value": 0.0
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "fp32",
+    "metric": "fvd",
+    "value": 3.5923281757277437e-05
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "fp32",
+    "metric": "bytes_per_video",
+    "value": 58982448.0
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "fp32",
+    "metric": "serialize_ms_per_video",
+    "value": 14.459802300001684
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "fp32",
+    "metric": "deserialize_ms_per_video",
+    "value": 8.334312745988427
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "fp16",
+    "metric": "mse",
+    "value": 3.841567368656485e-09
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "fp16",
+    "metric": "psnr",
+    "value": 84.60356600952149
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "fp16",
+    "metric": "ssim",
+    "value": 0.9999897704124451
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "fp16",
+    "metric": "lpips",
+    "value": 0.0
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "fp16",
+    "metric": "fvd",
+    "value": 0.0002400589646640583
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "fp16",
+    "metric": "bytes_per_video",
+    "value": 29491244.0
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "fp16",
+    "metric": "serialize_ms_per_video",
+    "value": 12.881227258012586
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "fp16",
+    "metric": "deserialize_ms_per_video",
+    "value": 4.3454939179882786
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "bf16",
+    "metric": "mse",
+    "value": 2.4445474366530107e-07
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "bf16",
+    "metric": "psnr",
+    "value": 67.00756182861328
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "bf16",
+    "metric": "ssim",
+    "value": 0.9997480556964874
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "bf16",
+    "metric": "lpips",
+    "value": 2.9121112120265025e-05
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "bf16",
+    "metric": "fvd",
+    "value": 0.0031465143511013594
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "bf16",
+    "metric": "bytes_per_video",
+    "value": 29491248.0
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "bf16",
+    "metric": "serialize_ms_per_video",
+    "value": 12.842726394015699
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "bf16",
+    "metric": "deserialize_ms_per_video",
+    "value": 4.324992557976657
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "fp8_e4m3",
+    "metric": "mse",
+    "value": 6.26571556495037e-05
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "fp8_e4m3",
+    "metric": "psnr",
+    "value": 42.608600173950194
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "fp8_e4m3",
+    "metric": "ssim",
+    "value": 0.9581054215431213
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "fp8_e4m3",
+    "metric": "lpips",
+    "value": 0.013084082757122814
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "fp8_e4m3",
+    "metric": "fvd",
+    "value": 2.204651759682747
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "fp8_e4m3",
+    "metric": "bytes_per_video",
+    "value": 14745648.0
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "fp8_e4m3",
+    "metric": "serialize_ms_per_video",
+    "value": 3.82337927998924
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "fp8_e4m3",
+    "metric": "deserialize_ms_per_video",
+    "value": 8.237057210015337
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "int8_tensor",
+    "metric": "mse",
+    "value": 1.714837253530277e-06
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "int8_tensor",
+    "metric": "psnr",
+    "value": 57.77273933410645
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "int8_tensor",
+    "metric": "ssim",
+    "value": 0.999220673084259
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "int8_tensor",
+    "metric": "lpips",
+    "value": 0.0002304347782264813
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "int8_tensor",
+    "metric": "fvd",
+    "value": 0.023250906122484594
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "int8_tensor",
+    "metric": "bytes_per_video",
+    "value": 14745714.0
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "int8_tensor",
+    "metric": "serialize_ms_per_video",
+    "value": 3.790716482015341
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "int8_tensor",
+    "metric": "deserialize_ms_per_video",
+    "value": 1.9580155959811236
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "int8_minmax_square_b8",
+    "metric": "mse",
+    "value": 1.0822982992664265e-07
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "int8_minmax_square_b8",
+    "metric": "psnr",
+    "value": 70.69108206176757
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "int8_minmax_square_b8",
+    "metric": "ssim",
+    "value": 0.9999811987876892
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "int8_minmax_square_b8",
+    "metric": "lpips",
+    "value": 2.8699552308353304e-06
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "int8_minmax_square_b8",
+    "metric": "fvd",
+    "value": 0.0003458457940723747
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "int8_minmax_square_b8",
+    "metric": "bytes_per_video",
+    "value": 15206638.0
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "int8_minmax_square_b8",
+    "metric": "serialize_ms_per_video",
+    "value": 3.4211439920054545
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "int8_minmax_square_b8",
+    "metric": "deserialize_ms_per_video",
+    "value": 2.2360304959966015
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "int4_group_g32",
+    "metric": "mse",
+    "value": 0.00018565064476570116
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "int4_group_g32",
+    "metric": "psnr",
+    "value": 37.50942730712891
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "int4_group_g32",
+    "metric": "ssim",
+    "value": 0.940701904296875
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "int4_group_g32",
+    "metric": "lpips",
+    "value": 0.03446560133434832
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "int4_group_g32",
+    "metric": "fvd",
+    "value": 10.921277427529276
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "int4_group_g32",
+    "metric": "bytes_per_video",
+    "value": 8294522.0
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "int4_group_g32",
+    "metric": "serialize_ms_per_video",
+    "value": 2.1249682100151404
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "int4_group_g32",
+    "metric": "deserialize_ms_per_video",
+    "value": 1.3670959759838297
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "int4_minmax_square_b4",
+    "metric": "mse",
+    "value": 1.1864719922868971e-05
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "int4_minmax_square_b4",
+    "metric": "psnr",
+    "value": 50.489322479248045
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "int4_minmax_square_b4",
+    "metric": "ssim",
+    "value": 0.9991364133358002
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "int4_minmax_square_b4",
+    "metric": "lpips",
+    "value": 0.00025207260530441997
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "int4_minmax_square_b4",
+    "metric": "fvd",
+    "value": 0.029019228679317166
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "int4_minmax_square_b4",
+    "metric": "bytes_per_video",
+    "value": 9216238.0
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "int4_minmax_square_b4",
+    "metric": "serialize_ms_per_video",
+    "value": 3.719095299997207
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "int4_minmax_square_b4",
+    "metric": "deserialize_ms_per_video",
+    "value": 2.8041068959937547
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "int4_hadamard_g32",
+    "metric": "mse",
+    "value": 0.0010348246805369854
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "int4_hadamard_g32",
+    "metric": "psnr",
+    "value": 30.51147449493408
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "int4_hadamard_g32",
+    "metric": "ssim",
+    "value": 0.8461741864681244
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "int4_hadamard_g32",
+    "metric": "lpips",
+    "value": 0.15230022852122785
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "int4_hadamard_g32",
+    "metric": "fvd",
+    "value": 101.05834668536227
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "int4_hadamard_g32",
+    "metric": "bytes_per_video",
+    "value": 8294522.0
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "int4_hadamard_g32",
+    "metric": "serialize_ms_per_video",
+    "value": 2.0850063119924016
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "int4_hadamard_g32",
+    "metric": "deserialize_ms_per_video",
+    "value": 1.4717949560072157
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "nvfp4",
+    "metric": "mse",
+    "value": 0.0005020079929381609
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "nvfp4",
+    "metric": "psnr",
+    "value": 33.39960193634033
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "nvfp4",
+    "metric": "ssim",
+    "value": 0.8920238134860993
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "nvfp4",
+    "metric": "lpips",
+    "value": 0.07620596347004176
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "nvfp4",
+    "metric": "fvd",
+    "value": 38.471072018452105
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "nvfp4",
+    "metric": "bytes_per_video",
+    "value": 8294562.0
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "nvfp4",
+    "metric": "serialize_ms_per_video",
+    "value": 2.088567279995914
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "nvfp4",
+    "metric": "deserialize_ms_per_video",
+    "value": 1.4637363439978799
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "nf4_dq_g64",
+    "metric": "mse",
+    "value": 0.0005332411158597097
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "nf4_dq_g64",
+    "metric": "psnr",
+    "value": 32.969614791870114
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "nf4_dq_g64",
+    "metric": "ssim",
+    "value": 0.8815204458236694
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "nf4_dq_g64",
+    "metric": "lpips",
+    "value": 0.08503458923846484
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "nf4_dq_g64",
+    "metric": "fvd",
+    "value": 52.101453721125836
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "nf4_dq_g64",
+    "metric": "bytes_per_video",
+    "value": 7605182.0
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "nf4_dq_g64",
+    "metric": "serialize_ms_per_video",
+    "value": 1.8618910819877783
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "nf4_dq_g64",
+    "metric": "deserialize_ms_per_video",
+    "value": 1.362214850012606
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c2_b4_r5",
+    "metric": "mse",
+    "value": 0.00022468873350590002
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c2_b4_r5",
+    "metric": "psnr",
+    "value": 37.52449855041504
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c2_b4_r5",
+    "metric": "ssim",
+    "value": 0.9760979051589966
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c2_b4_r5",
+    "metric": "lpips",
+    "value": 0.012102816497907043
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c2_b4_r5",
+    "metric": "fvd",
+    "value": 1.729820677483076
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c2_b4_r5",
+    "metric": "bytes_per_video",
+    "value": 4838674.0
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c2_b4_r5",
+    "metric": "serialize_ms_per_video",
+    "value": 5.420814323977538
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c2_b4_r5",
+    "metric": "deserialize_ms_per_video",
+    "value": 1.8682230460253777
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c3_b4_r5",
+    "metric": "mse",
+    "value": 5.5418709434889026e-05
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c3_b4_r5",
+    "metric": "psnr",
+    "value": 43.58493548583984
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c3_b4_r5",
+    "metric": "ssim",
+    "value": 0.9939943344593049
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c3_b4_r5",
+    "metric": "lpips",
+    "value": 0.001702574203023687
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c3_b4_r5",
+    "metric": "fvd",
+    "value": 0.19686004678987956
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c3_b4_r5",
+    "metric": "bytes_per_video",
+    "value": 6681886.0
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c3_b4_r5",
+    "metric": "serialize_ms_per_video",
+    "value": 5.107403211990459
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c3_b4_r5",
+    "metric": "deserialize_ms_per_video",
+    "value": 2.2315073780155217
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c3_b8_r5",
+    "metric": "mse",
+    "value": 0.00012695685124344892
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c3_b8_r5",
+    "metric": "psnr",
+    "value": 39.92947508239746
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c3_b8_r5",
+    "metric": "ssim",
+    "value": 0.98266357254982
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c3_b8_r5",
+    "metric": "lpips",
+    "value": 0.0050454016663134095
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c3_b8_r5",
+    "metric": "fvd",
+    "value": 0.8596465809232541
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c3_b8_r5",
+    "metric": "bytes_per_video",
+    "value": 5817886.0
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c3_b8_r5",
+    "metric": "serialize_ms_per_video",
+    "value": 4.83430018398758
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c3_b8_r5",
+    "metric": "deserialize_ms_per_video",
+    "value": 2.036160492001727
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c4_b8_r6",
+    "metric": "mse",
+    "value": 2.989548504592676e-05
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c4_b8_r6",
+    "metric": "psnr",
+    "value": 46.26463555908203
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c4_b8_r6",
+    "metric": "ssim",
+    "value": 0.9960263931751251
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c4_b8_r6",
+    "metric": "lpips",
+    "value": 0.0007403662513243035
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c4_b8_r6",
+    "metric": "fvd",
+    "value": 0.08920734047842416
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c4_b8_r6",
+    "metric": "bytes_per_video",
+    "value": 7718702.0
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c4_b8_r6",
+    "metric": "serialize_ms_per_video",
+    "value": 4.897478727993075
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c4_b8_r6",
+    "metric": "deserialize_ms_per_video",
+    "value": 2.6292321699911554
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c4_b4_r5",
+    "metric": "mse",
+    "value": 1.3912273416281096e-05
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c4_b4_r5",
+    "metric": "psnr",
+    "value": 49.585661895751954
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c4_b4_r5",
+    "metric": "ssim",
+    "value": 0.9985623178482056
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c4_b4_r5",
+    "metric": "lpips",
+    "value": 0.0003473446545540355
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c4_b4_r5",
+    "metric": "fvd",
+    "value": 0.03422452858740144
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c4_b4_r5",
+    "metric": "bytes_per_video",
+    "value": 8525102.0
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c4_b4_r5",
+    "metric": "serialize_ms_per_video",
+    "value": 5.259022117985296
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c4_b4_r5",
+    "metric": "deserialize_ms_per_video",
+    "value": 2.82993292401261
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c5_b8_r6",
+    "metric": "mse",
+    "value": 7.555723365385347e-06
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c5_b8_r6",
+    "metric": "psnr",
+    "value": 52.23097274780273
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c5_b8_r6",
+    "metric": "ssim",
+    "value": 0.9989774982929229
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c5_b8_r6",
+    "metric": "lpips",
+    "value": 0.00016352923604426905
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c5_b8_r6",
+    "metric": "fvd",
+    "value": 0.01744923725618719
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c5_b8_r6",
+    "metric": "bytes_per_video",
+    "value": 9561934.0
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c5_b8_r6",
+    "metric": "serialize_ms_per_video",
+    "value": 5.555545206016177
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c5_b8_r6",
+    "metric": "deserialize_ms_per_video",
+    "value": 3.0494969159972243
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c6_b8_r6",
+    "metric": "mse",
+    "value": 1.9072575199743368e-06
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c6_b8_r6",
+    "metric": "psnr",
+    "value": 58.20401449584961
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c6_b8_r6",
+    "metric": "ssim",
+    "value": 0.9997410953044892
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c6_b8_r6",
+    "metric": "lpips",
+    "value": 4.1920643991034014e-05
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c6_b8_r6",
+    "metric": "fvd",
+    "value": 0.003980083825808833
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c6_b8_r6",
+    "metric": "bytes_per_video",
+    "value": 11405198.0
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c6_b8_r6",
+    "metric": "serialize_ms_per_video",
+    "value": 6.19083599201258
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c6_b8_r6",
+    "metric": "deserialize_ms_per_video",
+    "value": 3.593065063985705
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c8_b8_r6",
+    "metric": "mse",
+    "value": 1.1360548084127231e-07
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c8_b8_r6",
+    "metric": "psnr",
+    "value": 70.42107565307617
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c8_b8_r6",
+    "metric": "ssim",
+    "value": 0.9999800100326538
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c8_b8_r6",
+    "metric": "lpips",
+    "value": 3.2000655755837216e-06
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c8_b8_r6",
+    "metric": "fvd",
+    "value": 0.00039652658870181767
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c8_b8_r6",
+    "metric": "bytes_per_video",
+    "value": 15091986.0
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c8_b8_r6",
+    "metric": "serialize_ms_per_video",
+    "value": 5.490011716001391
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c8_b8_r6",
+    "metric": "deserialize_ms_per_video",
+    "value": 2.4740541980008857
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_cube_c2_b4_r5",
+    "metric": "mse",
+    "value": 0.000471930861560395
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_cube_c2_b4_r5",
+    "metric": "psnr",
+    "value": 34.06401187133789
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_cube_c2_b4_r5",
+    "metric": "ssim",
+    "value": 0.9371457378864289
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_cube_c2_b4_r5",
+    "metric": "lpips",
+    "value": 0.044345223132520914
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_cube_c2_b4_r5",
+    "metric": "fvd",
+    "value": 7.717180142167308
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_cube_c2_b4_r5",
+    "metric": "bytes_per_video",
+    "value": 4027666.0
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_cube_c2_b4_r5",
+    "metric": "serialize_ms_per_video",
+    "value": 5.422085747984966
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_cube_c2_b4_r5",
+    "metric": "deserialize_ms_per_video",
+    "value": 1.6199912120064255
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_cube_c3_b4_r5",
+    "metric": "mse",
+    "value": 0.00011897328948543873
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_cube_c3_b4_r5",
+    "metric": "psnr",
+    "value": 40.02866436767578
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_cube_c3_b4_r5",
+    "metric": "ssim",
+    "value": 0.9781211657524109
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_cube_c3_b4_r5",
+    "metric": "lpips",
+    "value": 0.010250297338701784
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_cube_c3_b4_r5",
+    "metric": "fvd",
+    "value": 0.722554923539974
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_cube_c3_b4_r5",
+    "metric": "bytes_per_video",
+    "value": 5895454.0
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_cube_c3_b4_r5",
+    "metric": "serialize_ms_per_video",
+    "value": 5.231563835999623
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_cube_c3_b4_r5",
+    "metric": "deserialize_ms_per_video",
+    "value": 2.131527988007292
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_cube_c4_b4_r5",
+    "metric": "mse",
+    "value": 3.040386064458289e-05
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_cube_c4_b4_r5",
+    "metric": "psnr",
+    "value": 45.93953254699707
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_cube_c4_b4_r5",
+    "metric": "ssim",
+    "value": 0.9934316051006317
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_cube_c4_b4_r5",
+    "metric": "lpips",
+    "value": 0.002177950879675336
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_cube_c4_b4_r5",
+    "metric": "fvd",
+    "value": 0.0967509792835699
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_cube_c4_b4_r5",
+    "metric": "bytes_per_video",
+    "value": 7763246.0
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_cube_c4_b4_r5",
+    "metric": "serialize_ms_per_video",
+    "value": 5.187730040001043
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_cube_c4_b4_r5",
+    "metric": "deserialize_ms_per_video",
+    "value": 2.545565232001536
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_cube_c4_b8_r6",
+    "metric": "mse",
+    "value": 6.261702768097166e-05
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_cube_c4_b8_r6",
+    "metric": "psnr",
+    "value": 42.759454513549805
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_cube_c4_b8_r6",
+    "metric": "ssim",
+    "value": 0.9840452451705932
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_cube_c4_b8_r6",
+    "metric": "lpips",
+    "value": 0.005902701960876584
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_cube_c4_b8_r6",
+    "metric": "fvd",
+    "value": 0.4564727816459708
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_cube_c4_b8_r6",
+    "metric": "bytes_per_video",
+    "value": 7910702.0
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_cube_c4_b8_r6",
+    "metric": "serialize_ms_per_video",
+    "value": 5.72377584199603
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_cube_c4_b8_r6",
+    "metric": "deserialize_ms_per_video",
+    "value": 2.6405644900041807
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "normal_cdf_minmax_square_c4_b4_r5_s2.5",
+    "metric": "mse",
+    "value": 2.1259709415971884e-05
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "normal_cdf_minmax_square_c4_b4_r5_s2.5",
+    "metric": "psnr",
+    "value": 48.21354281616211
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "normal_cdf_minmax_square_c4_b4_r5_s2.5",
+    "metric": "ssim",
+    "value": 0.9985102875232696
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "normal_cdf_minmax_square_c4_b4_r5_s2.5",
+    "metric": "lpips",
+    "value": 0.0006564466687850654
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "normal_cdf_minmax_square_c4_b4_r5_s2.5",
+    "metric": "fvd",
+    "value": 0.14223374948869605
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "normal_cdf_minmax_square_c4_b4_r5_s2.5",
+    "metric": "bytes_per_video",
+    "value": 8525122.0
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "normal_cdf_minmax_square_c4_b4_r5_s2.5",
+    "metric": "serialize_ms_per_video",
+    "value": 4.10795313800736
+  },
+  {
+    "domain": "video",
+    "vae": "no_vae",
+    "storage": "normal_cdf_minmax_square_c4_b4_r5_s2.5",
+    "metric": "deserialize_ms_per_video",
+    "value": 3.0656812959896342
+  }
+]

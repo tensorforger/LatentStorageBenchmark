@@ -18,6 +18,7 @@ import sys
 from pathlib import Path
 
 import cv2
+import numpy as np
 from omegaconf import OmegaConf
 from tqdm import tqdm
 
@@ -121,6 +122,57 @@ def prepare_dataset(dataset_name: str, width: int, height: int) -> int:
     return saved
 
 
+def collect_source_videos(dataset_name: str, dataset_dir: Path) -> list[Path]:
+    """Return the source videos for a video dataset."""
+    if dataset_name == "movirec":
+        return sorted((dataset_dir / "video-patches").glob("*.mp4"))
+    raise ValueError(f"Unknown video dataset: {dataset_name!r}")
+
+
+def _read_video(
+    path: Path, height: int, width: int, num_frames: int
+) -> np.ndarray | None:
+    """Decode the first `num_frames` frames, cropped to size. Returns uint8 RGB [T, H, W, 3] or None if too short."""
+    capture = cv2.VideoCapture(str(path))
+    frames = []
+    while len(frames) < num_frames:
+        ok, frame = capture.read()
+        if not ok:
+            break
+        frame = crop_maximal_rectangle(frame, height, width)
+        frames.append(cv2.cvtColor(frame, cv2.COLOR_BGR2RGB))
+    capture.release()
+    return np.stack(frames) if len(frames) == num_frames else None
+
+
+def prepare_video_dataset(
+    dataset_name: str, width: int, height: int, num_frames: int
+) -> int:
+    """Crop and save all videos of one dataset as NNNNNN.npy (uint8 RGB [T, H, W, 3]). Returns count saved."""
+    dataset_dir = DATASETS_ROOT / dataset_name
+    if not dataset_dir.is_dir():
+        raise FileNotFoundError(f"Dataset directory not found: {dataset_dir}")
+
+    out_dir = PREPARED_ROOT / dataset_name
+    out_dir.mkdir(parents=True, exist_ok=True)
+    for old in out_dir.glob("*.npy"):
+        old.unlink()
+
+    saved = 0
+    for src in tqdm(
+        collect_source_videos(dataset_name, dataset_dir), desc=dataset_name, leave=False
+    ):
+        video = _read_video(src, height, width, num_frames)
+        if video is None:
+            print(
+                f"  skipping {src.relative_to(PROJECT_ROOT)}: fewer than {num_frames} frames"
+            )
+            continue
+        np.save(out_dir / f"{saved:06d}.npy", video)
+        saved += 1
+    return saved
+
+
 def main() -> None:
     config_path = (
         sys.argv[1]
@@ -138,6 +190,19 @@ def main() -> None:
     for dataset_name in image_cfg.datasets:
         count = prepare_dataset(dataset_name, width, height)
         print(f"{dataset_name}: saved {count} images -> {PREPARED_ROOT / dataset_name}")
+
+    video_cfg = cfg.get("video")
+    if video_cfg is not None:
+        for dataset_name in video_cfg.datasets:
+            count = prepare_video_dataset(
+                dataset_name,
+                int(video_cfg.width),
+                int(video_cfg.height),
+                int(video_cfg.num_frames),
+            )
+            print(
+                f"{dataset_name}: saved {count} videos -> {PREPARED_ROOT / dataset_name}"
+            )
 
 
 if __name__ == "__main__":

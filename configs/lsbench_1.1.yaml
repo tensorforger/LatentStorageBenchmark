@@ -1,0 +1,108 @@
+benchmark_name: lsbench_1.1
+num_samples: null
+image:
+  width: 1024
+  height: 1024
+  batch_size: 4
+  datasets:
+    - axis-v1_1k
+  vaes:
+    - no_vae
+    - name: flux_2
+      path_to_model: models/FLUX.2-klein-4B/vae
+    - name: qwen_image_2_1
+      path_to_model: models/texture-fix-vae-for-qwen-image-2.1
+      batch_size: 1
+    - name: flux_1
+      path_to_model: models/FLUX.1-schnell/vae
+    - name: sd_3_5
+      path_to_model: models/stable-diffusion-3.5-large/vae
+    - name: sdxl
+      path_to_model: models/sdxl-vae
+  latent_storages:
+    # Lossless-ish references
+    - fp32
+    - fp16
+    - bf16
+    # 8-bit
+    - fp8_e4m3
+    - int8_tensor
+    - {name: int8_minmax_square, block: 8}
+    # 4-bit, other algorithm families
+    - int4_group
+    - {name: int4_minmax_square, block: 4}
+    - int4_hadamard
+    - nvfp4
+    - nf4_dq
+    # Lloyd-Max
+    - {name: lloyd_minmax_square, bits: 2, block: 4, range_bits: 5}
+    - {name: lloyd_minmax_square, bits: 3, block: 4, range_bits: 5}
+    - {name: lloyd_minmax_square, bits: 3, block: 8, range_bits: 5}
+    - {name: lloyd_minmax_square, bits: 4, block: 8, range_bits: 6}
+    - {name: lloyd_minmax_square, bits: 4, block: 4, range_bits: 5}
+    - {name: lloyd_minmax_square, bits: 5, block: 8, range_bits: 6}
+    - {name: lloyd_minmax_square, bits: 6, block: 8, range_bits: 6}
+    - {name: lloyd_minmax_square, bits: 8, block: 8, range_bits: 6}
+    # Analytic-codebook counterpart of Lloyd-Max
+    - {name: normal_cdf_minmax_square, bits: 4, block: 4, range_bits: 5, std_scale: 2.5}
+  metrics:
+    - mse
+    - psnr
+    - ssim
+    - lpips
+    - fid
+
+video:
+  width: 256
+  height: 256
+  num_frames: 75
+  batch_size: 2
+  datasets:
+    - movirec
+  vaes:
+    - no_vae
+    - name: wan
+      path_to_model: models/Wan2.1-T2V-1.3B-Diffusers/vae
+    - name: ltx_2_5
+      path_to_model: models/LTX-2.5-Diffusers/vae
+      batch_size: 1
+    - name: minimax_h3
+      path_to_model: models/MiniMax-H3/vae
+      batch_size: 1
+  latent_storages:
+    # Lossless-ish references
+    - fp32
+    - fp16
+    - bf16
+    # 8-bit
+    - fp8_e4m3
+    - int8_tensor
+    - {name: int8_minmax_square, block: 8}
+    # 4-bit, other algorithm families
+    - int4_group
+    - {name: int4_minmax_square, block: 4}
+    - int4_hadamard
+    - nvfp4
+    - nf4_dq
+    # Lloyd-Max
+    - {name: lloyd_minmax_square, bits: 2, block: 4, range_bits: 5}
+    - {name: lloyd_minmax_square, bits: 3, block: 4, range_bits: 5}
+    - {name: lloyd_minmax_square, bits: 3, block: 8, range_bits: 5}
+    - {name: lloyd_minmax_square, bits: 4, block: 8, range_bits: 6}
+    - {name: lloyd_minmax_square, bits: 4, block: 4, range_bits: 5}
+    - {name: lloyd_minmax_square, bits: 5, block: 8, range_bits: 6}
+    - {name: lloyd_minmax_square, bits: 6, block: 8, range_bits: 6}
+    - {name: lloyd_minmax_square, bits: 8, block: 8, range_bits: 6}
+    # Lloyd-Max on spatiotemporal cubes
+    - {name: lloyd_minmax_cube, bits: 2, block: 4, range_bits: 5}
+    - {name: lloyd_minmax_cube, bits: 3, block: 4, range_bits: 5}
+    - {name: lloyd_minmax_cube, bits: 4, block: 4, range_bits: 5}
+    - {name: lloyd_minmax_cube, bits: 4, block: 8, range_bits: 6}
+    # Analytic-codebook counterpart of Lloyd-Max
+    - {name: normal_cdf_minmax_square, bits: 4, block: 4, range_bits: 5, std_scale: 2.5}
+  metrics:
+    - mse
+    - psnr
+    - ssim
+    - lpips
+    - fvd

@@ -8,9 +8,16 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 
-SIZE_METRIC = "bytes_per_image"
-EFFICIENCY_METRICS = {SIZE_METRIC, "serialize_ms_per_image", "deserialize_ms_per_image"}
 EPS = 1e-12
+
+
+def efficiency_keys(domain: str) -> tuple[str, str, str]:
+    """Per-storage result keys (size, serialize time, deserialize time) of a domain."""
+    return (
+        f"bytes_per_{domain}",
+        f"serialize_ms_per_{domain}",
+        f"deserialize_ms_per_{domain}",
+    )
 
 
 @dataclass(frozen=True)
@@ -18,12 +25,16 @@ class MetricSpec:
     higher_is_better: bool = False
     # Values beyond this are indistinguishable in practice; clipped before scoring the summary.
     floor: float | None = None
+    ceiling: float | None = None
     weight: float = 1.0
 
 
 # Metrics that are not listed use MetricSpec() (lower is better, no floor, weight 1).
 METRIC_SPECS: dict[str, MetricSpec] = {
     "mse": MetricSpec(floor=1e-6),
+    "psnr": MetricSpec(higher_is_better=True, ceiling=60.0),  # 60 dB == mse 1e-6
+    "ssim": MetricSpec(higher_is_better=True, ceiling=0.9999),
+    "lpips": MetricSpec(floor=1e-4),
     "fid": MetricSpec(),
 }
 
@@ -46,9 +57,10 @@ def make_plots(
         wide = domain_df.pivot(
             index=["vae", "storage"], columns="metric", values="value"
         )
-        if SIZE_METRIC not in wide.columns:
+        size_metric = efficiency_keys(domain)[0]
+        if size_metric not in wide.columns:
             continue
-        metrics = [m for m in wide.columns if m not in EFFICIENCY_METRICS]
+        metrics = [m for m in wide.columns if m not in efficiency_keys(domain)]
         if not metrics:
             continue
         summary = summary_score(wide[metrics], specs)
@@ -60,18 +72,20 @@ def make_plots(
             for metric in metrics:
                 spec = specs.get(metric, MetricSpec())
                 _plot_vs_size(
-                    part[SIZE_METRIC],
+                    part[size_metric],
                     part[metric],
                     group_dir / f"{domain}_{metric}_vs_size.png",
                     ylabel=_label(metric, spec.higher_is_better),
                     higher_is_better=spec.higher_is_better,
+                    domain=domain,
                 )
             _plot_vs_size(
-                part[SIZE_METRIC],
+                part[size_metric],
                 summary.loc[sel],
                 group_dir / f"{domain}_summary.png",
                 ylabel="summary score (higher is better)",
                 higher_is_better=True,
+                domain=domain,
             )
 
 
@@ -85,7 +99,7 @@ def summary_score(wide: pd.DataFrame, specs: dict[str, MetricSpec]) -> pd.Series
     scores, weights = {}, {}
     for metric in wide.columns:
         spec = specs.get(metric, MetricSpec())
-        v = wide[metric].clip(lower=max(spec.floor or 0.0, EPS))
+        v = wide[metric].clip(lower=max(spec.floor or 0.0, EPS), upper=spec.ceiling)
         t = np.log10(v) * (-1 if spec.higher_is_better else 1)  # lower t is better
         grouped = t.groupby(level="vae")
         lo, hi = grouped.transform("min"), grouped.transform("max")
@@ -120,6 +134,7 @@ def _plot_vs_size(
     path: Path,
     ylabel: str,
     higher_is_better: bool,
+    domain: str,
 ) -> None:
     fig, ax = plt.subplots()
     for i, (vae, idx) in enumerate(size.groupby(level="vae").groups.items()):
@@ -146,7 +161,7 @@ def _plot_vs_size(
 
     ax.set_xscale("log")
     ax.set_yscale("log")
-    ax.set_xlabel("bytes per image")
+    ax.set_xlabel(f"bytes per {domain}")
     ax.set_ylabel(ylabel)
     ax.legend(title="vae", fontsize=7, title_fontsize=8, markerscale=0.7)
     fig.tight_layout()

@@ -1,0 +1,5112 @@
+[
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "fp32",
+    "metric": "mse",
+    "value": 1.0800446157450899e-16
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "fp32",
+    "metric": "fid",
+    "value": 0.07488894462585449
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "fp32",
+    "metric": "bytes_per_image",
+    "value": 12582934.0
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "fp32",
+    "metric": "serialize_ms_per_image",
+    "value": 2.8514131710253423
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "fp32",
+    "metric": "deserialize_ms_per_image",
+    "value": 1.8161199569512974
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "fp16",
+    "metric": "mse",
+    "value": 3.916399663683734e-09
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "fp16",
+    "metric": "fid",
+    "value": 0.11908438056707382
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "fp16",
+    "metric": "bytes_per_image",
+    "value": 6291478.0
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "fp16",
+    "metric": "serialize_ms_per_image",
+    "value": 2.6718667799614195
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "fp16",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.8507042240307783
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "bf16",
+    "metric": "mse",
+    "value": 2.5186144836197857e-07
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "bf16",
+    "metric": "fid",
+    "value": 0.1026105135679245
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "bf16",
+    "metric": "bytes_per_image",
+    "value": 6291478.0
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "bf16",
+    "metric": "serialize_ms_per_image",
+    "value": 2.4570718159848184
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "bf16",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.7965102149973973
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "fp32",
+    "metric": "mse",
+    "value": 0.0012376180485007353
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "fp32",
+    "metric": "fid",
+    "value": 2.1119911670684814
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "fp32",
+    "metric": "bytes_per_image",
+    "value": 2097174.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "fp32",
+    "metric": "serialize_ms_per_image",
+    "value": 0.38273552301325253
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "fp32",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.24819341998227173
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "fp16",
+    "metric": "mse",
+    "value": 0.0012376196429831907
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "fp16",
+    "metric": "fid",
+    "value": 2.112711191177368
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "fp16",
+    "metric": "bytes_per_image",
+    "value": 1048598.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "fp16",
+    "metric": "serialize_ms_per_image",
+    "value": 0.3520649249694543
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "fp16",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.12108776199966087
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "bf16",
+    "metric": "mse",
+    "value": 0.0012376902640680782
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "bf16",
+    "metric": "fid",
+    "value": 2.11279034614563
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "bf16",
+    "metric": "bytes_per_image",
+    "value": 1048598.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "bf16",
+    "metric": "serialize_ms_per_image",
+    "value": 0.35220166001090547
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "bf16",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.12374077401909744
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "fp8_e4m3",
+    "metric": "mse",
+    "value": 6.469951515464346e-05
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "fp8_e4m3",
+    "metric": "fid",
+    "value": 1.7197591066360474
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "fp8_e4m3",
+    "metric": "bytes_per_image",
+    "value": 3145752.0
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "fp8_e4m3",
+    "metric": "serialize_ms_per_image",
+    "value": 0.671028685010242
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "fp8_e4m3",
+    "metric": "deserialize_ms_per_image",
+    "value": 1.8803711859800387
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "fp8_e5m2",
+    "metric": "mse",
+    "value": 0.00021309599321102724
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "fp8_e5m2",
+    "metric": "fid",
+    "value": 5.184000015258789
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "fp8_e5m2",
+    "metric": "bytes_per_image",
+    "value": 3145752.0
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "fp8_e5m2",
+    "metric": "serialize_ms_per_image",
+    "value": 0.6373792339982174
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "fp8_e5m2",
+    "metric": "deserialize_ms_per_image",
+    "value": 1.6449427910301893
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "fp8_e4m3_scaled",
+    "metric": "mse",
+    "value": 6.855663444730453e-05
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "fp8_e4m3_scaled",
+    "metric": "fid",
+    "value": 2.062546730041504
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "fp8_e4m3_scaled",
+    "metric": "bytes_per_image",
+    "value": 3145788.0
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "fp8_e4m3_scaled",
+    "metric": "serialize_ms_per_image",
+    "value": 0.698363947958569
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "fp8_e4m3_scaled",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.38359936803681194
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "mxfp8",
+    "metric": "mse",
+    "value": 6.46994121489115e-05
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "mxfp8",
+    "metric": "fid",
+    "value": 1.7203168869018555
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "mxfp8",
+    "metric": "bytes_per_image",
+    "value": 3244092.0
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "mxfp8",
+    "metric": "serialize_ms_per_image",
+    "value": 0.6747257780261862
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "mxfp8",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.43499518497264944
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int8_tensor",
+    "metric": "mse",
+    "value": 1.656648782955017e-06
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int8_tensor",
+    "metric": "fid",
+    "value": 0.13411776721477509
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int8_tensor",
+    "metric": "bytes_per_image",
+    "value": 3145786.0
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int8_tensor",
+    "metric": "serialize_ms_per_image",
+    "value": 0.5845887680006854
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int8_tensor",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.4101043140180991
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int8_channel",
+    "metric": "mse",
+    "value": 1.4717958420078503e-06
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int8_channel",
+    "metric": "fid",
+    "value": 0.15338683128356934
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int8_channel",
+    "metric": "bytes_per_image",
+    "value": 3145796.0
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int8_channel",
+    "metric": "serialize_ms_per_image",
+    "value": 0.5820037659796071
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int8_channel",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.41375402601624955
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int8_group_g64",
+    "metric": "mse",
+    "value": 6.652578421153521e-07
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int8_group_g64",
+    "metric": "fid",
+    "value": 0.09895870089530945
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int8_group_g64",
+    "metric": "bytes_per_image",
+    "value": 3244090.0
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int8_group_g64",
+    "metric": "serialize_ms_per_image",
+    "value": 0.6752775589702651
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int8_group_g64",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.4325302860161173
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int8_asym",
+    "metric": "mse",
+    "value": 5.123604737183039e-07
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int8_asym",
+    "metric": "fid",
+    "value": 0.10830792784690857
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int8_asym",
+    "metric": "bytes_per_image",
+    "value": 3145824.0
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int8_asym",
+    "metric": "serialize_ms_per_image",
+    "value": 0.6106997989882075
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int8_asym",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.42543677501089405
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int8_mse_clip",
+    "metric": "mse",
+    "value": 1.252922634648712e-06
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int8_mse_clip",
+    "metric": "fid",
+    "value": 0.1570720374584198
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int8_mse_clip",
+    "metric": "bytes_per_image",
+    "value": 3145794.0
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int8_mse_clip",
+    "metric": "serialize_ms_per_image",
+    "value": 1.882453923986759
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int8_mse_clip",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.4155875209871738
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int8_outlier_t4",
+    "metric": "mse",
+    "value": 1.4717958420078503e-06
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int8_outlier_t4",
+    "metric": "fid",
+    "value": 0.15338683128356934
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int8_outlier_t4",
+    "metric": "bytes_per_image",
+    "value": 3145824.0
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int8_outlier_t4",
+    "metric": "serialize_ms_per_image",
+    "value": 0.6459548100137908
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int8_outlier_t4",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.4204846040047414
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int8_hadamard_g64",
+    "metric": "mse",
+    "value": 6.855358900065766e-05
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int8_hadamard_g64",
+    "metric": "fid",
+    "value": 0.5752996802330017
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int8_hadamard_g64",
+    "metric": "bytes_per_image",
+    "value": 3145786.0
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int8_hadamard_g64",
+    "metric": "serialize_ms_per_image",
+    "value": 0.5695497170308954
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int8_hadamard_g64",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.43108023696549935
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int8_mulaw_mu255",
+    "metric": "mse",
+    "value": 1.4070488448851392e-05
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int8_mulaw_mu255",
+    "metric": "fid",
+    "value": 0.5518427491188049
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int8_mulaw_mu255",
+    "metric": "bytes_per_image",
+    "value": 3145786.0
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int8_mulaw_mu255",
+    "metric": "serialize_ms_per_image",
+    "value": 0.6200228070192679
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int8_mulaw_mu255",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.49175453500720323
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "nf8_g64",
+    "metric": "mse",
+    "value": 7.83990359523159e-05
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "nf8_g64",
+    "metric": "fid",
+    "value": 2.6467506885528564
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "nf8_g64",
+    "metric": "bytes_per_image",
+    "value": 3244090.0
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "nf8_g64",
+    "metric": "serialize_ms_per_image",
+    "value": 0.6628341709656524
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "nf8_g64",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.4700842200691113
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "nvfp4",
+    "metric": "mse",
+    "value": 0.0005369292056420818
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "nvfp4",
+    "metric": "fid",
+    "value": 8.098925590515137
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "nvfp4",
+    "metric": "bytes_per_image",
+    "value": 1769554.0
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "nvfp4",
+    "metric": "serialize_ms_per_image",
+    "value": 0.4928126379927562
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "nvfp4",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.28812013000424486
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "mxfp4",
+    "metric": "mse",
+    "value": 0.000837550634983927
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "mxfp4",
+    "metric": "fid",
+    "value": 14.306519508361816
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "mxfp4",
+    "metric": "bytes_per_image",
+    "value": 1671226.0
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "mxfp4",
+    "metric": "serialize_ms_per_image",
+    "value": 0.3832640220061876
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "mxfp4",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.25555277899547946
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_group_g32",
+    "metric": "mse",
+    "value": 0.00018355329295445698
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_group_g32",
+    "metric": "fid",
+    "value": 2.855787754058838
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_group_g32",
+    "metric": "bytes_per_image",
+    "value": 1769530.0
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_group_g32",
+    "metric": "serialize_ms_per_image",
+    "value": 0.36270802100989386
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_group_g32",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.24457981099840254
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_asym_group_g32",
+    "metric": "mse",
+    "value": 6.402509048348293e-05
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_asym_group_g32",
+    "metric": "fid",
+    "value": 0.8427318334579468
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_asym_group_g32",
+    "metric": "bytes_per_image",
+    "value": 1818700.0
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_asym_group_g32",
+    "metric": "serialize_ms_per_image",
+    "value": 0.47982949401193764
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_asym_group_g32",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.2602437589703186
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_mse_clip_g32",
+    "metric": "mse",
+    "value": 0.00012855838912946639
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_mse_clip_g32",
+    "metric": "fid",
+    "value": 2.6159327030181885
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_mse_clip_g32",
+    "metric": "bytes_per_image",
+    "value": 1769530.0
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_mse_clip_g32",
+    "metric": "serialize_ms_per_image",
+    "value": 1.905483288988762
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_mse_clip_g32",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.2516716470163374
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_hadamard_g32",
+    "metric": "mse",
+    "value": 0.0009529100909130648
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_hadamard_g32",
+    "metric": "fid",
+    "value": 14.390118598937988
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_hadamard_g32",
+    "metric": "bytes_per_image",
+    "value": 1769530.0
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_hadamard_g32",
+    "metric": "serialize_ms_per_image",
+    "value": 0.3819779830009793
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_hadamard_g32",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.2566730069920595
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_outlier_g32_p0.5",
+    "metric": "mse",
+    "value": 0.00017977776602492667
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_outlier_g32_p0.5",
+    "metric": "fid",
+    "value": 2.8293166160583496
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_outlier_g32_p0.5",
+    "metric": "bytes_per_image",
+    "value": 1863942.0
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_outlier_g32_p0.5",
+    "metric": "serialize_ms_per_image",
+    "value": 0.47187370294341235
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_outlier_g32_p0.5",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.26944248000290827
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "nf4_g64",
+    "metric": "mse",
+    "value": 0.0005306096720742062
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "nf4_g64",
+    "metric": "fid",
+    "value": 10.536994934082031
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "nf4_g64",
+    "metric": "bytes_per_image",
+    "value": 1671226.0
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "nf4_g64",
+    "metric": "serialize_ms_per_image",
+    "value": 0.3546055189872277
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "nf4_g64",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.25219698601722484
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "nf4_dq_g64",
+    "metric": "mse",
+    "value": 0.000530736159242224
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "nf4_dq_g64",
+    "metric": "fid",
+    "value": 10.624287605285645
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "nf4_dq_g64",
+    "metric": "bytes_per_image",
+    "value": 1622492.0
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "nf4_dq_g64",
+    "metric": "serialize_ms_per_image",
+    "value": 0.36714783603383694
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "nf4_dq_g64",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.2621799079788616
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "kmeans4_g64",
+    "metric": "mse",
+    "value": 0.00023405899381032214
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "kmeans4_g64",
+    "metric": "fid",
+    "value": 3.056786060333252
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "kmeans4_g64",
+    "metric": "bytes_per_image",
+    "value": 1671274.0
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "kmeans4_g64",
+    "metric": "serialize_ms_per_image",
+    "value": 2.5680894930010254
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "kmeans4_g64",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.25402495100934175
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "fp8_e4m3",
+    "metric": "mse",
+    "value": 0.0012515201062196866
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "fp8_e4m3",
+    "metric": "fid",
+    "value": 2.1944189071655273
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "fp8_e4m3",
+    "metric": "bytes_per_image",
+    "value": 524312.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "fp8_e4m3",
+    "metric": "serialize_ms_per_image",
+    "value": 0.149945528992248
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "fp8_e4m3",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.35270909898827085
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "fp8_e5m2",
+    "metric": "mse",
+    "value": 0.0012935854946554172
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "fp8_e5m2",
+    "metric": "fid",
+    "value": 2.436980962753296
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "fp8_e5m2",
+    "metric": "bytes_per_image",
+    "value": 524312.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "fp8_e5m2",
+    "metric": "serialize_ms_per_image",
+    "value": 0.15036777302157134
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "fp8_e5m2",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.25019160600277246
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "fp8_e4m3_scaled",
+    "metric": "mse",
+    "value": 0.00125146982431761
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "fp8_e4m3_scaled",
+    "metric": "fid",
+    "value": 2.21238112449646
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "fp8_e4m3_scaled",
+    "metric": "bytes_per_image",
+    "value": 524348.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "fp8_e4m3_scaled",
+    "metric": "serialize_ms_per_image",
+    "value": 0.17177005101621035
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "fp8_e4m3_scaled",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.08934208896607743
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "mxfp8",
+    "metric": "mse",
+    "value": 0.0012515200788911897
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "mxfp8",
+    "metric": "fid",
+    "value": 2.1954269409179688
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "mxfp8",
+    "metric": "bytes_per_image",
+    "value": 540730.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "mxfp8",
+    "metric": "serialize_ms_per_image",
+    "value": 0.174857124024129
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "mxfp8",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.09913544899245608
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int8_tensor",
+    "metric": "mse",
+    "value": 0.0012406699715647846
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int8_tensor",
+    "metric": "fid",
+    "value": 2.1669130325317383
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int8_tensor",
+    "metric": "bytes_per_image",
+    "value": 524346.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int8_tensor",
+    "metric": "serialize_ms_per_image",
+    "value": 0.16356436500063865
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int8_tensor",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.08513968802435556
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int8_channel",
+    "metric": "mse",
+    "value": 0.00123889525415143
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int8_channel",
+    "metric": "fid",
+    "value": 2.1453375816345215
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int8_channel",
+    "metric": "bytes_per_image",
+    "value": 524472.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int8_channel",
+    "metric": "serialize_ms_per_image",
+    "value": 0.15953089600952808
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int8_channel",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.08498729598795762
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int8_group_g64",
+    "metric": "mse",
+    "value": 0.0012380989649682305
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int8_group_g64",
+    "metric": "fid",
+    "value": 2.1414215564727783
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int8_group_g64",
+    "metric": "bytes_per_image",
+    "value": 540728.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int8_group_g64",
+    "metric": "serialize_ms_per_image",
+    "value": 0.16834059597022133
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int8_group_g64",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.09303967404412106
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int8_asym",
+    "metric": "mse",
+    "value": 0.001238529454014497
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int8_asym",
+    "metric": "fid",
+    "value": 2.142040252685547
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int8_asym",
+    "metric": "bytes_per_image",
+    "value": 524618.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int8_asym",
+    "metric": "serialize_ms_per_image",
+    "value": 0.1674068659922341
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int8_asym",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.08982269799525966
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int8_mse_clip",
+    "metric": "mse",
+    "value": 0.0012389608756056987
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int8_mse_clip",
+    "metric": "fid",
+    "value": 2.1510872840881348
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int8_mse_clip",
+    "metric": "bytes_per_image",
+    "value": 524472.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int8_mse_clip",
+    "metric": "serialize_ms_per_image",
+    "value": 0.34216285198999685
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int8_mse_clip",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.08097101797466166
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int8_outlier_t4",
+    "metric": "mse",
+    "value": 0.0012387697279627901
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int8_outlier_t4",
+    "metric": "fid",
+    "value": 2.144930362701416
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int8_outlier_t4",
+    "metric": "bytes_per_image",
+    "value": 524986.422
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int8_outlier_t4",
+    "metric": "serialize_ms_per_image",
+    "value": 0.2211945560084132
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int8_outlier_t4",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.09861123196969857
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int8_hadamard_g64",
+    "metric": "mse",
+    "value": 0.0012577706357405987
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int8_hadamard_g64",
+    "metric": "fid",
+    "value": 2.3152732849121094
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int8_hadamard_g64",
+    "metric": "bytes_per_image",
+    "value": 524346.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int8_hadamard_g64",
+    "metric": "serialize_ms_per_image",
+    "value": 0.17302848097097012
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int8_hadamard_g64",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.09461850600564503
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int8_mulaw_mu255",
+    "metric": "mse",
+    "value": 0.0012402661494852509
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int8_mulaw_mu255",
+    "metric": "fid",
+    "value": 2.1520729064941406
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int8_mulaw_mu255",
+    "metric": "bytes_per_image",
+    "value": 524346.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int8_mulaw_mu255",
+    "metric": "serialize_ms_per_image",
+    "value": 0.17144186704535969
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int8_mulaw_mu255",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.09454302093945444
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "nf8_g64",
+    "metric": "mse",
+    "value": 0.0012428775302541907
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "nf8_g64",
+    "metric": "fid",
+    "value": 2.1652724742889404
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "nf8_g64",
+    "metric": "bytes_per_image",
+    "value": 540730.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "nf8_g64",
+    "metric": "serialize_ms_per_image",
+    "value": 0.1750301740175928
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "nf8_g64",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.09985756300011417
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "nvfp4",
+    "metric": "mse",
+    "value": 0.0014216259201639333
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "nvfp4",
+    "metric": "fid",
+    "value": 3.221047878265381
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "nvfp4",
+    "metric": "bytes_per_image",
+    "value": 294992.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "nvfp4",
+    "metric": "serialize_ms_per_image",
+    "value": 0.17728942698886385
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "nvfp4",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.0948310970015882
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "mxfp4",
+    "metric": "mse",
+    "value": 0.0014976628263830207
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "mxfp4",
+    "metric": "fid",
+    "value": 3.597639560699463
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "mxfp4",
+    "metric": "bytes_per_image",
+    "value": 278586.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "mxfp4",
+    "metric": "serialize_ms_per_image",
+    "value": 0.15380165604437934
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "mxfp4",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.08880771602343884
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_group_g32",
+    "metric": "mse",
+    "value": 0.0013728482297738084
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_group_g32",
+    "metric": "fid",
+    "value": 3.1365699768066406
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_group_g32",
+    "metric": "bytes_per_image",
+    "value": 294970.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_group_g32",
+    "metric": "serialize_ms_per_image",
+    "value": 0.1406230029897415
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_group_g32",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.07720512503146892
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_asym_group_g32",
+    "metric": "mse",
+    "value": 0.001306480171973817
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_asym_group_g32",
+    "metric": "fid",
+    "value": 2.5671961307525635
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_asym_group_g32",
+    "metric": "bytes_per_image",
+    "value": 303180.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_asym_group_g32",
+    "metric": "serialize_ms_per_image",
+    "value": 0.1576179030125786
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_asym_group_g32",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.08637472802729462
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_mse_clip_g32",
+    "metric": "mse",
+    "value": 0.0013731411365442909
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_mse_clip_g32",
+    "metric": "fid",
+    "value": 3.008165121078491
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_mse_clip_g32",
+    "metric": "bytes_per_image",
+    "value": 294970.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_mse_clip_g32",
+    "metric": "serialize_ms_per_image",
+    "value": 0.3317847130165319
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_mse_clip_g32",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.07576758994764532
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_hadamard_g32",
+    "metric": "mse",
+    "value": 0.0015723613449954428
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_hadamard_g32",
+    "metric": "fid",
+    "value": 4.949639320373535
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_hadamard_g32",
+    "metric": "bytes_per_image",
+    "value": 294970.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_hadamard_g32",
+    "metric": "serialize_ms_per_image",
+    "value": 0.14959950099728303
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_hadamard_g32",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.08559149805660127
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_outlier_g32_p0.5",
+    "metric": "mse",
+    "value": 0.001358913374657277
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_outlier_g32_p0.5",
+    "metric": "fid",
+    "value": 3.0579428672790527
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_outlier_g32_p0.5",
+    "metric": "bytes_per_image",
+    "value": 310738.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_outlier_g32_p0.5",
+    "metric": "serialize_ms_per_image",
+    "value": 0.18466649695983506
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_outlier_g32_p0.5",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.09255501701045432
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "nf4_g64",
+    "metric": "mse",
+    "value": 0.0013957249465747737
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "nf4_g64",
+    "metric": "fid",
+    "value": 3.0354347229003906
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "nf4_g64",
+    "metric": "bytes_per_image",
+    "value": 278586.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "nf4_g64",
+    "metric": "serialize_ms_per_image",
+    "value": 0.14291388597121113
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "nf4_g64",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.08188603504095227
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "nf4_dq_g64",
+    "metric": "mse",
+    "value": 0.0013956776739214548
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "nf4_dq_g64",
+    "metric": "fid",
+    "value": 3.031127691268921
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "nf4_dq_g64",
+    "metric": "bytes_per_image",
+    "value": 270492.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "nf4_dq_g64",
+    "metric": "serialize_ms_per_image",
+    "value": 0.17006678802863462
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "nf4_dq_g64",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.09299999595532427
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "kmeans4_g64",
+    "metric": "mse",
+    "value": 0.0014227114550885744
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "kmeans4_g64",
+    "metric": "fid",
+    "value": 3.096921682357788
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "kmeans4_g64",
+    "metric": "bytes_per_image",
+    "value": 278632.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "kmeans4_g64",
+    "metric": "serialize_ms_per_image",
+    "value": 2.100940708973212
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "kmeans4_g64",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.0793804969980556
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_asym_group_g4",
+    "metric": "mse",
+    "value": 2.4643244276376207e-05
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_asym_group_g4",
+    "metric": "fid",
+    "value": 0.27527791261672974
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_asym_group_g4",
+    "metric": "bytes_per_image",
+    "value": 3539022.0
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_asym_group_g4",
+    "metric": "serialize_ms_per_image",
+    "value": 0.780781355995714
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_asym_group_g4",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.5251299109731917
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_asym_group_g16",
+    "metric": "mse",
+    "value": 4.838311154162511e-05
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_asym_group_g16",
+    "metric": "fid",
+    "value": 0.5885567665100098
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_asym_group_g16",
+    "metric": "bytes_per_image",
+    "value": 2064462.0
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_asym_group_g16",
+    "metric": "serialize_ms_per_image",
+    "value": 0.4823881889351469
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_asym_group_g16",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.2897400570291211
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_asym_group_g64",
+    "metric": "mse",
+    "value": 8.428671382716857e-05
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_asym_group_g64",
+    "metric": "fid",
+    "value": 1.2451839447021484
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_asym_group_g64",
+    "metric": "bytes_per_image",
+    "value": 1695820.0
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_asym_group_g64",
+    "metric": "serialize_ms_per_image",
+    "value": 0.3736999850225402
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_asym_group_g64",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.23537991199918906
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_asym_square_b2",
+    "metric": "mse",
+    "value": 2.3114096678909845e-05
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_asym_square_b2",
+    "metric": "fid",
+    "value": 0.263548344373703
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_asym_square_b2",
+    "metric": "bytes_per_image",
+    "value": 3539022.0
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_asym_square_b2",
+    "metric": "serialize_ms_per_image",
+    "value": 0.7632394269821816
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_asym_square_b2",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.5368938399915351
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_asym_square_b4",
+    "metric": "mse",
+    "value": 4.055621012594202e-05
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_asym_square_b4",
+    "metric": "fid",
+    "value": 0.47201716899871826
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_asym_square_b4",
+    "metric": "bytes_per_image",
+    "value": 2064462.0
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_asym_square_b4",
+    "metric": "serialize_ms_per_image",
+    "value": 0.4994854310025403
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_asym_square_b4",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.3069366540075862
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_asym_square_b8",
+    "metric": "mse",
+    "value": 5.87662527905195e-05
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_asym_square_b8",
+    "metric": "fid",
+    "value": 0.8283588886260986
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_asym_square_b8",
+    "metric": "bytes_per_image",
+    "value": 1695820.0
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_asym_square_b8",
+    "metric": "serialize_ms_per_image",
+    "value": 0.38840489099675324
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_asym_square_b8",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.2430762130097719
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_asym_group_g4",
+    "metric": "mse",
+    "value": 0.0012563067845476326
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_asym_group_g4",
+    "metric": "fid",
+    "value": 2.2378368377685547
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_asym_group_g4",
+    "metric": "bytes_per_image",
+    "value": 589900.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_asym_group_g4",
+    "metric": "serialize_ms_per_image",
+    "value": 0.24010156699296203
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_asym_group_g4",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.13495004699507263
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_asym_group_g16",
+    "metric": "mse",
+    "value": 0.0012872281144664158
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_asym_group_g16",
+    "metric": "fid",
+    "value": 2.4188549518585205
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_asym_group_g16",
+    "metric": "bytes_per_image",
+    "value": 344140.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_asym_group_g16",
+    "metric": "serialize_ms_per_image",
+    "value": 0.1751381029971526
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_asym_group_g16",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.0958985180077434
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_asym_group_g64",
+    "metric": "mse",
+    "value": 0.0013273993163311387
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_asym_group_g64",
+    "metric": "fid",
+    "value": 2.6842691898345947
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_asym_group_g64",
+    "metric": "bytes_per_image",
+    "value": 282700.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_asym_group_g64",
+    "metric": "serialize_ms_per_image",
+    "value": 0.162203315012448
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_asym_group_g64",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.087595908989897
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_asym_square_b2",
+    "metric": "mse",
+    "value": 0.001255383679701481
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_asym_square_b2",
+    "metric": "fid",
+    "value": 2.2298853397369385
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_asym_square_b2",
+    "metric": "bytes_per_image",
+    "value": 589900.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_asym_square_b2",
+    "metric": "serialize_ms_per_image",
+    "value": 0.2322208519981359
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_asym_square_b2",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.13219460603431799
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_asym_square_b4",
+    "metric": "mse",
+    "value": 0.0012840148443065118
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_asym_square_b4",
+    "metric": "fid",
+    "value": 2.384948492050171
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_asym_square_b4",
+    "metric": "bytes_per_image",
+    "value": 344140.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_asym_square_b4",
+    "metric": "serialize_ms_per_image",
+    "value": 0.1845032919991354
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_asym_square_b4",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.09913372100345441
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_asym_square_b8",
+    "metric": "mse",
+    "value": 0.0013196255408402067
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_asym_square_b8",
+    "metric": "fid",
+    "value": 2.620544195175171
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_asym_square_b8",
+    "metric": "bytes_per_image",
+    "value": 282700.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_asym_square_b8",
+    "metric": "serialize_ms_per_image",
+    "value": 0.17129895104153547
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_asym_square_b8",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.09116774297945085
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_minmax_group_g32",
+    "metric": "mse",
+    "value": 3.807556989158911e-05
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_minmax_group_g32",
+    "metric": "fid",
+    "value": 0.17033614218235016
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_minmax_group_g32",
+    "metric": "bytes_per_image",
+    "value": 1769602.0
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_minmax_group_g32",
+    "metric": "serialize_ms_per_image",
+    "value": 0.46214707196486415
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_minmax_group_g32",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.26128304802114144
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_minmax_group_g4",
+    "metric": "mse",
+    "value": 3.517074664159736e-06
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_minmax_group_g4",
+    "metric": "fid",
+    "value": 0.07075871527194977
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_minmax_group_g4",
+    "metric": "bytes_per_image",
+    "value": 3145858.0
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_minmax_group_g4",
+    "metric": "serialize_ms_per_image",
+    "value": 0.7184328839648515
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_minmax_group_g4",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.5004713420203188
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_minmax_group_g16",
+    "metric": "mse",
+    "value": 2.1415864036498532e-05
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_minmax_group_g16",
+    "metric": "fid",
+    "value": 0.10799219459295273
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_minmax_group_g16",
+    "metric": "bytes_per_image",
+    "value": 1966210.0
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_minmax_group_g16",
+    "metric": "serialize_ms_per_image",
+    "value": 0.45362208400911186
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_minmax_group_g16",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.32714491995284334
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_minmax_group_g64",
+    "metric": "mse",
+    "value": 6.112846138057649e-05
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_minmax_group_g64",
+    "metric": "fid",
+    "value": 0.37356331944465637
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_minmax_group_g64",
+    "metric": "bytes_per_image",
+    "value": 1671298.0
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_minmax_group_g64",
+    "metric": "serialize_ms_per_image",
+    "value": 0.36935182301385794
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_minmax_group_g64",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.25130663195159286
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_minmax_square_b2",
+    "metric": "mse",
+    "value": 2.7568779870534856e-06
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_minmax_square_b2",
+    "metric": "fid",
+    "value": 0.0688336119055748
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_minmax_square_b2",
+    "metric": "bytes_per_image",
+    "value": 3145858.0
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_minmax_square_b2",
+    "metric": "serialize_ms_per_image",
+    "value": 0.7285666429888806
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_minmax_square_b2",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.5066111769265262
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_minmax_square_b4",
+    "metric": "mse",
+    "value": 1.3573031773830735e-05
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_minmax_square_b4",
+    "metric": "fid",
+    "value": 0.09492629021406174
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_minmax_square_b4",
+    "metric": "bytes_per_image",
+    "value": 1966210.0
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_minmax_square_b4",
+    "metric": "serialize_ms_per_image",
+    "value": 0.46349987394933123
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_minmax_square_b4",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.32416561007266864
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_minmax_square_b8",
+    "metric": "mse",
+    "value": 3.184868263815588e-05
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_minmax_square_b8",
+    "metric": "fid",
+    "value": 0.17332373559474945
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_minmax_square_b8",
+    "metric": "bytes_per_image",
+    "value": 1671298.0
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_minmax_square_b8",
+    "metric": "serialize_ms_per_image",
+    "value": 0.386592568080232
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int4_minmax_square_b8",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.2620929799377336
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_minmax_group_g32",
+    "metric": "mse",
+    "value": 0.0013047639885335229
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_minmax_group_g32",
+    "metric": "fid",
+    "value": 2.5525834560394287
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_minmax_group_g32",
+    "metric": "bytes_per_image",
+    "value": 295276.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_minmax_group_g32",
+    "metric": "serialize_ms_per_image",
+    "value": 0.21153157296066638
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_minmax_group_g32",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.10670187901996542
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_minmax_group_g4",
+    "metric": "mse",
+    "value": 0.0012543111364357172
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_minmax_group_g4",
+    "metric": "fid",
+    "value": 2.269934892654419
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_minmax_group_g4",
+    "metric": "bytes_per_image",
+    "value": 524652.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_minmax_group_g4",
+    "metric": "serialize_ms_per_image",
+    "value": 0.23523599802865647
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_minmax_group_g4",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.13576517102774233
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_minmax_group_g16",
+    "metric": "mse",
+    "value": 0.0012847455013543366
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_minmax_group_g16",
+    "metric": "fid",
+    "value": 2.423593521118164
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_minmax_group_g16",
+    "metric": "bytes_per_image",
+    "value": 328044.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_minmax_group_g16",
+    "metric": "serialize_ms_per_image",
+    "value": 0.19440793104149634
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_minmax_group_g16",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.10512686307629338
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_minmax_group_g64",
+    "metric": "mse",
+    "value": 0.0013267982121906244
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_minmax_group_g64",
+    "metric": "fid",
+    "value": 2.707340955734253
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_minmax_group_g64",
+    "metric": "bytes_per_image",
+    "value": 278892.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_minmax_group_g64",
+    "metric": "serialize_ms_per_image",
+    "value": 0.183385848045873
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_minmax_group_g64",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.09818510497279931
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_minmax_square_b2",
+    "metric": "mse",
+    "value": 0.0012534682077239268
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_minmax_square_b2",
+    "metric": "fid",
+    "value": 2.249805450439453
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_minmax_square_b2",
+    "metric": "bytes_per_image",
+    "value": 524652.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_minmax_square_b2",
+    "metric": "serialize_ms_per_image",
+    "value": 0.23976766005216632
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_minmax_square_b2",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.13630837898381287
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_minmax_square_b4",
+    "metric": "mse",
+    "value": 0.0012817967418232
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_minmax_square_b4",
+    "metric": "fid",
+    "value": 2.421525239944458
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_minmax_square_b4",
+    "metric": "bytes_per_image",
+    "value": 328044.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_minmax_square_b4",
+    "metric": "serialize_ms_per_image",
+    "value": 0.20372209599008784
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_minmax_square_b4",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.10899615999369416
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_minmax_square_b8",
+    "metric": "mse",
+    "value": 0.0013191905205021612
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_minmax_square_b8",
+    "metric": "fid",
+    "value": 2.6348063945770264
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_minmax_square_b8",
+    "metric": "bytes_per_image",
+    "value": 278892.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_minmax_square_b8",
+    "metric": "serialize_ms_per_image",
+    "value": 0.19353760196827352
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int4_minmax_square_b8",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.10240789304225473
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int2_minmax_square_b2",
+    "metric": "mse",
+    "value": 5.505067796912044e-05
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int2_minmax_square_b2",
+    "metric": "fid",
+    "value": 0.12626086175441742
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int2_minmax_square_b2",
+    "metric": "bytes_per_image",
+    "value": 2359426.0
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int2_minmax_square_b2",
+    "metric": "serialize_ms_per_image",
+    "value": 0.7039569030021084
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int2_minmax_square_b2",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.5000135879745358
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int2_minmax_square_b4",
+    "metric": "mse",
+    "value": 0.0003171113060598145
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int2_minmax_square_b4",
+    "metric": "fid",
+    "value": 0.5281816124916077
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int2_minmax_square_b4",
+    "metric": "bytes_per_image",
+    "value": 1179778.0
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int2_minmax_square_b4",
+    "metric": "serialize_ms_per_image",
+    "value": 0.5546703809450264
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int2_minmax_square_b4",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.33275491801759927
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int2_minmax_square_b8",
+    "metric": "mse",
+    "value": 0.000757903382560471
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int2_minmax_square_b8",
+    "metric": "fid",
+    "value": 2.140596866607666
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int2_minmax_square_b8",
+    "metric": "bytes_per_image",
+    "value": 884866.0
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int2_minmax_square_b8",
+    "metric": "serialize_ms_per_image",
+    "value": 0.3763413400083664
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int2_minmax_square_b8",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.27363466896349564
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int6_minmax_square_b2",
+    "metric": "mse",
+    "value": 2.0717804130754302e-07
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int6_minmax_square_b2",
+    "metric": "fid",
+    "value": 0.06570956856012344
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int6_minmax_square_b2",
+    "metric": "bytes_per_image",
+    "value": 3932290.0
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int6_minmax_square_b2",
+    "metric": "serialize_ms_per_image",
+    "value": 1.3411933809693437
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int6_minmax_square_b2",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.9719703420487349
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int6_minmax_square_b4",
+    "metric": "mse",
+    "value": 8.168404492892023e-07
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int6_minmax_square_b4",
+    "metric": "fid",
+    "value": 0.07943713665008545
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int6_minmax_square_b4",
+    "metric": "bytes_per_image",
+    "value": 2752642.0
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int6_minmax_square_b4",
+    "metric": "serialize_ms_per_image",
+    "value": 1.0960847039095825
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int6_minmax_square_b4",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.7268103860988049
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int6_minmax_square_b8",
+    "metric": "mse",
+    "value": 1.8211883490835134e-06
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int6_minmax_square_b8",
+    "metric": "fid",
+    "value": 0.12284928560256958
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int6_minmax_square_b8",
+    "metric": "bytes_per_image",
+    "value": 2457730.0
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int6_minmax_square_b8",
+    "metric": "serialize_ms_per_image",
+    "value": 0.9275453850495978
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int6_minmax_square_b8",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.6876326910714852
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int8_minmax_square_b2",
+    "metric": "mse",
+    "value": 1.2327526331290528e-08
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int8_minmax_square_b2",
+    "metric": "fid",
+    "value": 0.0652301087975502
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int8_minmax_square_b2",
+    "metric": "bytes_per_image",
+    "value": 4718724.0
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int8_minmax_square_b2",
+    "metric": "serialize_ms_per_image",
+    "value": 1.1481045579348574
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int8_minmax_square_b2",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.7043959070215351
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int8_minmax_square_b4",
+    "metric": "mse",
+    "value": 4.951320504531509e-08
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int8_minmax_square_b4",
+    "metric": "fid",
+    "value": 0.07971197366714478
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int8_minmax_square_b4",
+    "metric": "bytes_per_image",
+    "value": 3539076.0
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int8_minmax_square_b4",
+    "metric": "serialize_ms_per_image",
+    "value": 0.8143577819719212
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int8_minmax_square_b4",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.5619510710748727
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int8_minmax_square_b8",
+    "metric": "mse",
+    "value": 1.1007973220955591e-07
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int8_minmax_square_b8",
+    "metric": "fid",
+    "value": 0.11951345205307007
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int8_minmax_square_b8",
+    "metric": "bytes_per_image",
+    "value": 3244162.0
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int8_minmax_square_b8",
+    "metric": "serialize_ms_per_image",
+    "value": 0.6847148259985261
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "int8_minmax_square_b8",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.49554054501641076
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int2_minmax_square_b2",
+    "metric": "mse",
+    "value": 0.0014770185532979668
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int2_minmax_square_b2",
+    "metric": "fid",
+    "value": 3.6901440620422363
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int2_minmax_square_b2",
+    "metric": "bytes_per_image",
+    "value": 393580.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int2_minmax_square_b2",
+    "metric": "serialize_ms_per_image",
+    "value": 0.271429738990264
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int2_minmax_square_b2",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.1346912761000567
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int2_minmax_square_b4",
+    "metric": "mse",
+    "value": 0.0024098672801628708
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int2_minmax_square_b4",
+    "metric": "fid",
+    "value": 9.924639701843262
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int2_minmax_square_b4",
+    "metric": "bytes_per_image",
+    "value": 196970.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int2_minmax_square_b4",
+    "metric": "serialize_ms_per_image",
+    "value": 0.2019937170553021
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int2_minmax_square_b4",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.10533725196728483
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int2_minmax_square_b8",
+    "metric": "mse",
+    "value": 0.0035494922541547567
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int2_minmax_square_b8",
+    "metric": "fid",
+    "value": 19.032804489135742
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int2_minmax_square_b8",
+    "metric": "bytes_per_image",
+    "value": 147818.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int2_minmax_square_b8",
+    "metric": "serialize_ms_per_image",
+    "value": 0.18882062096963637
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int2_minmax_square_b8",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.09048882406932535
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int6_minmax_square_b2",
+    "metric": "mse",
+    "value": 0.0012386446566670201
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int6_minmax_square_b2",
+    "metric": "fid",
+    "value": 2.123706817626953
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int6_minmax_square_b2",
+    "metric": "bytes_per_image",
+    "value": 655724.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int6_minmax_square_b2",
+    "metric": "serialize_ms_per_image",
+    "value": 0.29446115290920716
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int6_minmax_square_b2",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.1733639280355419
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int6_minmax_square_b4",
+    "metric": "mse",
+    "value": 0.0012406538204522803
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int6_minmax_square_b4",
+    "metric": "fid",
+    "value": 2.1367454528808594
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int6_minmax_square_b4",
+    "metric": "bytes_per_image",
+    "value": 459116.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int6_minmax_square_b4",
+    "metric": "serialize_ms_per_image",
+    "value": 0.25560563398175873
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int6_minmax_square_b4",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.14444713204284199
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int6_minmax_square_b8",
+    "metric": "mse",
+    "value": 0.0012425887870485895
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int6_minmax_square_b8",
+    "metric": "fid",
+    "value": 2.150977373123169
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int6_minmax_square_b8",
+    "metric": "bytes_per_image",
+    "value": 409964.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int6_minmax_square_b8",
+    "metric": "serialize_ms_per_image",
+    "value": 0.244711956998799
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int6_minmax_square_b8",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.1359164509922266
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int8_minmax_square_b2",
+    "metric": "mse",
+    "value": 0.0012374679525673856
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int8_minmax_square_b2",
+    "metric": "fid",
+    "value": 2.110393524169922
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int8_minmax_square_b2",
+    "metric": "bytes_per_image",
+    "value": 786796.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int8_minmax_square_b2",
+    "metric": "serialize_ms_per_image",
+    "value": 0.2688513779794448
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int8_minmax_square_b2",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.14889346602285514
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int8_minmax_square_b4",
+    "metric": "mse",
+    "value": 0.0012375738669070414
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int8_minmax_square_b4",
+    "metric": "fid",
+    "value": 2.1123194694519043
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int8_minmax_square_b4",
+    "metric": "bytes_per_image",
+    "value": 590188.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int8_minmax_square_b4",
+    "metric": "serialize_ms_per_image",
+    "value": 0.2277741370271542
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int8_minmax_square_b4",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.12505208697984926
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int8_minmax_square_b8",
+    "metric": "mse",
+    "value": 0.0012377067888446618
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int8_minmax_square_b8",
+    "metric": "fid",
+    "value": 2.1116340160369873
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int8_minmax_square_b8",
+    "metric": "bytes_per_image",
+    "value": 541036.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int8_minmax_square_b8",
+    "metric": "serialize_ms_per_image",
+    "value": 0.21983830699900864
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "int8_minmax_square_b8",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.11737453197565628
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c2_b4_r5",
+    "metric": "mse",
+    "value": 0.0002458965895930305
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c2_b4_r5",
+    "metric": "fid",
+    "value": 0.5657162070274353
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c2_b4_r5",
+    "metric": "bytes_per_image",
+    "value": 1032346.0
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c2_b4_r5",
+    "metric": "serialize_ms_per_image",
+    "value": 3.900619401021686
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c2_b4_r5",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.36638760600908427
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c3_b4_r5",
+    "metric": "mse",
+    "value": 6.0163476788147815e-05
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c3_b4_r5",
+    "metric": "fid",
+    "value": 0.17277804017066956
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c3_b4_r5",
+    "metric": "bytes_per_image",
+    "value": 1425570.0
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c3_b4_r5",
+    "metric": "serialize_ms_per_image",
+    "value": 3.1557576429258916
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c3_b4_r5",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.45189430403115693
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c3_b8_r6",
+    "metric": "mse",
+    "value": 0.00011503381514194188
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c3_b8_r6",
+    "metric": "fid",
+    "value": 0.3122749328613281
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c3_b8_r6",
+    "metric": "bytes_per_image",
+    "value": 1253538.0
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c3_b8_r6",
+    "metric": "serialize_ms_per_image",
+    "value": 2.9839791029153275
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c3_b8_r6",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.40692108594521414
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c4_b4_r5",
+    "metric": "mse",
+    "value": 1.53417914370948e-05
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c4_b4_r5",
+    "metric": "fid",
+    "value": 0.1482866406440735
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c4_b4_r5",
+    "metric": "bytes_per_image",
+    "value": 1818802.0
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c4_b4_r5",
+    "metric": "serialize_ms_per_image",
+    "value": 2.5002615930134198
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c4_b4_r5",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.5442779020158923
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c4_b8_r6",
+    "metric": "mse",
+    "value": 2.91228640544432e-05
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c4_b8_r6",
+    "metric": "fid",
+    "value": 0.15911614894866943
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c4_b8_r6",
+    "metric": "bytes_per_image",
+    "value": 1646770.0
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c4_b8_r6",
+    "metric": "serialize_ms_per_image",
+    "value": 2.4923204919759883
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c4_b8_r6",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.49806005900609307
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c5_b4_r5",
+    "metric": "mse",
+    "value": 3.868650743015678e-06
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c5_b4_r5",
+    "metric": "fid",
+    "value": 0.12635788321495056
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c5_b4_r5",
+    "metric": "bytes_per_image",
+    "value": 2212050.0
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c5_b4_r5",
+    "metric": "serialize_ms_per_image",
+    "value": 2.480720521962212
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c5_b4_r5",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.6547141130358796
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c5_b8_r6",
+    "metric": "mse",
+    "value": 7.3933457583734706e-06
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c5_b8_r6",
+    "metric": "fid",
+    "value": 0.1242818534374237
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c5_b8_r6",
+    "metric": "bytes_per_image",
+    "value": 2040018.0
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c5_b8_r6",
+    "metric": "serialize_ms_per_image",
+    "value": 2.401961422037857
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c5_b8_r6",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.6116707120236242
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c6_b8_r6",
+    "metric": "mse",
+    "value": 1.875346456472471e-06
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c6_b8_r6",
+    "metric": "fid",
+    "value": 0.1145017072558403
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c6_b8_r6",
+    "metric": "bytes_per_image",
+    "value": 2433298.0
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c6_b8_r6",
+    "metric": "serialize_ms_per_image",
+    "value": 2.737431768939132
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c6_b8_r6",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.7172447890479816
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c7_b8_r6",
+    "metric": "mse",
+    "value": 4.697494340746289e-07
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c7_b8_r6",
+    "metric": "fid",
+    "value": 0.11615672707557678
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c7_b8_r6",
+    "metric": "bytes_per_image",
+    "value": 2826644.0
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c7_b8_r6",
+    "metric": "serialize_ms_per_image",
+    "value": 2.4800702400461887
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c7_b8_r6",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.8368038119733683
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c8_b8_r6",
+    "metric": "mse",
+    "value": 1.140518464879392e-07
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c8_b8_r6",
+    "metric": "fid",
+    "value": 0.12476520985364914
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c8_b8_r6",
+    "metric": "bytes_per_image",
+    "value": 3220116.0
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c8_b8_r6",
+    "metric": "serialize_ms_per_image",
+    "value": 2.4142285470297793
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c8_b8_r6",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.530759468972974
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c2_b4_r5",
+    "metric": "mse",
+    "value": 0.0020425554574467243
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c2_b4_r5",
+    "metric": "fid",
+    "value": 7.221277236938477
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c2_b4_r5",
+    "metric": "bytes_per_image",
+    "value": 172418.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c2_b4_r5",
+    "metric": "serialize_ms_per_image",
+    "value": 2.995459688034316
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c2_b4_r5",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.11908606296492508
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c3_b4_r5",
+    "metric": "mse",
+    "value": 0.0014155659226817079
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c3_b4_r5",
+    "metric": "fid",
+    "value": 3.205007314682007
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c3_b4_r5",
+    "metric": "bytes_per_image",
+    "value": 237962.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c3_b4_r5",
+    "metric": "serialize_ms_per_image",
+    "value": 2.1288142429402797
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c3_b4_r5",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.12908987806440564
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c3_b8_r6",
+    "metric": "mse",
+    "value": 0.001531264059478417
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c3_b8_r6",
+    "metric": "fid",
+    "value": 3.889110565185547
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c3_b8_r6",
+    "metric": "bytes_per_image",
+    "value": 209290.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c3_b8_r6",
+    "metric": "serialize_ms_per_image",
+    "value": 2.371341995036346
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c3_b8_r6",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.11841549703240162
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c4_b4_r5",
+    "metric": "mse",
+    "value": 0.0012827777285128832
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c4_b4_r5",
+    "metric": "fid",
+    "value": 2.3817365169525146
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c4_b4_r5",
+    "metric": "bytes_per_image",
+    "value": 303516.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c4_b4_r5",
+    "metric": "serialize_ms_per_image",
+    "value": 1.6239793120039394
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c4_b4_r5",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.13569720595842227
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c4_b8_r6",
+    "metric": "mse",
+    "value": 0.0013080882155045402
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c4_b8_r6",
+    "metric": "fid",
+    "value": 2.5150866508483887
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c4_b8_r6",
+    "metric": "bytes_per_image",
+    "value": 274844.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c4_b8_r6",
+    "metric": "serialize_ms_per_image",
+    "value": 1.7737394840005436
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c4_b8_r6",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.1290840050278348
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c5_b4_r5",
+    "metric": "mse",
+    "value": 0.0012488097438181284
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c5_b4_r5",
+    "metric": "fid",
+    "value": 2.171079158782959
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c5_b4_r5",
+    "metric": "bytes_per_image",
+    "value": 369084.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c5_b4_r5",
+    "metric": "serialize_ms_per_image",
+    "value": 1.47094179000851
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c5_b4_r5",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.13884389393933816
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c5_b8_r6",
+    "metric": "mse",
+    "value": 0.001256112091767136
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c5_b8_r6",
+    "metric": "fid",
+    "value": 2.223778247833252
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c5_b8_r6",
+    "metric": "bytes_per_image",
+    "value": 340412.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c5_b8_r6",
+    "metric": "serialize_ms_per_image",
+    "value": 1.5072952390255523
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c5_b8_r6",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.13347356195299653
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c6_b8_r6",
+    "metric": "mse",
+    "value": 0.0012421258601243608
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c6_b8_r6",
+    "metric": "fid",
+    "value": 2.132047653198242
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c6_b8_r6",
+    "metric": "bytes_per_image",
+    "value": 406012.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c6_b8_r6",
+    "metric": "serialize_ms_per_image",
+    "value": 1.645787899971765
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c6_b8_r6",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.14129404500272358
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c7_b8_r6",
+    "metric": "mse",
+    "value": 0.0012385462666279637
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c7_b8_r6",
+    "metric": "fid",
+    "value": 2.1096959114074707
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c7_b8_r6",
+    "metric": "bytes_per_image",
+    "value": 471676.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c7_b8_r6",
+    "metric": "serialize_ms_per_image",
+    "value": 1.3418197909632
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c7_b8_r6",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.15427476196055068
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c8_b8_r6",
+    "metric": "mse",
+    "value": 0.0012376636627595872
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c8_b8_r6",
+    "metric": "fid",
+    "value": 2.1025280952453613
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c8_b8_r6",
+    "metric": "bytes_per_image",
+    "value": 537468.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c8_b8_r6",
+    "metric": "serialize_ms_per_image",
+    "value": 1.4257975890577654
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c8_b8_r6",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.14538859199092258
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c2_b4_r5_pc",
+    "metric": "mse",
+    "value": 0.00024483829122618774
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c2_b4_r5_pc",
+    "metric": "fid",
+    "value": 0.5550345182418823
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c2_b4_r5_pc",
+    "metric": "bytes_per_image",
+    "value": 1032362.0
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c2_b4_r5_pc",
+    "metric": "serialize_ms_per_image",
+    "value": 10.565387993032346
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c2_b4_r5_pc",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.3558605469588656
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c3_b4_r5_pc",
+    "metric": "mse",
+    "value": 5.9869610944588206e-05
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c3_b4_r5_pc",
+    "metric": "fid",
+    "value": 0.17112495005130768
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c3_b4_r5_pc",
+    "metric": "bytes_per_image",
+    "value": 1425602.0
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c3_b4_r5_pc",
+    "metric": "serialize_ms_per_image",
+    "value": 7.914653069965425
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c3_b4_r5_pc",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.4435183630157553
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c3_b8_r6_pc",
+    "metric": "mse",
+    "value": 0.00011409816522791516
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c3_b8_r6_pc",
+    "metric": "fid",
+    "value": 0.3080326020717621
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c3_b8_r6_pc",
+    "metric": "bytes_per_image",
+    "value": 1253570.0
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c3_b8_r6_pc",
+    "metric": "serialize_ms_per_image",
+    "value": 8.542918734001432
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c3_b8_r6_pc",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.3956032660025812
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c4_b4_r5_pc",
+    "metric": "mse",
+    "value": 1.5252643949679623e-05
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c4_b4_r5_pc",
+    "metric": "fid",
+    "value": 0.15009616315364838
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c4_b4_r5_pc",
+    "metric": "bytes_per_image",
+    "value": 1818866.0
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c4_b4_r5_pc",
+    "metric": "serialize_ms_per_image",
+    "value": 6.231482346003759
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c4_b4_r5_pc",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.538246452993917
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c4_b8_r6_pc",
+    "metric": "mse",
+    "value": 2.8923025094627518e-05
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c4_b8_r6_pc",
+    "metric": "fid",
+    "value": 0.15853440761566162
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c4_b8_r6_pc",
+    "metric": "bytes_per_image",
+    "value": 1646834.0
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c4_b8_r6_pc",
+    "metric": "serialize_ms_per_image",
+    "value": 6.622404905996518
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c4_b8_r6_pc",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.49078721397017944
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c5_b4_r5_pc",
+    "metric": "mse",
+    "value": 3.843839230285084e-06
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c5_b4_r5_pc",
+    "metric": "fid",
+    "value": 0.1305886209011078
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c5_b4_r5_pc",
+    "metric": "bytes_per_image",
+    "value": 2212178.0
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c5_b4_r5_pc",
+    "metric": "serialize_ms_per_image",
+    "value": 5.753688989021612
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c5_b4_r5_pc",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.6710082279605558
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c5_b8_r6_pc",
+    "metric": "mse",
+    "value": 7.344239716530865e-06
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c5_b8_r6_pc",
+    "metric": "fid",
+    "value": 0.12388551980257034
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c5_b8_r6_pc",
+    "metric": "bytes_per_image",
+    "value": 2040146.0
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c5_b8_r6_pc",
+    "metric": "serialize_ms_per_image",
+    "value": 5.942470704983862
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c5_b8_r6_pc",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.6067010520127951
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c6_b8_r6_pc",
+    "metric": "mse",
+    "value": 1.864172435148248e-06
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c6_b8_r6_pc",
+    "metric": "fid",
+    "value": 0.11631185561418533
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c6_b8_r6_pc",
+    "metric": "bytes_per_image",
+    "value": 2433554.0
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c6_b8_r6_pc",
+    "metric": "serialize_ms_per_image",
+    "value": 6.554698364991054
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c6_b8_r6_pc",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.7367243460030295
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c7_b8_r6_pc",
+    "metric": "mse",
+    "value": 4.661090611079999e-07
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c7_b8_r6_pc",
+    "metric": "fid",
+    "value": 0.11675317585468292
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c7_b8_r6_pc",
+    "metric": "bytes_per_image",
+    "value": 2827156.0
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c7_b8_r6_pc",
+    "metric": "serialize_ms_per_image",
+    "value": 5.510529380000662
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c7_b8_r6_pc",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.8194439060025616
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c8_b8_r6_pc",
+    "metric": "mse",
+    "value": 1.1234344739108338e-07
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c8_b8_r6_pc",
+    "metric": "fid",
+    "value": 0.12210957705974579
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c8_b8_r6_pc",
+    "metric": "bytes_per_image",
+    "value": 3221140.0
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c8_b8_r6_pc",
+    "metric": "serialize_ms_per_image",
+    "value": 5.191964072997507
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "lloyd_minmax_square_c8_b8_r6_pc",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.553940440997394
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "normal_cdf_minmax_square_c4_b4_r5",
+    "metric": "mse",
+    "value": 0.0004480533344194555
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "normal_cdf_minmax_square_c4_b4_r5",
+    "metric": "fid",
+    "value": 2.9110617637634277
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "normal_cdf_minmax_square_c4_b4_r5",
+    "metric": "bytes_per_image",
+    "value": 1818808.0
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "normal_cdf_minmax_square_c4_b4_r5",
+    "metric": "serialize_ms_per_image",
+    "value": 0.6993003120005596
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "normal_cdf_minmax_square_c4_b4_r5",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.544945160021598
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "normal_cdf_minmax_square_c3_b4_r5_s2.5",
+    "metric": "mse",
+    "value": 9.790905410773121e-05
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "normal_cdf_minmax_square_c3_b4_r5_s2.5",
+    "metric": "fid",
+    "value": 0.30535459518432617
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "normal_cdf_minmax_square_c3_b4_r5_s2.5",
+    "metric": "bytes_per_image",
+    "value": 1425592.0
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "normal_cdf_minmax_square_c3_b4_r5_s2.5",
+    "metric": "serialize_ms_per_image",
+    "value": 0.576381676037272
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "normal_cdf_minmax_square_c3_b4_r5_s2.5",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.44703901198954554
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "normal_cdf_minmax_square_c4_b4_r5_s2.5",
+    "metric": "mse",
+    "value": 2.4730686765906285e-05
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "normal_cdf_minmax_square_c4_b4_r5_s2.5",
+    "metric": "fid",
+    "value": 0.1721739023923874
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "normal_cdf_minmax_square_c4_b4_r5_s2.5",
+    "metric": "bytes_per_image",
+    "value": 1818808.0
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "normal_cdf_minmax_square_c4_b4_r5_s2.5",
+    "metric": "serialize_ms_per_image",
+    "value": 0.6752167509985156
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "normal_cdf_minmax_square_c4_b4_r5_s2.5",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.5350022010279645
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "normal_cdf_minmax_square_c4_b8_r6_s2.5",
+    "metric": "mse",
+    "value": 4.3854062831087505e-05
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "normal_cdf_minmax_square_c4_b8_r6_s2.5",
+    "metric": "fid",
+    "value": 0.27228590846061707
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "normal_cdf_minmax_square_c4_b8_r6_s2.5",
+    "metric": "bytes_per_image",
+    "value": 1646776.0
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "normal_cdf_minmax_square_c4_b8_r6_s2.5",
+    "metric": "serialize_ms_per_image",
+    "value": 0.6215221809798095
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "normal_cdf_minmax_square_c4_b8_r6_s2.5",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.4883768230356509
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "normal_cdf_minmax_square_c5_b4_r5_s2.5",
+    "metric": "mse",
+    "value": 6.53760549926119e-06
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "normal_cdf_minmax_square_c5_b4_r5_s2.5",
+    "metric": "fid",
+    "value": 0.12405732274055481
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "normal_cdf_minmax_square_c5_b4_r5_s2.5",
+    "metric": "bytes_per_image",
+    "value": 2212024.0
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "normal_cdf_minmax_square_c5_b4_r5_s2.5",
+    "metric": "serialize_ms_per_image",
+    "value": 0.8144435560170677
+  },
+  {
+    "domain": "image",
+    "vae": "no_vae",
+    "storage": "normal_cdf_minmax_square_c5_b4_r5_s2.5",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.6616635379941727
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c2_b4_r5_pc",
+    "metric": "mse",
+    "value": 0.002034829518815968
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c2_b4_r5_pc",
+    "metric": "fid",
+    "value": 7.186337471008301
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c2_b4_r5_pc",
+    "metric": "bytes_per_image",
+    "value": 172668.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c2_b4_r5_pc",
+    "metric": "serialize_ms_per_image",
+    "value": 27.369376013986766
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c2_b4_r5_pc",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.11498157901587547
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c3_b4_r5_pc",
+    "metric": "mse",
+    "value": 0.001412639589922037
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c3_b4_r5_pc",
+    "metric": "fid",
+    "value": 3.132295846939087
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c3_b4_r5_pc",
+    "metric": "bytes_per_image",
+    "value": 238460.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c3_b4_r5_pc",
+    "metric": "serialize_ms_per_image",
+    "value": 27.38818989598076
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c3_b4_r5_pc",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.12310507601796417
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c3_b8_r6_pc",
+    "metric": "mse",
+    "value": 0.0015278447633027099
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c3_b8_r6_pc",
+    "metric": "fid",
+    "value": 3.8659098148345947
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c3_b8_r6_pc",
+    "metric": "bytes_per_image",
+    "value": 209786.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c3_b8_r6_pc",
+    "metric": "serialize_ms_per_image",
+    "value": 27.44265506895681
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c3_b8_r6_pc",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.11759703604548122
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c4_b4_r5_pc",
+    "metric": "mse",
+    "value": 0.0012820837760227732
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c4_b4_r5_pc",
+    "metric": "fid",
+    "value": 2.383739948272705
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c4_b4_r5_pc",
+    "metric": "bytes_per_image",
+    "value": 304508.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c4_b4_r5_pc",
+    "metric": "serialize_ms_per_image",
+    "value": 27.41170647402396
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c4_b4_r5_pc",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.13163109597735456
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c4_b8_r6_pc",
+    "metric": "mse",
+    "value": 0.0013078158391581383
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c4_b8_r6_pc",
+    "metric": "fid",
+    "value": 2.5166900157928467
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c4_b8_r6_pc",
+    "metric": "bytes_per_image",
+    "value": 275836.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c4_b8_r6_pc",
+    "metric": "serialize_ms_per_image",
+    "value": 27.39947849901364
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c4_b8_r6_pc",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.12641771998096374
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c5_b4_r5_pc",
+    "metric": "mse",
+    "value": 0.0012483076802745927
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c5_b4_r5_pc",
+    "metric": "fid",
+    "value": 2.1797032356262207
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c5_b4_r5_pc",
+    "metric": "bytes_per_image",
+    "value": 371068.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c5_b4_r5_pc",
+    "metric": "serialize_ms_per_image",
+    "value": 27.424719583006663
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c5_b4_r5_pc",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.14112624900008086
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c5_b8_r6_pc",
+    "metric": "mse",
+    "value": 0.0012557129091583191
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c5_b8_r6_pc",
+    "metric": "fid",
+    "value": 2.2326700687408447
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c5_b8_r6_pc",
+    "metric": "bytes_per_image",
+    "value": 342396.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c5_b8_r6_pc",
+    "metric": "serialize_ms_per_image",
+    "value": 27.425370914006635
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c5_b8_r6_pc",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.13283877701542224
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c6_b8_r6_pc",
+    "metric": "mse",
+    "value": 0.001241621696855873
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c6_b8_r6_pc",
+    "metric": "fid",
+    "value": 2.140839099884033
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c6_b8_r6_pc",
+    "metric": "bytes_per_image",
+    "value": 409980.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c6_b8_r6_pc",
+    "metric": "serialize_ms_per_image",
+    "value": 27.51050564700199
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c6_b8_r6_pc",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.14400861299873213
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c7_b8_r6_pc",
+    "metric": "mse",
+    "value": 0.0012381485741352664
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c7_b8_r6_pc",
+    "metric": "fid",
+    "value": 2.125694513320923
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c7_b8_r6_pc",
+    "metric": "bytes_per_image",
+    "value": 479614.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c7_b8_r6_pc",
+    "metric": "serialize_ms_per_image",
+    "value": 27.53855049698177
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c7_b8_r6_pc",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.1552590909814171
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c8_b8_r6_pc",
+    "metric": "mse",
+    "value": 0.0012373332032002509
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c8_b8_r6_pc",
+    "metric": "fid",
+    "value": 2.116818428039551
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c8_b8_r6_pc",
+    "metric": "bytes_per_image",
+    "value": 553342.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c8_b8_r6_pc",
+    "metric": "serialize_ms_per_image",
+    "value": 27.393769039950712
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "lloyd_minmax_square_c8_b8_r6_pc",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.15359258102762396
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "normal_cdf_minmax_square_c4_b4_r5",
+    "metric": "mse",
+    "value": 0.009294595267623664
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "normal_cdf_minmax_square_c4_b4_r5",
+    "metric": "fid",
+    "value": 22.583913803100586
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "normal_cdf_minmax_square_c4_b4_r5",
+    "metric": "bytes_per_image",
+    "value": 303756.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "normal_cdf_minmax_square_c4_b4_r5",
+    "metric": "serialize_ms_per_image",
+    "value": 0.24897279598008026
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "normal_cdf_minmax_square_c4_b4_r5",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.1378967690106947
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "normal_cdf_minmax_square_c3_b4_r5_s2.5",
+    "metric": "mse",
+    "value": 0.001553878159611486
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "normal_cdf_minmax_square_c3_b4_r5_s2.5",
+    "metric": "fid",
+    "value": 4.270532131195068
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "normal_cdf_minmax_square_c3_b4_r5_s2.5",
+    "metric": "bytes_per_image",
+    "value": 238218.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "normal_cdf_minmax_square_c3_b4_r5_s2.5",
+    "metric": "serialize_ms_per_image",
+    "value": 0.23274273799688672
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "normal_cdf_minmax_square_c3_b4_r5_s2.5",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.12705852698127273
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "normal_cdf_minmax_square_c4_b4_r5_s2.5",
+    "metric": "mse",
+    "value": 0.0013041451714525464
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "normal_cdf_minmax_square_c4_b4_r5_s2.5",
+    "metric": "fid",
+    "value": 2.5588510036468506
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "normal_cdf_minmax_square_c4_b4_r5_s2.5",
+    "metric": "bytes_per_image",
+    "value": 303756.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "normal_cdf_minmax_square_c4_b4_r5_s2.5",
+    "metric": "serialize_ms_per_image",
+    "value": 0.24635597395899822
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "normal_cdf_minmax_square_c4_b4_r5_s2.5",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.13384753103309777
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "normal_cdf_minmax_square_c4_b8_r6_s2.5",
+    "metric": "mse",
+    "value": 0.001329099331749603
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "normal_cdf_minmax_square_c4_b8_r6_s2.5",
+    "metric": "fid",
+    "value": 2.746774196624756
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "normal_cdf_minmax_square_c4_b8_r6_s2.5",
+    "metric": "bytes_per_image",
+    "value": 275084.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "normal_cdf_minmax_square_c4_b8_r6_s2.5",
+    "metric": "serialize_ms_per_image",
+    "value": 0.23943748903548112
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "normal_cdf_minmax_square_c4_b8_r6_s2.5",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.12757153000347898
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "normal_cdf_minmax_square_c5_b4_r5_s2.5",
+    "metric": "mse",
+    "value": 0.0012517869966977742
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "normal_cdf_minmax_square_c5_b4_r5_s2.5",
+    "metric": "fid",
+    "value": 2.226459264755249
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "normal_cdf_minmax_square_c5_b4_r5_s2.5",
+    "metric": "bytes_per_image",
+    "value": 369292.0
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "normal_cdf_minmax_square_c5_b4_r5_s2.5",
+    "metric": "serialize_ms_per_image",
+    "value": 0.2531785679748282
+  },
+  {
+    "domain": "image",
+    "vae": "flux_2",
+    "storage": "normal_cdf_minmax_square_c5_b4_r5_s2.5",
+    "metric": "deserialize_ms_per_image",
+    "value": 0.14334173400857253
+  }
+]

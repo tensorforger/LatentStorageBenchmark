@@ -58,6 +58,24 @@ def from_square_groups(groups: torch.Tensor, shape, block: int) -> torch.Tensor:
     return x.reshape(b, c, hb * block, wb * block)[:, :, :h, :w]
 
 
+def to_cube_groups(x: torch.Tensor, block: int) -> torch.Tensor:
+    """[B, C, T, H, W] -> [B, G, block^3]; each group is a block^3 spatiotemporal cube of one channel (zero padded)."""
+    b, c, t, h, w = x.shape
+    x = F.pad(x, (0, (-w) % block, 0, (-h) % block, 0, (-t) % block))
+    tb, hb, wb = (s // block for s in x.shape[2:])
+    x = x.reshape(b, c, tb, block, hb, block, wb, block).permute(0, 1, 2, 4, 6, 3, 5, 7)
+    return x.reshape(b, c * tb * hb * wb, block**3)
+
+
+def from_cube_groups(groups: torch.Tensor, shape, block: int) -> torch.Tensor:
+    b, c, t, h, w = shape
+    tb, hb, wb = -(-t // block), -(-h // block), -(-w // block)
+    x = groups.reshape(b, c, tb, hb, wb, block, block, block).permute(
+        0, 1, 2, 5, 3, 6, 4, 7
+    )
+    return x.reshape(b, c, tb * block, hb * block, wb * block)[:, :, :t, :h, :w]
+
+
 def fp16_scale(amax: torch.Tensor, qmax: float) -> torch.Tensor:
     return (amax / qmax).clamp(min=FP16_MIN_SCALE).to(torch.float16)
 
@@ -173,13 +191,14 @@ def quantize_minmax(
     bits: int,
     range_bits: int = 8,
     lloyd: bool = False,
+    lloyd_per_channel: bool = False,
 ) -> dict[str, torch.Tensor]:
     """
     Asymmetric `bits`-bit quantization on the true [min, max] of each group (no forced zero,
     all codes usable). The group min/max are stored as `range_bits`-bit indices into the range
     of a reference block (`refs` equal blocks per sample, e.g. channels).
     With `lloyd` the levels inside [min, max] are a per-sample Lloyd-Max table (stored in the
-    result) instead of uniform.
+    result) instead of uniform; with `lloyd_per_channel` one table per reference block (channel).
     groups [B, G, g] with G % refs == 0, blocks contiguous along G.
     """
     b, n_groups, n = groups.shape
@@ -195,11 +214,14 @@ def quantize_minmax(
     start, span = _minmax_grid(lo, hi, cmin, cmax, range_bits)
     out = {}
     if lloyd:
-        u = ((x - start) / span).reshape(b, -1)
-        w = span.expand_as(x).reshape(b, -1) ** 2  # squared error scales with span^2
-        tables = [fit_lloyd_table(u[i], w[i], 2**bits) for i in range(b)]
-        q = torch.stack([nearest_code(u[i], tables[i]) for i in range(b)])
-        out["table"] = torch.stack(tables).to(torch.float16)
+        rows = (b, refs) if lloyd_per_channel else (b,)  # one table per row
+        u = ((x - start) / span).reshape(-1, x.numel() // math.prod(rows))
+        w = (span.expand_as(x) ** 2).reshape_as(u)  # squared error scales with span^2
+        tables = torch.stack([fit_lloyd_table(ui, wi, 2**bits) for ui, wi in zip(u, w)])
+        q = torch.stack([nearest_code(ui, ti) for ui, ti in zip(u, tables)]).reshape(
+            b, -1
+        )
+        out["table"] = tables.reshape(*rows, -1).to(torch.float16)
     else:
         step = span / (2**bits - 1)
         q = torch.round((x - start) / step).clamp(0, 2**bits - 1).to(torch.uint8)
@@ -236,7 +258,12 @@ def dequantize_minmax(
         range_bits,
     )
     if "table" in t:
-        x = lookup(t["table"].float(), q) * span + start
+        table = t["table"].float()
+        if table.dim() == 3:  # per-channel tables [B, refs, K]
+            vals = table.gather(2, q.reshape(b, refs, -1).long()).reshape(q.shape)
+        else:
+            vals = lookup(table, q)
+        x = vals * span + start
     else:
         x = q.float() * (span / (2**bits - 1)) + start
     return x.reshape(b, n_groups, group_size)

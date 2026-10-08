@@ -2,6 +2,10 @@
 
 Latent Storage Benchmark (`lsbench`): measures how well VAE latents survive different storage/compression schemes (quality vs. disk size and I/O time). Package lives in `src/lsbench/`, installed editable (`import lsbench...`).
 
+## 0. Tool usage conventions
+
+- The default terminal is **Fish** that **does not support** Heredocs.
+
 ## 1. Architecture
 
 Pipeline per VAE: `image -> vae.encode -> storage.serialize -> bytes -> storage.deserialize -> vae.decode -> metrics(original, reconstructed)`.
@@ -17,9 +21,9 @@ Pipeline per VAE: `image -> vae.encode -> storage.serialize -> bytes -> storage.
 - `lsbench/utils/`: `result_writer.py` (long-format table -> `results/<benchmark_name>/results.parquet` + `tables/*.md`), `report.py::make_plots`, `image_tools.py` (torch/np/cv2 conversions), `crop_maximal_rectangle.py`.
 - `configs/lsbench_1.0.yaml` (OmegaConf): `benchmark_name`, optional global `num_samples` (first N images of all datasets combined in config order; `null`/absent = all), `image.{width,height,batch_size,datasets,vaes,latent_storages,metrics}`, and a `video` section (not used yet). `configs/lsbench_fast.yaml` is the same with `num_samples: 5` and its own `benchmark_name` for quick tests.
 - **Components are built from the config** by `lsbench/utils/component_factory.py` (`configure_vae(entry, device)`, `configure_latent_storage(entry)`, `configure_metric_factory(entry)`). It imports every module in `lsbench/image/{vaes,latent_storages,metrics}/` and picks the single subclass whose class constant `NAME` equals the config name. `main()` has no component imports: adding a file + a config entry is the whole registration.
-- Config entry is either a plain name (`- mse`) or a mapping with constructor kwargs (`- {name: flux_2, path_to_model: models/FLUX.2-klein-4B/vae}`). `device` is injected automatically into VAEs whose `__init__` has a `device` argument.
+- Config entry is either a plain name (`- mse`) or a mapping with constructor kwargs (`- {name: flux_2, path_to_model: models/FLUX.2-klein-4B/vae}`). `device` is injected automatically into VAEs whose `__init__` has a `device` argument. A VAE entry may also set `batch_size` (overrides `image.batch_size`, for memory-hungry VAEs); the runner consumes it and it is not passed to the constructor.
 - Every VAE/storage/metric class must define `NAME = "..."` as a class constant; `get_*_name()` returns `self.NAME`.
-- Only the `image` domain is implemented; `src/lsbench/video/` is empty (`ResultWriter` already has a `domain_name` arg).
+- Only `image` and `video` domains are implemented. The `video` domain mirrors `image` under `src/lsbench/video/` (`dataset.py::VideoDataset`, `vaes/video_vae.py::VideoVAE` + `no_vae.py`, `latent_storages/video_latent_storage.py::VideoLatentStorage` + `fp32/fp16/bf16`, `metrics/video_metric.py::VideoMetric` + `mse_metric.py`) with tensors `[B, C, T, H, W]`, RGB, `[0, 1]`; `VideoVAE` additionally has `get_temporal_compression()`. Video datasets are prepared as `prepared_datasets/<name>/NNNNNN.npy` (uint8 RGB `[T, H, W, 3]`, cropped to `video.{width,height}`, first `video.num_frames` frames; only `movirec`, 75 frames @ 256x256). `run_benchmark.py` runs every domain section present in the config (`image`, then `video`), writes rows with `domain=<domain>` and size/time keys `bytes_per_<domain>`, `serialize_ms_per_<domain>`, `deserialize_ms_per_<domain>`; the component factory takes a `domain` argument.
 - Data flow is two-stage: raw `datasets/` (never modify) -> `scripts/prepare_datasets.py` -> `prepared_datasets/` (only thing the loader reads). `models/` holds local HF checkpoints (git-cloned).
 
 ## 2. Rules for adding components

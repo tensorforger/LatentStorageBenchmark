@@ -2,11 +2,6 @@
 name = "lsbench"
 version = "1.0"
 requires-python = ">=3.12"
-dependencies = [
-    "transformers",
-    "diffusers",
-    "numpy",
-]
 
 [build-system]
 requires = ["setuptools"]

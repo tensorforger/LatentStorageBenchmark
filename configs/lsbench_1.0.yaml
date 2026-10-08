@@ -10,6 +10,14 @@ image:
     - no_vae
     - name: flux_2
       path_to_model: models/FLUX.2-klein-4B/vae
+    - name: qwen_image_2_1
+      path_to_model: models/texture-fix-vae-for-qwen-image-2.1
+    - name: flux_1
+      path_to_model: models/FLUX.1-schnell/vae
+    - name: sd_3_5
+      path_to_model: models/stable-diffusion-3.5-large/vae
+    - name: sdxl
+      path_to_model: models/sdxl-vae
   latent_storages:
     - fp32
     - fp16
@@ -65,6 +73,17 @@ image:
     - {name: lloyd_minmax_square, bits: 6, block: 8, range_bits: 6}
     - {name: lloyd_minmax_square, bits: 7, block: 8, range_bits: 6}
     - {name: lloyd_minmax_square, bits: 8, block: 8, range_bits: 6}
+    # lloyd: one table per latent channel (_pc) vs one per sample
+    - {name: lloyd_minmax_square, bits: 2, block: 4, range_bits: 5, per_channel: true}
+    - {name: lloyd_minmax_square, bits: 3, block: 4, range_bits: 5, per_channel: true}
+    - {name: lloyd_minmax_square, bits: 3, block: 8, range_bits: 6, per_channel: true}
+    - {name: lloyd_minmax_square, bits: 4, block: 4, range_bits: 5, per_channel: true}
+    - {name: lloyd_minmax_square, bits: 4, block: 8, range_bits: 6, per_channel: true}
+    - {name: lloyd_minmax_square, bits: 5, block: 4, range_bits: 5, per_channel: true}
+    - {name: lloyd_minmax_square, bits: 5, block: 8, range_bits: 6, per_channel: true}
+    - {name: lloyd_minmax_square, bits: 6, block: 8, range_bits: 6, per_channel: true}
+    - {name: lloyd_minmax_square, bits: 7, block: 8, range_bits: 6, per_channel: true}
+    - {name: lloyd_minmax_square, bits: 8, block: 8, range_bits: 6, per_channel: true}
     - {name: normal_cdf_minmax_square, bits: 4, block: 4, range_bits: 5}
     - {name: normal_cdf_minmax_square, bits: 3, block: 4, range_bits: 5, std_scale: 2.5}
     - {name: normal_cdf_minmax_square, bits: 4, block: 4, range_bits: 5, std_scale: 2.5}
@@ -81,9 +100,12 @@ image:
     - fid
 
 video:
+  width: 256
+  height: 256
+  num_frames: 75
+  batch_size: 2
   datasets:
     - movirec
-    - GasVideo1000
   vaes:
     - no_vae
   latent_storages:
@@ -92,4 +114,3 @@ video:
     - bf16
   metrics:
     - mse
-    - fid

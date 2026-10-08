@@ -1,0 +1,121 @@
+benchmark_name: lsbench_1.2
+num_samples: null
+image:
+  width: 1024
+  height: 1024
+  batch_size: 2
+  datasets:
+    - axis-v1_1k
+  vaes:
+    - name: flux_2
+      path_to_model: models/FLUX.2-klein-4B/vae
+  latent_storages:
+    # Naive
+    - fp32
+    - fp16
+    - bf16
+    - fp8_e4m3
+    - int8_tensor
+    # Global minamx + low precision
+    - {name: lloyd_minmax_square, bits: 2, block: null, lloyd: false}
+    - {name: lloyd_minmax_square, bits: 3, block: null, lloyd: false}
+    - {name: lloyd_minmax_square, bits: 4, block: null, lloyd: false}
+    - {name: lloyd_minmax_square, bits: 5, block: null, lloyd: false}
+    - {name: lloyd_minmax_square, bits: 6, block: null, lloyd: false}
+    - {name: lloyd_minmax_square, bits: 7, block: null, lloyd: false}
+    - {name: lloyd_minmax_square, bits: 8, block: null, lloyd: false}
+    # Global minamx + blockwise minmax + low precision
+    - {name: lloyd_minmax_square, bits: 2, block: 2, range_bits: 4, lloyd: false}
+    - {name: lloyd_minmax_square, bits: 3, block: 2, range_bits: 4, lloyd: false}
+    - {name: lloyd_minmax_square, bits: 4, block: 2, range_bits: 4, lloyd: false}
+    - {name: lloyd_minmax_square, bits: 5, block: 2, range_bits: 4, lloyd: false}
+    - {name: lloyd_minmax_square, bits: 6, block: 2, range_bits: 4, lloyd: false}
+    - {name: lloyd_minmax_square, bits: 7, block: 2, range_bits: 4, lloyd: false}
+    - {name: lloyd_minmax_square, bits: 8, block: 2, range_bits: 4, lloyd: false}
+    - {name: lloyd_minmax_square, bits: 2, block: 4, range_bits: 4, lloyd: false}
+    - {name: lloyd_minmax_square, bits: 3, block: 4, range_bits: 4, lloyd: false}
+    - {name: lloyd_minmax_square, bits: 4, block: 4, range_bits: 4, lloyd: false}
+    - {name: lloyd_minmax_square, bits: 5, block: 4, range_bits: 4, lloyd: false}
+    - {name: lloyd_minmax_square, bits: 6, block: 4, range_bits: 4, lloyd: false}
+    - {name: lloyd_minmax_square, bits: 7, block: 4, range_bits: 4, lloyd: false}
+    - {name: lloyd_minmax_square, bits: 8, block: 4, range_bits: 4, lloyd: false}
+    - {name: lloyd_minmax_square, bits: 2, block: 8, range_bits: 4, lloyd: false}
+    - {name: lloyd_minmax_square, bits: 3, block: 8, range_bits: 4, lloyd: false}
+    - {name: lloyd_minmax_square, bits: 4, block: 8, range_bits: 4, lloyd: false}
+    - {name: lloyd_minmax_square, bits: 5, block: 8, range_bits: 4, lloyd: false}
+    - {name: lloyd_minmax_square, bits: 6, block: 8, range_bits: 4, lloyd: false}
+    - {name: lloyd_minmax_square, bits: 7, block: 8, range_bits: 4, lloyd: false}
+    - {name: lloyd_minmax_square, bits: 8, block: 8, range_bits: 4, lloyd: false}
+
+    - {name: lloyd_minmax_square, bits: 2, block: 2, range_bits: 6, lloyd: false}
+    - {name: lloyd_minmax_square, bits: 3, block: 2, range_bits: 6, lloyd: false}
+    - {name: lloyd_minmax_square, bits: 4, block: 2, range_bits: 6, lloyd: false}
+    - {name: lloyd_minmax_square, bits: 5, block: 2, range_bits: 6, lloyd: false}
+    - {name: lloyd_minmax_square, bits: 6, block: 2, range_bits: 6, lloyd: false}
+    - {name: lloyd_minmax_square, bits: 7, block: 2, range_bits: 6, lloyd: false}
+    - {name: lloyd_minmax_square, bits: 8, block: 2, range_bits: 6, lloyd: false}
+    - {name: lloyd_minmax_square, bits: 2, block: 4, range_bits: 6, lloyd: false}
+    - {name: lloyd_minmax_square, bits: 3, block: 4, range_bits: 6, lloyd: false}
+    - {name: lloyd_minmax_square, bits: 4, block: 4, range_bits: 6, lloyd: false}
+    - {name: lloyd_minmax_square, bits: 5, block: 4, range_bits: 6, lloyd: false}
+    - {name: lloyd_minmax_square, bits: 6, block: 4, range_bits: 6, lloyd: false}
+    - {name: lloyd_minmax_square, bits: 7, block: 4, range_bits: 6, lloyd: false}
+    - {name: lloyd_minmax_square, bits: 8, block: 4, range_bits: 6, lloyd: false}
+    - {name: lloyd_minmax_square, bits: 2, block: 8, range_bits: 6, lloyd: false}
+    - {name: lloyd_minmax_square, bits: 3, block: 8, range_bits: 6, lloyd: false}
+    - {name: lloyd_minmax_square, bits: 4, block: 8, range_bits: 6, lloyd: false}
+    - {name: lloyd_minmax_square, bits: 5, block: 8, range_bits: 6, lloyd: false}
+    - {name: lloyd_minmax_square, bits: 6, block: 8, range_bits: 6, lloyd: false}
+    - {name: lloyd_minmax_square, bits: 7, block: 8, range_bits: 6, lloyd: false}
+    - {name: lloyd_minmax_square, bits: 8, block: 8, range_bits: 6, lloyd: false}
+
+    # Global minamx + blockwise minmax + low precision + Lloyd-Max tables
+    - {name: lloyd_minmax_square, bits: 2, block: 2, range_bits: 4, lloyd: true}
+    - {name: lloyd_minmax_square, bits: 3, block: 2, range_bits: 4, lloyd: true}
+    - {name: lloyd_minmax_square, bits: 4, block: 2, range_bits: 4, lloyd: true}
+    - {name: lloyd_minmax_square, bits: 5, block: 2, range_bits: 4, lloyd: true}
+    - {name: lloyd_minmax_square, bits: 6, block: 2, range_bits: 4, lloyd: true}
+    - {name: lloyd_minmax_square, bits: 7, block: 2, range_bits: 4, lloyd: true}
+    - {name: lloyd_minmax_square, bits: 8, block: 2, range_bits: 4, lloyd: true}
+    - {name: lloyd_minmax_square, bits: 2, block: 4, range_bits: 4, lloyd: true}
+    - {name: lloyd_minmax_square, bits: 3, block: 4, range_bits: 4, lloyd: true}
+    - {name: lloyd_minmax_square, bits: 4, block: 4, range_bits: 4, lloyd: true}
+    - {name: lloyd_minmax_square, bits: 5, block: 4, range_bits: 4, lloyd: true}
+    - {name: lloyd_minmax_square, bits: 6, block: 4, range_bits: 4, lloyd: true}
+    - {name: lloyd_minmax_square, bits: 7, block: 4, range_bits: 4, lloyd: true}
+    - {name: lloyd_minmax_square, bits: 8, block: 4, range_bits: 4, lloyd: true}
+    - {name: lloyd_minmax_square, bits: 2, block: 8, range_bits: 4, lloyd: true}
+    - {name: lloyd_minmax_square, bits: 3, block: 8, range_bits: 4, lloyd: true}
+    - {name: lloyd_minmax_square, bits: 4, block: 8, range_bits: 4, lloyd: true}
+    - {name: lloyd_minmax_square, bits: 5, block: 8, range_bits: 4, lloyd: true}
+    - {name: lloyd_minmax_square, bits: 6, block: 8, range_bits: 4, lloyd: true}
+    - {name: lloyd_minmax_square, bits: 7, block: 8, range_bits: 4, lloyd: true}
+    - {name: lloyd_minmax_square, bits: 8, block: 8, range_bits: 4, lloyd: true}
+
+    - {name: lloyd_minmax_square, bits: 2, block: 2, range_bits: 6, lloyd: true}
+    - {name: lloyd_minmax_square, bits: 3, block: 2, range_bits: 6, lloyd: true}
+    - {name: lloyd_minmax_square, bits: 4, block: 2, range_bits: 6, lloyd: true}
+    - {name: lloyd_minmax_square, bits: 5, block: 2, range_bits: 6, lloyd: true}
+    - {name: lloyd_minmax_square, bits: 6, block: 2, range_bits: 6, lloyd: true}
+    - {name: lloyd_minmax_square, bits: 7, block: 2, range_bits: 6, lloyd: true}
+    - {name: lloyd_minmax_square, bits: 8, block: 2, range_bits: 6, lloyd: true}
+    - {name: lloyd_minmax_square, bits: 2, block: 4, range_bits: 6, lloyd: true}
+    - {name: lloyd_minmax_square, bits: 3, block: 4, range_bits: 6, lloyd: true}
+    - {name: lloyd_minmax_square, bits: 4, block: 4, range_bits: 6, lloyd: true}
+    - {name: lloyd_minmax_square, bits: 5, block: 4, range_bits: 6, lloyd: true}
+    - {name: lloyd_minmax_square, bits: 6, block: 4, range_bits: 6, lloyd: true}
+    - {name: lloyd_minmax_square, bits: 7, block: 4, range_bits: 6, lloyd: true}
+    - {name: lloyd_minmax_square, bits: 8, block: 4, range_bits: 6, lloyd: true}
+    - {name: lloyd_minmax_square, bits: 2, block: 8, range_bits: 6, lloyd: true}
+    - {name: lloyd_minmax_square, bits: 3, block: 8, range_bits: 6, lloyd: true}
+    - {name: lloyd_minmax_square, bits: 4, block: 8, range_bits: 6, lloyd: true}
+    - {name: lloyd_minmax_square, bits: 5, block: 8, range_bits: 6, lloyd: true}
+    - {name: lloyd_minmax_square, bits: 6, block: 8, range_bits: 6, lloyd: true}
+    - {name: lloyd_minmax_square, bits: 7, block: 8, range_bits: 6, lloyd: true}
+    - {name: lloyd_minmax_square, bits: 8, block: 8, range_bits: 6, lloyd: true}
+  metrics:
+    - mse
+    - psnr
+    - ssim
+    - lpips
+    - fid
