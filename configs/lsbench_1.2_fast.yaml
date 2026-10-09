@@ -1,9 +1,9 @@
 benchmark_name: lsbench_1.2_fast
-num_samples: 4
+num_samples: 20
 image:
   width: 1024
   height: 1024
-  batch_size: 2
+  batch_size: 1
   datasets:
     - axis-v1_1k
   vaes:
@@ -113,6 +113,17 @@ image:
     - {name: lloyd_minmax_square, bits: 6, block: 8, range_bits: 6, lloyd: true}
     - {name: lloyd_minmax_square, bits: 7, block: 8, range_bits: 6, lloyd: true}
     - {name: lloyd_minmax_square, bits: 8, block: 8, range_bits: 6, lloyd: true}
+
+
+    # Global minamx + blockwise minmax + low precision + Lloyd-Max tables
+    - {name: lloyd_minmax_square, bits: 2, block: 2, range_bits: 4, lloyd: true, lloyd_fast: true}
+    - {name: lloyd_minmax_square, bits: 3, block: 2, range_bits: 4, lloyd: true, lloyd_fast: true}
+    - {name: lloyd_minmax_square, bits: 4, block: 2, range_bits: 4, lloyd: true, lloyd_fast: true}
+    - {name: lloyd_minmax_square, bits: 5, block: 2, range_bits: 4, lloyd: true, lloyd_fast: true}
+    - {name: lloyd_minmax_square, bits: 6, block: 2, range_bits: 4, lloyd: true, lloyd_fast: true}
+    - {name: lloyd_minmax_square, bits: 7, block: 2, range_bits: 4, lloyd: true, lloyd_fast: true}
+    - {name: lloyd_minmax_square, bits: 8, block: 2, range_bits: 4, lloyd: true, lloyd_fast: true}
+    - {name: lloyd_minmax_square, bits: 2, block: 4, range_bits: 4, lloyd: true, lloyd_fast: true}
   metrics:
     - mse
     - psnr

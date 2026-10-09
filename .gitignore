@@ -1,6 +1,9 @@
 .vscode/
 local_samples/
 
+# Smoke-test results (configs/*fast.yaml)
+results/*fast/
+
 # Weights
 models/
 

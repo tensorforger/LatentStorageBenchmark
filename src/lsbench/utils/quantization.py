@@ -185,6 +185,40 @@ def fit_lloyd_table(
     return table.to(torch.float16).float().sort().values
 
 
+def fit_lloyd_tables_fast(
+    u: torch.Tensor,
+    w: torch.Tensor,
+    levels: int,
+    iters: int = 2,
+    bins: int = 4096,
+) -> torch.Tensor:
+    """
+    Batched approximation of `fit_lloyd_table`: u, w [R, N] -> fp16-representable tables [R, levels].
+    Works on a weighted histogram of u (one pass over the data) instead of the points: the start is the
+    companded quantiles (point density ~ mass^(1/3), the high-resolution Lloyd-Max optimum), then a few
+    Lloyd steps on the bin centroids. Tables are not sorted explicitly (the start is monotone).
+    """
+    r = u.shape[0]
+    tiny = 1e-30
+    w = w / w.mean(1, keepdim=True).clamp(min=tiny)
+    idx = (u * bins).long().clamp_(0, bins - 1)
+    mass = torch.zeros(r, bins, device=u.device).scatter_add_(1, idx, w)
+    moment = torch.zeros_like(mass).scatter_add_(1, idx, u * w)
+    centers = (torch.arange(bins, device=u.device) + 0.5) / bins
+    centroid = torch.where(mass > 0, moment / mass.clamp(min=tiny), centers)
+
+    cdf = mass.pow(1 / 3).cumsum(1)
+    targets = (torch.arange(levels, device=u.device) + 0.5) / levels
+    pos = torch.searchsorted(cdf / cdf[:, -1:], targets.expand(r, -1).contiguous())
+    table = centroid.gather(1, pos.clamp(max=bins - 1))
+    for _ in range(iters):
+        assign = torch.searchsorted((table[:, 1:] + table[:, :-1]) / 2, centroid)
+        num = torch.zeros_like(table).scatter_add_(1, assign, moment)
+        den = torch.zeros_like(table).scatter_add_(1, assign, mass)
+        table = torch.where(den > 0, num / den.clamp(min=tiny), table)
+    return table.to(torch.float16).float()
+
+
 def quantize_minmax(
     groups: torch.Tensor,
     refs: int,
@@ -192,6 +226,7 @@ def quantize_minmax(
     range_bits: int = 8,
     lloyd: bool = False,
     lloyd_per_channel: bool = False,
+    lloyd_fast: bool = False,
 ) -> dict[str, torch.Tensor]:
     """
     Asymmetric `bits`-bit quantization on the true [min, max] of each group (no forced zero,
@@ -199,6 +234,7 @@ def quantize_minmax(
     of a reference block (`refs` equal blocks per sample, e.g. channels).
     With `lloyd` the levels inside [min, max] are a per-sample Lloyd-Max table (stored in the
     result) instead of uniform; with `lloyd_per_channel` one table per reference block (channel).
+    `lloyd_fast` fits the tables with `fit_lloyd_tables_fast` (batched, histogram based).
     groups [B, G, g] with G % refs == 0, blocks contiguous along G.
     """
     b, n_groups, n = groups.shape
@@ -217,10 +253,17 @@ def quantize_minmax(
         rows = (b, refs) if lloyd_per_channel else (b,)  # one table per row
         u = ((x - start) / span).reshape(-1, x.numel() // math.prod(rows))
         w = (span.expand_as(x) ** 2).reshape_as(u)  # squared error scales with span^2
-        tables = torch.stack([fit_lloyd_table(ui, wi, 2**bits) for ui, wi in zip(u, w)])
-        q = torch.stack([nearest_code(ui, ti) for ui, ti in zip(u, tables)]).reshape(
-            b, -1
-        )
+        if lloyd_fast:
+            tables = fit_lloyd_tables_fast(u, w, 2**bits)
+            mids = (tables[:, 1:] + tables[:, :-1]) / 2
+            q = torch.searchsorted(mids, u.contiguous()).to(torch.uint8).reshape(b, -1)
+        else:
+            tables = torch.stack(
+                [fit_lloyd_table(ui, wi, 2**bits) for ui, wi in zip(u, w)]
+            )
+            q = torch.stack(
+                [nearest_code(ui, ti) for ui, ti in zip(u, tables)]
+            ).reshape(b, -1)
         out["table"] = tables.reshape(*rows, -1).to(torch.float16)
     else:
         step = span / (2**bits - 1)

@@ -1,8 +1,8 @@
 """Prepare raw datasets into a uniform, cropped PNG tree.
 
 Each raw dataset under ``datasets/`` has a different on-disk layout. This
-script extracts only the meaningful content images (skipping ground-truth
-masks, captions, and macOS junk), crops them to the configured size, and
+script extracts only the content images/videos (skipping captions and junk files),
+crops them to the configured size, and
 writes them as zero-padded ``NNNNNN.png`` files under ``prepared_datasets/``.
 
 After running this, the image dataset loader only has to read the uniform
@@ -79,13 +79,6 @@ def collect_source_images(dataset_name: str, dataset_dir: Path) -> list[Path]:
     if dataset_name == "axis-v1_1k":
         # Per-category subfolders, each mixing images with .txt captions.
         return _find_images(dataset_dir)
-    if dataset_name == "OCR-Quality":
-        # All content images live under pics/.
-        return _find_images(dataset_dir / "pics")
-    if dataset_name == "Total-Text-Dataset":
-        # Only Images/ holds real photos. groundtruth_* are masks,
-        # txt_format is text, __MACOSX is macOS junk.
-        return _find_images(dataset_dir / "Images")
     raise ValueError(f"Unknown dataset: {dataset_name!r}")
 
 

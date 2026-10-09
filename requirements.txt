@@ -2,17 +2,11 @@ diffusers>=0.41.0
 transformers
 numpy>=2.0
 opencv-python==4.12.0.88
-imageio-ffmpeg
-imageio
 accelerate
 safetensors>=0.4.0
 ipykernel
 matplotlib
 tqdm
-tensorboard
-boto3
-python-dotenv
-decord
 omegaconf
 torchmetrics
 lpips
@@ -21,4 +15,3 @@ torch-fidelity
 pandas
 tabulate
 pyarrow
-zstandard

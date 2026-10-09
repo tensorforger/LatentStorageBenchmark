@@ -21,6 +21,7 @@ class LloydMinMaxSquareLatentStorage(ImageLatentStorage):
     With `per_channel` every latent channel gets its own table (more metadata).
     With `block=None` there is no blockwise range (`range_bits` is unused): each channel is quantized
     on its global min/max only. With `lloyd=False` the levels are uniform instead of a Lloyd-Max table.
+    With `lloyd_fast` the tables are fitted by a fast batched histogram-based approximation.
     """
 
     NAME = "lloyd_minmax_square"
@@ -32,6 +33,7 @@ class LloydMinMaxSquareLatentStorage(ImageLatentStorage):
         range_bits: int = 6,
         per_channel: bool = False,
         lloyd: bool = True,
+        lloyd_fast: bool = False,
     ):
         super().__init__()
         if not 2 <= bits <= 8 or not 2 <= range_bits <= 8:
@@ -41,6 +43,7 @@ class LloydMinMaxSquareLatentStorage(ImageLatentStorage):
         self.range_bits = range_bits
         self.per_channel = per_channel
         self.lloyd = lloyd
+        self.lloyd_fast = lloyd_fast
 
     def serialize(self, latents: torch.Tensor) -> bytes:
         """
@@ -61,6 +64,7 @@ class LloydMinMaxSquareLatentStorage(ImageLatentStorage):
                 self.bits,
                 self.range_bits,
                 lloyd=self.lloyd,
+                lloyd_fast=self.lloyd_fast,
                 lloyd_per_channel=self.per_channel,
             ),
             x.shape,
@@ -87,6 +91,7 @@ class LloydMinMaxSquareLatentStorage(ImageLatentStorage):
     def get_storage_name(self) -> str:
         prefix = self.NAME if self.lloyd else "minmax_square"
         suffix = "_pc" if self.lloyd and self.per_channel else ""
+        suffix += "_fast" if self.lloyd and self.lloyd_fast else ""
         if self.block is None:
             return f"{prefix}_c{self.bits}_global{suffix}"
         return f"{prefix}_c{self.bits}_b{self.block}_r{self.range_bits}{suffix}"

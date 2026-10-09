@@ -41,6 +41,6 @@ class ImageDataset(Dataset):
         if image is None:
             raise ValueError(f"Failed to read image: {self.image_paths[index]}")
 
-        image = cv2_to_torch(image)[0]
+        image = cv2_to_torch(image)[0]  # CPU; the runner moves batches to the device
 
         return image

@@ -11,8 +11,8 @@ class Flux2VAE(ImageVAE):
     def __init__(self, path_to_model: str, device: torch.device = "cuda"):
         super().__init__()
 
-        self.latent_channels = 3
-        self.spatial_compression = 1
+        self.latent_channels = 32
+        self.spatial_compression = 8
 
         self.model = AutoencoderKLFlux2.from_pretrained(
             path_to_model, device=device

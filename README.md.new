@@ -10,12 +10,13 @@ It can also be used as a plain VAE benchmark (`fp32` storage = no compression).
 
 - **Storage format is a free lunch down to ~5 bits per value.** On FLUX.2, 8-bit and `fp16`/`bf16` storage are indistinguishable from `fp32` on every metric, and 5.5 bits per value is still within noise (FID 2.15 vs 2.08, PSNR -0.07 dB).
 - **The best scheme found is block-wise min/max quantization with a Lloyd-Max codebook** (`lloyd_minmax_square`). At 4.5 bits per value it is **7.1x smaller than `fp32`** (3.5x smaller than `fp16`) for -0.25 dB PSNR and +0.3 FID.
-- **Ranking of schemes is almost VAE-independent** (Spearman rank correlation >= 0.97 on PSNR across five image VAEs, >= 0.98 across three video VAEs). Absolute sensitivity differs: FLUX.2 is the most robust, SDXL (4 channels) the least.
+- **Ranking of schemes is almost VAE-independent** (Spearman rank correlation >= 0.97 on PSNR across five image VAEs, >= 0.98 across three video VAEs). Absolute sensitivity differs: e.g. 4-bit Lloyd-Max costs 0.15-0.2 dB PSNR on SD 3.5 and FLUX.2 but about 1 dB on SDXL and Qwen-Image 2.1.
 - **What makes it work** (ablation on FLUX.2): block-wise min/max ranges give most of the gain over global min/max, and Lloyd-Max level tables help mainly at 2-3 bits.
 
-![PSNR and FID vs bits per value](results/lsbench_1.2/plots/ablation/flux_2_psnr_fid_vs_bits.png)
+![PSNR vs bits per value](results/lsbench_1.2/plots/ablation/flux_2_psnr_vs_bits.png)
+![FID vs bits per value](results/lsbench_1.2/plots/ablation/flux_2_fid_vs_bits.png)
 
-*FLUX.2 VAE, 1000 images at 1024x1024. PSNR (solid, left axis) and FID (dashed, right axis); lines are Pareto fronts of the three feature sets (global min/max only, + block-wise min/max, + Lloyd-Max tables); white markers are naive formats. Bits per value is `bytes * 8 / (32 * 128 * 128)` and includes all metadata.*
+*FLUX.2 VAE, 1000 images at 1024x1024. Lines are Pareto fronts of the three feature sets (global min/max only, + block-wise min/max, + Lloyd-Max tables); black squares are naive formats. Bits per value is `bytes * 8 / (32 * 128 * 128)` and includes all metadata.*
 
 | Storage (FLUX.2) | Bits / value | KiB / image | vs `fp32` | PSNR (dB) | SSIM | LPIPS | FID |
 |---|---:|---:|---:|---:|---:|---:|---:|
@@ -47,7 +48,7 @@ The size of `bytes` is the reported storage size, so every storage must put ever
 
 ### VAEs (5 image + 3 video, plus `no_vae` identity baselines)
 
-| Name | Domain | Latent (per 1024² image / 75x256² video) | Source |
+| Name | Domain | Latent channels, compression | Source |
 |---|---|---|---|
 | `flux_2` | image | 32 ch, 8x spatial | [FLUX.2-klein-4B](https://huggingface.co/black-forest-labs/FLUX.2-klein-4B) |
 | `qwen_image_2_1` | image | 64 ch, 16x spatial | [texture-fix-vae-for-qwen-image-2.1](https://huggingface.co/madebyollin/texture-fix-vae-for-qwen-image-2.1) |
@@ -56,7 +57,7 @@ The size of `bytes` is the reported storage size, so every storage must put ever
 | `sdxl` | image | 4 ch, 8x spatial | [sdxl-vae](https://huggingface.co/stabilityai/sdxl-vae) |
 | `wan` | video | 16 ch, 8x spatial, 4x temporal | [Wan2.1](https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B-Diffusers) |
 | `ltx_2_5` | video | 128 ch, 32x spatial, 8x temporal | [LTX-2.5](https://huggingface.co/Lightricks/LTX-2.5-Diffusers) |
-| `minimax_h3` | video | 24 ch | [MiniMax-H3](https://huggingface.co/MiniMaxAI/MiniMax-H3) |
+| `minimax_h3` | video | 24 ch, 16x spatial, ~3.4x temporal | [MiniMax-H3](https://huggingface.co/MiniMaxAI/MiniMax-H3) |
 
 All wrappers return **normalized latents** (the VAE's own scale/shift/BN statistics are applied inside the wrapper), which is what a storage would see in a real training pipeline.
 
@@ -106,7 +107,7 @@ Running every storage on every VAE is expensive (and unnecessary), so the benchm
 
 Not every (VAE, storage, metric) combination is computed on purpose:
 
-1. **Phase 1** compares many algorithms from different families (floating point, per-tensor/channel/group integer, Hadamard rotation, outlier side-channels, NormalFloat/FP4, codebooks, block-wise min/max with Lloyd-Max tables) on a *single* image VAE, only to filter out the worst performers. Early findings: all 8-bit schemes are equivalent; at 4 bits, rotation (Hadamard) hurts, per-channel Lloyd tables give nothing over per-sample tables but are 10x slower to fit, and block-wise min/max + Lloyd-Max tables dominates the quality/size front.
+1. **Phase 1** compares many algorithms from different families (floating point, per-tensor/channel/group integer, Hadamard rotation, outlier side-channels, NormalFloat/FP4, codebooks, block-wise min/max with Lloyd-Max tables) on a *single* image VAE, only to filter out the worst performers. Early findings: all INT8 variants are equivalent; at 4 bits, rotation (Hadamard) hurts, per-channel Lloyd tables give nothing over per-sample tables but are 10x slower to fit, and block-wise min/max + Lloyd-Max tables dominates the quality/size front.
 2. **Phase 2** applies a hand-picked subset of the best algorithm of each family to different VAEs, image and video. The goal is to show that performance of storage algorithms is highly correlated and mostly VAE-independent, so conclusions of phase 1/3 transfer. Spearman rank correlation of the storage ranking between VAE pairs:
 
    | Metric | Min over VAE pairs | Notes |
@@ -117,10 +118,10 @@ Not every (VAE, storage, metric) combination is computed on purpose:
    | video LPIPS | 0.982 | 3 VAEs |
    | video FVD | 0.630 | noisy: 500 clips, LTX-2.5 deviates most |
 
-   What does differ is *sensitivity*, e.g. 4-bit Lloyd-Max (`c4_b4_r5`) costs 0.2 dB PSNR on FLUX.2 but 0.6-1.1 dB on the other image VAEs.
+   What does differ is *sensitivity*, e.g. 4-bit Lloyd-Max (`c4_b4_r5`) costs between 0.15 dB (SD 3.5, FLUX.2) and 1.1 dB (SDXL, Qwen-Image 2.1) of PSNR.
 3. **Phase 3** takes the final best algorithm and benchmarks it with many settings (bits 2-8, block 2/4/8/global, range bits 4/6, Lloyd tables on/off) to isolate which feature produces which gain. Again for a single VAE, as phase 2 showed that the result transfers.
 
-Phase 1 reports only MSE and FID; PSNR there is derived from the mean MSE and differs from the per-sample-mean PSNR used in phases 2 and 3, so do not compare PSNR values across phases.
+Phase 1 predates the PSNR/SSIM/LPIPS metrics and only has MSE and FID.
 
 ## Setup
 
@@ -149,15 +150,15 @@ python scripts/prepare_datasets.py configs/lsbench_1.1.yaml
 
 ### Models
 
-Only the VAE weights are needed (the `vae/` subfolder, or for the standalone VAE repos `config.json` + `diffusion_pytorch_model.safetensors` at the repo root). Some repositories are gated: accept the license on the model page and run `hf auth login` first (SD 3.5, LTX-2.5, MiniMax-H3).
+Only the `vae/` subfolders are needed. Some repositories are gated: accept the license on the model page and run `hf auth login` first (SD 3.5, LTX-2.5, MiniMax-H3).
 
 ```bash
 cd models
 
 # image VAEs
-hf download black-forest-labs/FLUX.2-klein-4B --include "vae/*" --local-dir FLUX.2-klein-4B
-hf download madebyollin/texture-fix-vae-for-qwen-image-2.1 --include "config.json" "diffusion_pytorch_model.safetensors" --local-dir texture-fix-vae-for-qwen-image-2.1
-hf download stabilityai/sdxl-vae --include "config.json" "diffusion_pytorch_model.safetensors" --local-dir sdxl-vae
+git clone https://huggingface.co/black-forest-labs/FLUX.2-klein-4B
+git clone https://huggingface.co/madebyollin/texture-fix-vae-for-qwen-image-2.1
+git clone https://huggingface.co/stabilityai/sdxl-vae
 hf download black-forest-labs/FLUX.1-schnell --include "vae/*" --local-dir FLUX.1-schnell
 hf download stabilityai/stable-diffusion-3.5-large --include "vae/*" --local-dir stable-diffusion-3.5-large
 
@@ -195,9 +196,18 @@ Each run writes to `results/<benchmark_name>/`:
 
 Results are keyed by (VAE, storage, metric) only. After changing datasets, `num_samples` or other data settings, use `--overwrite` or a new `benchmark_name`, otherwise old and new rows get mixed.
 
+## Adding your own VAE, storage or metric
+
+Components are registered by file + config entry only (no changes to the runner). See [AGENTS.md](AGENTS.md) for the exact interface contracts; it is written to be given to an AI coding assistant as well.
+
+1. Add `src/lsbench/<image|video>/<vaes|latent_storages|metrics>/<name>_<kind>.py` with a class constant `NAME`.
+2. Reference `NAME` (optionally with constructor arguments) in a config's `vaes` / `latent_storages` / `metrics` list.
+3. Smoke test with a copy of `configs/lsbench_fast.yaml`.
+
 ## Notes and limitations
 
 - Single run per configuration, no confidence intervals; timings are from one GPU and indicative only.
+- The FLUX.2 wrapper encodes with `latent_dist.sample()` (stochastic) while all other VAEs use `.mode()`. All storages of one run see the same latents, so comparisons are fair, but absolute FLUX.2 numbers vary slightly between runs.
 - Only reconstruction quality is measured, not the effect of quantized latents on downstream training or generation.
 - Quality metrics are measured against the original image, so VAE error is included in all numbers.
 

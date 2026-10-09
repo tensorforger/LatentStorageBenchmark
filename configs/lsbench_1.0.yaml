@@ -10,14 +10,6 @@ image:
     - no_vae
     - name: flux_2
       path_to_model: models/FLUX.2-klein-4B/vae
-    - name: qwen_image_2_1
-      path_to_model: models/texture-fix-vae-for-qwen-image-2.1
-    - name: flux_1
-      path_to_model: models/FLUX.1-schnell/vae
-    - name: sd_3_5
-      path_to_model: models/stable-diffusion-3.5-large/vae
-    - name: sdxl
-      path_to_model: models/sdxl-vae
   latent_storages:
     - fp32
     - fp16
@@ -98,19 +90,3 @@ image:
   metrics:
     - mse
     - fid
-
-video:
-  width: 256
-  height: 256
-  num_frames: 75
-  batch_size: 2
-  datasets:
-    - movirec
-  vaes:
-    - no_vae
-  latent_storages:
-    - fp32
-    - fp16
-    - bf16
-  metrics:
-    - mse
